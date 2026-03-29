@@ -91,7 +91,7 @@
     return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
   }
 
-  fetch("veri.json?t=" + Date.now())
+  fetch("https://api.github.com/repos/${GITHUB_KULLANICI}/${GITHUB_REPO}/commits?path=veri.json?t=" + Date.now())
     .then(r => r.json())
     .then(veri => {
 
