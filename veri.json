@@ -124,7 +124,7 @@
   "aciklama": "2009"
  }
 ],
-"dizi":[
+"diziler":[
  {
   "no": 1,
   "adi": "coupling",
@@ -959,7 +959,7 @@
   "sezon": "1, 2, 3, 4."
  }
 ],
-"yabanci":[
+"filmler":[
  {
   "no": 1,
   "adi": "manhunter",
