@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İzlenenler</title>
+<style>
+  body, td, th {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 12px;
+    color: #494949;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  small {
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    color: #999999;
+    padding-left: 15px;
+  }
+  a, a:visited {
+    text-decoration: none;
+    color: #CC3300;
+  }
+  a:hover {
+    color: #FFFFFF;
+    background-color: #CC3300;
+  }
+  .style1 {
+    color: #003399;
+  }
+  .yukleniyor {
+    color: #999;
+    font-style: italic;
+  }
+  .wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <h1>İzlenenler</h1>
+  <hr>
+
+  <table border="0" cellpadding="4" cellspacing="0">
+    <tr>
+      <td width="30"><strong>#</strong></td>
+      <td width="580"><strong>Adı</strong></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><b><u>Yabancı Filmler</u></b></td>
+    </tr>
+
+    <tbody id="filmler-listesi">
+      <tr><td colspan="2" class="yukleniyor">Yükleniyor...</td></tr>
+    </tbody>
+
+    <tr><td colspan="2"><br></td></tr>
+
+    <tr>
+      <td></td>
+      <td><b><u>Diziler</u></b></td>
+    </tr>
+
+    <tbody id="diziler-listesi">
+      <tr><td colspan="2" class="yukleniyor">Yükleniyor...</td></tr>
+    </tbody>
+
+  </table>
+
+  <hr style="border:dotted 1px #CCCCCC;">
+
+</div>
+
+<script>
+  // GitHub raw URL'ini buraya yapıştır
+  // Örnek: https://raw.githubusercontent.com/KULLANICI/REPO/main/veri.json
+  const VERI_URL = "veri.json";
+
+  fetch(VERI_URL + "?t=" + Date.now())
+    .then(r => r.json())
+    .then(veri => {
+      // Filmler
+      const filmlerEl = document.getElementById("filmler-listesi");
+      filmlerEl.innerHTML = "";
+      const filmler = veri.filmler || [];
+      filmler.sort((a, b) => a.adi.localeCompare(b.adi, "tr"));
+      filmler.forEach((film, i) => {
+        const tr = document.createElement("tr");
+        tr.setAttribute("valign", "top");
+        tr.innerHTML = `
+          <td align="right">${i + 1}.</td>
+          <td>
+            <span class="style1">${escHtml(film.adi)}</span>
+            <small><em>${escHtml(film.yil)}</em></small>
+          </td>`;
+        filmlerEl.appendChild(tr);
+      });
+
+      // Diziler
+      const dizilerEl = document.getElementById("diziler-listesi");
+      dizilerEl.innerHTML = "";
+      const diziler = veri.diziler || [];
+      diziler.sort((a, b) => a.adi.localeCompare(b.adi, "tr"));
+      diziler.forEach((dizi, i) => {
+        const tr = document.createElement("tr");
+        tr.setAttribute("valign", "top");
+        tr.innerHTML = `
+          <td align="right">${i + 1}.</td>
+          <td>
+            <span class="style1">${escHtml(dizi.adi)}</span>
+            <small><em>${escHtml(dizi.sezon)} ${escHtml(dizi.aciklama)}</em></small>
+          </td>`;
+        dizilerEl.appendChild(tr);
+      });
+    })
+    .catch(() => {
+      document.getElementById("filmler-listesi").innerHTML =
+        '<tr><td colspan="2" style="color:red;">Veri yüklenemedi.</td></tr>';
+      document.getElementById("diziler-listesi").innerHTML = "";
+    });
+
+  function escHtml(str) {
+    if (!str) return "";
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+</script>
+
+</body>
+</html>
