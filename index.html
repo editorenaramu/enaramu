@@ -28,6 +28,7 @@
 <div class="wrapper">
 
   <h1>İzlenenler</h1>
+  <p id="guncelleme" style="font-size:10px; color:#999; margin:2px 0 0 0;"></p>
   <hr>
 
   <table border="0" cellpadding="4" cellspacing="0">
@@ -72,6 +73,24 @@
 </div>
 
 <script>
+  // !! Buraya kendi GitHub kullanıcı adın ve repo adını yaz !!
+  const GITHUB_KULLANICI = "editorenaramu";
+  const GITHUB_REPO      = "enaramu";
+
+  // veri.json'un son commit tarihini GitHub API'den çek
+  fetch(`https://api.github.com/repos/${GITHUB_KULLANICI}/${GITHUB_REPO}/commits?path=veri.json&per_page=1`)
+    .then(r => r.json())
+    .then(data => {
+      if (data && data[0]) {
+        const tarih = new Date(data[0].commit.author.date);
+        document.getElementById("guncelleme").textContent =
+          "Son güncelleme: " + tarih.toLocaleDateString("tr-TR", {
+            day: "numeric", month: "long", year: "numeric"
+          });
+      }
+    })
+    .catch(() => {}); // tarih çekilemezse sessizce geç
+
   function escHtml(str) {
     if (!str) return "";
     return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
