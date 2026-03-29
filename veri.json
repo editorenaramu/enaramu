@@ -1,0 +1,6251 @@
+{
+  "filmler": [
+    {
+      "adi": "10 cloverfield lane",
+      "yil": "2016"
+    },
+    {
+      "adi": "12 angry men",
+      "yil": "1957"
+    },
+    {
+      "adi": "12 years a slave",
+      "yil": "2013"
+    },
+    {
+      "adi": "127 hours",
+      "yil": "2010"
+    },
+    {
+      "adi": "13 hours",
+      "yil": "2016"
+    },
+    {
+      "adi": "1408",
+      "yil": ""
+    },
+    {
+      "adi": "1922",
+      "yil": "2017"
+    },
+    {
+      "adi": "2 guns",
+      "yil": "2013"
+    },
+    {
+      "adi": "2001: a space odyssey",
+      "yil": "1968"
+    },
+    {
+      "adi": "2012",
+      "yil": ""
+    },
+    {
+      "adi": "2046",
+      "yil": "2004"
+    },
+    {
+      "adi": "21 grams",
+      "yil": ""
+    },
+    {
+      "adi": "25th hour",
+      "yil": ""
+    },
+    {
+      "adi": "28 days later",
+      "yil": ""
+    },
+    {
+      "adi": "28 weeks later",
+      "yil": ""
+    },
+    {
+      "adi": "3 idiots",
+      "yil": "2009"
+    },
+    {
+      "adi": "300",
+      "yil": ""
+    },
+    {
+      "adi": "4 luni, 3 saptamâni si 2 zile (4 months, 3 weeks and 2 days)",
+      "yil": "2007"
+    },
+    {
+      "adi": "6 bullets",
+      "yil": "2012"
+    },
+    {
+      "adi": "7500",
+      "yil": "2019"
+    },
+    {
+      "adi": "88 minutes",
+      "yil": ""
+    },
+    {
+      "adi": "8mm",
+      "yil": "1999"
+    },
+    {
+      "adi": "8½",
+      "yil": "1963"
+    },
+    {
+      "adi": "9 / 11 mysteries",
+      "yil": ""
+    },
+    {
+      "adi": "a beautiful day in the neighborhood",
+      "yil": "2019"
+    },
+    {
+      "adi": "a beautiful mind",
+      "yil": "2001"
+    },
+    {
+      "adi": "a bronx tale",
+      "yil": ""
+    },
+    {
+      "adi": "a fish called wanda",
+      "yil": "1988"
+    },
+    {
+      "adi": "a man called otto",
+      "yil": "2022"
+    },
+    {
+      "adi": "a man escaped",
+      "yil": "1956"
+    },
+    {
+      "adi": "a man for all seasons",
+      "yil": ""
+    },
+    {
+      "adi": "a matter of life and death",
+      "yil": "1946"
+    },
+    {
+      "adi": "a million ways to die in the west",
+      "yil": "2014"
+    },
+    {
+      "adi": "a night at the opera",
+      "yil": "1935"
+    },
+    {
+      "adi": "a night at the roxbury",
+      "yil": ""
+    },
+    {
+      "adi": "a noble intention",
+      "yil": "2015"
+    },
+    {
+      "adi": "a perfect world",
+      "yil": "1993"
+    },
+    {
+      "adi": "a quiet place",
+      "yil": "2018"
+    },
+    {
+      "adi": "a room with a view",
+      "yil": "1985"
+    },
+    {
+      "adi": "a simple favor",
+      "yil": "2018"
+    },
+    {
+      "adi": "a streetcar named desire",
+      "yil": ""
+    },
+    {
+      "adi": "a time for drunken horses (Zamani barayé masti asbha)",
+      "yil": "2000"
+    },
+    {
+      "adi": "a time to kill",
+      "yil": "1996"
+    },
+    {
+      "adi": "a very long engagement",
+      "yil": ""
+    },
+    {
+      "adi": "a walk among the tombstones",
+      "yil": "2014"
+    },
+    {
+      "adi": "a wednesday",
+      "yil": "2008"
+    },
+    {
+      "adi": "a.i. artificial intelligence",
+      "yil": "2001"
+    },
+    {
+      "adi": "about schmidt",
+      "yil": "2002"
+    },
+    {
+      "adi": "about time",
+      "yil": "2013"
+    },
+    {
+      "adi": "abre los ojos (open your eyes)",
+      "yil": "1997"
+    },
+    {
+      "adi": "ace ventura: when nature calls",
+      "yil": "1995"
+    },
+    {
+      "adi": "after hours",
+      "yil": "1985"
+    },
+    {
+      "adi": "aftersun",
+      "yil": "2022"
+    },
+    {
+      "adi": "agora",
+      "yil": "2009"
+    },
+    {
+      "adi": "aguirre, the wrath of god",
+      "yil": ""
+    },
+    {
+      "adi": "ah fei zing zyun (days of being wild)",
+      "yil": "1990"
+    },
+    {
+      "adi": "airlift",
+      "yil": "2016"
+    },
+    {
+      "adi": "airplane!",
+      "yil": "1980"
+    },
+    {
+      "adi": "albatross",
+      "yil": "2011"
+    },
+    {
+      "adi": "alexander nevsky",
+      "yil": "1938"
+    },
+    {
+      "adi": "ali",
+      "yil": "2001"
+    },
+    {
+      "adi": "alien 1, 2, 3, 4",
+      "yil": ""
+    },
+    {
+      "adi": "all about eve",
+      "yil": ""
+    },
+    {
+      "adi": "all quieton the western front",
+      "yil": "1930"
+    },
+    {
+      "adi": "almost famous",
+      "yil": ""
+    },
+    {
+      "adi": "along came a spider",
+      "yil": "2001"
+    },
+    {
+      "adi": "amadeus",
+      "yil": ""
+    },
+    {
+      "adi": "amarcord",
+      "yil": "1973"
+    },
+    {
+      "adi": "amelie",
+      "yil": ""
+    },
+    {
+      "adi": "american beauty",
+      "yil": ""
+    },
+    {
+      "adi": "american fiction",
+      "yil": "2023"
+    },
+    {
+      "adi": "american gangster",
+      "yil": "2007"
+    },
+    {
+      "adi": "american graffiti",
+      "yil": "1973"
+    },
+    {
+      "adi": "american history x",
+      "yil": ""
+    },
+    {
+      "adi": "american hustle",
+      "yil": "2013"
+    },
+    {
+      "adi": "american made",
+      "yil": "2017"
+    },
+    {
+      "adi": "american psycho",
+      "yil": "2000"
+    },
+    {
+      "adi": "american sniper",
+      "yil": "2014"
+    },
+    {
+      "adi": "amistad",
+      "yil": "1997"
+    },
+    {
+      "adi": "amores perros",
+      "yil": ""
+    },
+    {
+      "adi": "amour",
+      "yil": "2012"
+    },
+    {
+      "adi": "analyze that",
+      "yil": ""
+    },
+    {
+      "adi": "analyze this",
+      "yil": ""
+    },
+    {
+      "adi": "anand",
+      "yil": "1971"
+    },
+    {
+      "adi": "anatomy of a murder",
+      "yil": "1959"
+    },
+    {
+      "adi": "and justice for all",
+      "yil": "1979"
+    },
+    {
+      "adi": "ang-ma-reul bo-at-da (i saw the devil)",
+      "yil": "2010"
+    },
+    {
+      "adi": "angels & demons",
+      "yil": "2009"
+    },
+    {
+      "adi": "angels with dirty faces",
+      "yil": "1938"
+    },
+    {
+      "adi": "angst essen Seele auf (ali: fear eats the soul)",
+      "yil": "1974"
+    },
+    {
+      "adi": "anne of green gables",
+      "yil": "1985"
+    },
+    {
+      "adi": "annie hall",
+      "yil": ""
+    },
+    {
+      "adi": "anonimo veneziano (the anonymous venetian)",
+      "yil": "1970"
+    },
+    {
+      "adi": "anora",
+      "yil": "2024"
+    },
+    {
+      "adi": "antichrist",
+      "yil": "2009"
+    },
+    {
+      "adi": "any given sunday",
+      "yil": ""
+    },
+    {
+      "adi": "aong came polly (2004)",
+      "yil": ""
+    },
+    {
+      "adi": "apocalypse now",
+      "yil": ""
+    },
+    {
+      "adi": "apocalypto",
+      "yil": ""
+    },
+    {
+      "adi": "apollo 13",
+      "yil": ""
+    },
+    {
+      "adi": "ararat",
+      "yil": "2002"
+    },
+    {
+      "adi": "argo",
+      "yil": "2012"
+    },
+    {
+      "adi": "arizona dream",
+      "yil": ""
+    },
+    {
+      "adi": "arrival",
+      "yil": "2016"
+    },
+    {
+      "adi": "arsene lupin",
+      "yil": ""
+    },
+    {
+      "adi": "article 15",
+      "yil": "2019"
+    },
+    {
+      "adi": "as good as it gets",
+      "yil": "1997"
+    },
+    {
+      "adi": "astérix et les vikings",
+      "yil": ""
+    },
+    {
+      "adi": "atonement",
+      "yil": "2007"
+    },
+    {
+      "adi": "august rush",
+      "yil": "2007"
+    },
+    {
+      "adi": "avatar",
+      "yil": "2009"
+    },
+    {
+      "adi": "avaze gonjeshk-ha (the song of sparrows)",
+      "yil": "2008"
+    },
+    {
+      "adi": "awakenings",
+      "yil": "1990"
+    },
+    {
+      "adi": "baahubali: the beginning",
+      "yil": "2015"
+    },
+    {
+      "adi": "babel",
+      "yil": ""
+    },
+    {
+      "adi": "baby driver",
+      "yil": "2017"
+    },
+    {
+      "adi": "bacheha-ye aseman (children of heaven)",
+      "yil": "1997"
+    },
+    {
+      "adi": "back to the future 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "bad ma ra khahad bord (the wind will carry us )",
+      "yil": "1999"
+    },
+    {
+      "adi": "bajrangi bhaijaan",
+      "yil": "2015"
+    },
+    {
+      "adi": "ballon",
+      "yil": "2018"
+    },
+    {
+      "adi": "baran",
+      "yil": "2001"
+    },
+    {
+      "adi": "barfi",
+      "yil": "2012"
+    },
+    {
+      "adi": "barry lyndon",
+      "yil": "1975"
+    },
+    {
+      "adi": "barton fink",
+      "yil": "1991"
+    },
+    {
+      "adi": "basquiat",
+      "yil": "1996"
+    },
+    {
+      "adi": "batman & robin (1997)",
+      "yil": ""
+    },
+    {
+      "adi": "batman (1989)",
+      "yil": ""
+    },
+    {
+      "adi": "batman begins",
+      "yil": ""
+    },
+    {
+      "adi": "batman forever (1995)",
+      "yil": ""
+    },
+    {
+      "adi": "batman returns (1992)",
+      "yil": ""
+    },
+    {
+      "adi": "beerfest",
+      "yil": "2006"
+    },
+    {
+      "adi": "beetlejuice",
+      "yil": "1988"
+    },
+    {
+      "adi": "before sunrise",
+      "yil": "1995"
+    },
+    {
+      "adi": "before sunset",
+      "yil": "2004"
+    },
+    {
+      "adi": "before the rain",
+      "yil": "1994"
+    },
+    {
+      "adi": "being john malkovich",
+      "yil": ""
+    },
+    {
+      "adi": "being there",
+      "yil": "1979"
+    },
+    {
+      "adi": "ben-hur",
+      "yil": ""
+    },
+    {
+      "adi": "betty blue",
+      "yil": "1986"
+    },
+    {
+      "adi": "beverly hills cop",
+      "yil": "1984"
+    },
+    {
+      "adi": "beverly hills cop 2",
+      "yil": "1987"
+    },
+    {
+      "adi": "bhaag milkha bhaag",
+      "yil": "2013"
+    },
+    {
+      "adi": "big fish",
+      "yil": ""
+    },
+    {
+      "adi": "bin-jip (3 iron)",
+      "yil": "2004"
+    },
+    {
+      "adi": "birdman",
+      "yil": "2014"
+    },
+    {
+      "adi": "birdy",
+      "yil": "1984"
+    },
+    {
+      "adi": "bitva za sevastopol",
+      "yil": "2015"
+    },
+    {
+      "adi": "black",
+      "yil": "2005"
+    },
+    {
+      "adi": "black hawk down",
+      "yil": "2001"
+    },
+    {
+      "adi": "black narcissus",
+      "yil": "1947"
+    },
+    {
+      "adi": "black swan",
+      "yil": "2010"
+    },
+    {
+      "adi": "blacKkKlansman",
+      "yil": "2018"
+    },
+    {
+      "adi": "blade runner",
+      "yil": "1982"
+    },
+    {
+      "adi": "blazing saddles",
+      "yil": "1974"
+    },
+    {
+      "adi": "blood diamond",
+      "yil": ""
+    },
+    {
+      "adi": "blood simple",
+      "yil": "1984"
+    },
+    {
+      "adi": "blood simple",
+      "yil": "1984"
+    },
+    {
+      "adi": "blue jasmine",
+      "yil": "2013"
+    },
+    {
+      "adi": "blue velvet",
+      "yil": "1986"
+    },
+    {
+      "adi": "bom yeoreum gaeul gyeoul geurigo bom (Spring, Summer, Fall, Winter... and Spring)",
+      "yil": ""
+    },
+    {
+      "adi": "bonnie and clyde",
+      "yil": "1967"
+    },
+    {
+      "adi": "boogie nights",
+      "yil": "1997"
+    },
+    {
+      "adi": "boyhood",
+      "yil": "2014"
+    },
+    {
+      "adi": "boyz n the hood",
+      "yil": "1991"
+    },
+    {
+      "adi": "braveheart",
+      "yil": "1995"
+    },
+    {
+      "adi": "brazil",
+      "yil": "1985"
+    },
+    {
+      "adi": "breaking the waves",
+      "yil": "1996"
+    },
+    {
+      "adi": "brief encounter",
+      "yil": ""
+    },
+    {
+      "adi": "brilliantovaya ruka (the diamond arm)",
+      "yil": "1969"
+    },
+    {
+      "adi": "bring me the head of alfredo garcia",
+      "yil": "1974"
+    },
+    {
+      "adi": "broadcast news",
+      "yil": "1987"
+    },
+    {
+      "adi": "brokeback mountain",
+      "yil": "2005"
+    },
+    {
+      "adi": "bronenosets potemkin",
+      "yil": "1925"
+    },
+    {
+      "adi": "bruce almighty",
+      "yil": "2003"
+    },
+    {
+      "adi": "bull",
+      "yil": "2019"
+    },
+    {
+      "adi": "buried",
+      "yil": "2010"
+    },
+    {
+      "adi": "butch cassidy and the sundance kid",
+      "yil": ""
+    },
+    {
+      "adi": "butterfly effect 1, 2",
+      "yil": ""
+    },
+    {
+      "adi": "cannibal holocaust",
+      "yil": ""
+    },
+    {
+      "adi": "cape fear",
+      "yil": "1991"
+    },
+    {
+      "adi": "capharnaüm (capernaum)",
+      "yil": "2018"
+    },
+    {
+      "adi": "captain philips",
+      "yil": "2013"
+    },
+    {
+      "adi": "captains courageous",
+      "yil": "1937"
+    },
+    {
+      "adi": "cars",
+      "yil": ""
+    },
+    {
+      "adi": "casablanca",
+      "yil": ""
+    },
+    {
+      "adi": "cashback",
+      "yil": ""
+    },
+    {
+      "adi": "casino",
+      "yil": "1995"
+    },
+    {
+      "adi": "casino royale",
+      "yil": ""
+    },
+    {
+      "adi": "catch me if you can",
+      "yil": "2002"
+    },
+    {
+      "adi": "celda 211 (cell 211)",
+      "yil": "2009"
+    },
+    {
+      "adi": "celda 211 (cell 211)",
+      "yil": "2009"
+    },
+    {
+      "adi": "celeste & jesse forever",
+      "yil": "2012"
+    },
+    {
+      "adi": "central do brasil",
+      "yil": ""
+    },
+    {
+      "adi": "changeling",
+      "yil": "2008"
+    },
+    {
+      "adi": "chaos",
+      "yil": ""
+    },
+    {
+      "adi": "charade",
+      "yil": "1963"
+    },
+    {
+      "adi": "chasing amy",
+      "yil": "1997"
+    },
+    {
+      "adi": "chelovek s kino-apparatom (man with a movie camera)",
+      "yil": "1929"
+    },
+    {
+      "adi": "children of men",
+      "yil": ""
+    },
+    {
+      "adi": "chinatown",
+      "yil": ""
+    },
+    {
+      "adi": "chocolat",
+      "yil": "2000"
+    },
+    {
+      "adi": "chung hing sam lam (chungking express)",
+      "yil": "194"
+    },
+    {
+      "adi": "cidade de deus (city of god)",
+      "yil": ""
+    },
+    {
+      "adi": "cinderella man",
+      "yil": ""
+    },
+    {
+      "adi": "citizen kane",
+      "yil": ""
+    },
+    {
+      "adi": "city lights",
+      "yil": ""
+    },
+    {
+      "adi": "clerks",
+      "yil": "1994"
+    },
+    {
+      "adi": "clockwork orange",
+      "yil": ""
+    },
+    {
+      "adi": "close encounters of the third kind",
+      "yil": "1977"
+    },
+    {
+      "adi": "close up (nema-ye nazdik)",
+      "yil": "1990"
+    },
+    {
+      "adi": "closer",
+      "yil": "2004"
+    },
+    {
+      "adi": "cloud atlas",
+      "yil": "2012"
+    },
+    {
+      "adi": "cloverfield",
+      "yil": "2008"
+    },
+    {
+      "adi": "clueless",
+      "yil": "1995"
+    },
+    {
+      "adi": "coco",
+      "yil": "2017"
+    },
+    {
+      "adi": "coda",
+      "yil": "2021"
+    },
+    {
+      "adi": "coherence",
+      "yil": "2013"
+    },
+    {
+      "adi": "cold mountain",
+      "yil": "2003"
+    },
+    {
+      "adi": "collateral",
+      "yil": ""
+    },
+    {
+      "adi": "como agua para chocolate (like water for chocolate)",
+      "yil": "1992"
+    },
+    {
+      "adi": "con air",
+      "yil": "1997"
+    },
+    {
+      "adi": "conspiracy theory",
+      "yil": "1997"
+    },
+    {
+      "adi": "contact",
+      "yil": "1997"
+    },
+    {
+      "adi": "contagion",
+      "yil": "2011"
+    },
+    {
+      "adi": "contract killers",
+      "yil": "2008"
+    },
+    {
+      "adi": "contratiempo (the invisible guest)",
+      "yil": "2016"
+    },
+    {
+      "adi": "cool hand luke",
+      "yil": ""
+    },
+    {
+      "adi": "copie conforme (certified copy)",
+      "yil": "2010"
+    },
+    {
+      "adi": "couples retreat",
+      "yil": "2009"
+    },
+    {
+      "adi": "covenant",
+      "yil": ""
+    },
+    {
+      "adi": "crank",
+      "yil": ""
+    },
+    {
+      "adi": "crash",
+      "yil": ""
+    },
+    {
+      "adi": "crazy stupid love",
+      "yil": "2011"
+    },
+    {
+      "adi": "crimes and misdemeanors",
+      "yil": "1989"
+    },
+    {
+      "adi": "crna macka, beli macor (black cat, white cat)",
+      "yil": "1998"
+    },
+    {
+      "adi": "crumb",
+      "yil": "1994"
+    },
+    {
+      "adi": "cría cuervos",
+      "yil": "1976"
+    },
+    {
+      "adi": "cube",
+      "yil": "1997"
+    },
+    {
+      "adi": "da vinci code",
+      "yil": ""
+    },
+    {
+      "adi": "dallas buyers club",
+      "yil": "2013"
+    },
+    {
+      "adi": "dancer in the dark",
+      "yil": ""
+    },
+    {
+      "adi": "dances with wolves",
+      "yil": "1990"
+    },
+    {
+      "adi": "darbareye elly (about elly)",
+      "yil": "2009"
+    },
+    {
+      "adi": "dark city",
+      "yil": "1998"
+    },
+    {
+      "adi": "dark water",
+      "yil": ""
+    },
+    {
+      "adi": "dark waters",
+      "yil": ""
+    },
+    {
+      "adi": "darkest hour",
+      "yil": "2017"
+    },
+    {
+      "adi": "das boot",
+      "yil": ""
+    },
+    {
+      "adi": "das cabinet des dr. caligari",
+      "yil": "1920"
+    },
+    {
+      "adi": "das experiment",
+      "yil": ""
+    },
+    {
+      "adi": "das leben der anderen (the lives of others)",
+      "yil": "2006"
+    },
+    {
+      "adi": "das weiße band - eine deutsche kindergeschichte (the white ribbon)",
+      "yil": "2009"
+    },
+    {
+      "adi": "dawn of the dead",
+      "yil": "2004"
+    },
+    {
+      "adi": "dazed and confused",
+      "yil": "1993"
+    },
+    {
+      "adi": "dead again",
+      "yil": "1991"
+    },
+    {
+      "adi": "dead man walking",
+      "yil": "1995"
+    },
+    {
+      "adi": "dead poets society",
+      "yil": ""
+    },
+    {
+      "adi": "deadfall",
+      "yil": "2012"
+    },
+    {
+      "adi": "dear frankie",
+      "yil": "2004"
+    },
+    {
+      "adi": "death becomes her",
+      "yil": "1992"
+    },
+    {
+      "adi": "death to smoochy",
+      "yil": ""
+    },
+    {
+      "adi": "death trap",
+      "yil": "1982"
+    },
+    {
+      "adi": "death tunnel",
+      "yil": ""
+    },
+    {
+      "adi": "deck the halls",
+      "yil": "2006"
+    },
+    {
+      "adi": "deconstructing harry",
+      "yil": "1997"
+    },
+    {
+      "adi": "deep water",
+      "yil": "2022"
+    },
+    {
+      "adi": "deja vu",
+      "yil": ""
+    },
+    {
+      "adi": "delicatessen",
+      "yil": "1991"
+    },
+    {
+      "adi": "den brysomme mannen",
+      "yil": "2006"
+    },
+    {
+      "adi": "den skyldige (the guilty)",
+      "yil": "2018"
+    },
+    {
+      "adi": "der amerikanische freund (the american friend)",
+      "yil": "1977"
+    },
+    {
+      "adi": "der himmel über berlin (wings of desire)",
+      "yil": "1987"
+    },
+    {
+      "adi": "der letzte mann (the last laugh)",
+      "yil": "1924"
+    },
+    {
+      "adi": "der siebente kontinent",
+      "yil": "1989"
+    },
+    {
+      "adi": "der untergang",
+      "yil": ""
+    },
+    {
+      "adi": "dersu uzala",
+      "yil": "1975"
+    },
+    {
+      "adi": "desperado",
+      "yil": ""
+    },
+    {
+      "adi": "despicable me",
+      "yil": "1, 2"
+    },
+    {
+      "adi": "detachment",
+      "yil": "2011"
+    },
+    {
+      "adi": "dev.d",
+      "yil": "2009"
+    },
+    {
+      "adi": "dhobi ghat (mumbai dairies)",
+      "yil": "2010"
+    },
+    {
+      "adi": "dial m for murder",
+      "yil": "1954"
+    },
+    {
+      "adi": "diamonds are forever",
+      "yil": "1971"
+    },
+    {
+      "adi": "diarios de motocicleta",
+      "yil": ""
+    },
+    {
+      "adi": "die fetten jahre sind vorbei (the edukators)",
+      "yil": "2004"
+    },
+    {
+      "adi": "die Fälscher (the counterfeiters)",
+      "yil": "2007"
+    },
+    {
+      "adi": "die hard",
+      "yil": "1988"
+    },
+    {
+      "adi": "die welle (the wave)",
+      "yil": "2008"
+    },
+    {
+      "adi": "dilwale dulhania le jayenge",
+      "yil": "1995"
+    },
+    {
+      "adi": "dirty dancing",
+      "yil": ""
+    },
+    {
+      "adi": "disconnect",
+      "yil": "2012"
+    },
+    {
+      "adi": "district 9",
+      "yil": "2009"
+    },
+    {
+      "adi": "disturbia",
+      "yil": ""
+    },
+    {
+      "adi": "django unchained",
+      "yil": "2012"
+    },
+    {
+      "adi": "doctor",
+      "yil": "2019"
+    },
+    {
+      "adi": "doctor zhivago",
+      "yil": ""
+    },
+    {
+      "adi": "dodsworth",
+      "yil": "1936"
+    },
+    {
+      "adi": "dog day afternoon",
+      "yil": ""
+    },
+    {
+      "adi": "dogma",
+      "yil": "1999"
+    },
+    {
+      "adi": "dogville",
+      "yil": "2003"
+    },
+    {
+      "adi": "dom za vesanje (time of the gypsies)",
+      "yil": "1988"
+    },
+    {
+      "adi": "don juan de marco",
+      "yil": "1994"
+    },
+    {
+      "adi": "donnie brasco",
+      "yil": ""
+    },
+    {
+      "adi": "donnie darko",
+      "yil": ""
+    },
+    {
+      "adi": "doraibu mai kâ (drive my car)\\\"",
+      "yil": "2021"
+    },
+    {
+      "adi": "double indemnity",
+      "yil": ""
+    },
+    {
+      "adi": "double jeopardy",
+      "yil": "1999"
+    },
+    {
+      "adi": "doubt",
+      "yil": "2008"
+    },
+    {
+      "adi": "down by law",
+      "yil": "1986"
+    },
+    {
+      "adi": "downsizing",
+      "yil": "2017"
+    },
+    {
+      "adi": "downton abbey",
+      "yil": "2019"
+    },
+    {
+      "adi": "dr. no",
+      "yil": "1962"
+    },
+    {
+      "adi": "dr. strangelove or: how i learned to stop worrying and love the bomb",
+      "yil": "1964"
+    },
+    {
+      "adi": "dream scenario",
+      "yil": "2023"
+    },
+    {
+      "adi": "drive",
+      "yil": "2011"
+    },
+    {
+      "adi": "driving miss daisy",
+      "yil": "1989"
+    },
+    {
+      "adi": "druk (another round)",
+      "yil": "2020"
+    },
+    {
+      "adi": "duck soup",
+      "yil": ""
+    },
+    {
+      "adi": "dunkirk",
+      "yil": "2017"
+    },
+    {
+      "adi": "eastern promises",
+      "yil": "2007"
+    },
+    {
+      "adi": "ed wood",
+      "yil": ""
+    },
+    {
+      "adi": "edward scissorhands",
+      "yil": ""
+    },
+    {
+      "adi": "einstein and eddington",
+      "yil": "2008"
+    },
+    {
+      "adi": "el angel exterminador",
+      "yil": ""
+    },
+    {
+      "adi": "el camino: a breaking bad movie",
+      "yil": "2019"
+    },
+    {
+      "adi": "el cuerpo (the body)",
+      "yil": "2012"
+    },
+    {
+      "adi": "el espíritu de la colmena (the spirit of the beehive",
+      "yil": "1973"
+    },
+    {
+      "adi": "el hoyo (the platform)",
+      "yil": "2019"
+    },
+    {
+      "adi": "el infierno",
+      "yil": "2010"
+    },
+    {
+      "adi": "el mariachi",
+      "yil": ""
+    },
+    {
+      "adi": "el método (the method)",
+      "yil": "2005"
+    },
+    {
+      "adi": "el secreto de sus ojos (the secret in their eyes)",
+      "yil": "2009"
+    },
+    {
+      "adi": "elizabeth",
+      "yil": "1998"
+    },
+    {
+      "adi": "elizabeth: the golden age",
+      "yil": ""
+    },
+    {
+      "adi": "empire of the sun",
+      "yil": "1987"
+    },
+    {
+      "adi": "end of days",
+      "yil": ""
+    },
+    {
+      "adi": "enemy of the state",
+      "yil": ""
+    },
+    {
+      "adi": "englar alheimsins (angels of the universe)",
+      "yil": "2000"
+    },
+    {
+      "adi": "enola holmes",
+      "yil": "2020"
+    },
+    {
+      "adi": "enter the void",
+      "yil": "2009"
+    },
+    {
+      "adi": "equilibrium",
+      "yil": "2002"
+    },
+    {
+      "adi": "equus",
+      "yil": "1977"
+    },
+    {
+      "adi": "erin brockovich",
+      "yil": "2000"
+    },
+    {
+      "adi": "escape from alcatraz",
+      "yil": "1979"
+    },
+    {
+      "adi": "estate violenta (violent summer)",
+      "yil": "1959"
+    },
+    {
+      "adi": "eternal sunshine of the spotless mind",
+      "yil": ""
+    },
+    {
+      "adi": "europa",
+      "yil": "1991"
+    },
+    {
+      "adi": "eurotrip",
+      "yil": ""
+    },
+    {
+      "adi": "evan almighty",
+      "yil": ""
+    },
+    {
+      "adi": "event horizon",
+      "yil": ""
+    },
+    {
+      "adi": "ever after: a cinderella story",
+      "yil": "1998"
+    },
+    {
+      "adi": "everest",
+      "yil": "2015"
+    },
+    {
+      "adi": "everything is illuminated",
+      "yil": "2005"
+    },
+    {
+      "adi": "everything you always wanted to know about sex",
+      "yil": ""
+    },
+    {
+      "adi": "evil under the sun",
+      "yil": "1982"
+    },
+    {
+      "adi": "ex machina",
+      "yil": "2015"
+    },
+    {
+      "adi": "exotica",
+      "yil": "1994"
+    },
+    {
+      "adi": "eyes wide shut",
+      "yil": ""
+    },
+    {
+      "adi": "fa yeung nin wa (in the mood for love)",
+      "yil": ""
+    },
+    {
+      "adi": "face off",
+      "yil": ""
+    },
+    {
+      "adi": "fahrenheit 451",
+      "yil": "1966"
+    },
+    {
+      "adi": "fahrenheit 9 / 11",
+      "yil": ""
+    },
+    {
+      "adi": "fargo",
+      "yil": ""
+    },
+    {
+      "adi": "fatal attraction",
+      "yil": "1987"
+    },
+    {
+      "adi": "feast of love",
+      "yil": ""
+    },
+    {
+      "adi": "felon",
+      "yil": "2008"
+    },
+    {
+      "adi": "femme fatale",
+      "yil": "2002"
+    },
+    {
+      "adi": "festen (the celebration)",
+      "yil": "1998"
+    },
+    {
+      "adi": "fiddler on the roof",
+      "yil": "1971"
+    },
+    {
+      "adi": "fifth element",
+      "yil": ""
+    },
+    {
+      "adi": "fight club",
+      "yil": ""
+    },
+    {
+      "adi": "final destination",
+      "yil": "2000"
+    },
+    {
+      "adi": "finding nemo",
+      "yil": ""
+    },
+    {
+      "adi": "finding neverland",
+      "yil": ""
+    },
+    {
+      "adi": "firewall",
+      "yil": ""
+    },
+    {
+      "adi": "first knight",
+      "yil": "1995"
+    },
+    {
+      "adi": "first man",
+      "yil": "2018"
+    },
+    {
+      "adi": "flight",
+      "yil": "2012"
+    },
+    {
+      "adi": "flipped",
+      "yil": "2010"
+    },
+    {
+      "adi": "focus",
+      "yil": "2015"
+    },
+    {
+      "adi": "for columbines",
+      "yil": ""
+    },
+    {
+      "adi": "forgetting sarah marshall",
+      "yil": "2008"
+    },
+    {
+      "adi": "forrest gump",
+      "yil": ""
+    },
+    {
+      "adi": "four weddings and a funeral",
+      "yil": "1994"
+    },
+    {
+      "adi": "frequency",
+      "yil": ""
+    },
+    {
+      "adi": "frida",
+      "yil": "2002"
+    },
+    {
+      "adi": "friday",
+      "yil": "1995"
+    },
+    {
+      "adi": "from dusk till dawn",
+      "yil": "1996"
+    },
+    {
+      "adi": "from russia with love",
+      "yil": "1963"
+    },
+    {
+      "adi": "full metal jacket",
+      "yil": ""
+    },
+    {
+      "adi": "fun with dick and jane",
+      "yil": ""
+    },
+    {
+      "adi": "funny games",
+      "yil": "1997"
+    },
+    {
+      "adi": "fury",
+      "yil": "1936"
+    },
+    {
+      "adi": "futurama 1, 2, 3, 4",
+      "yil": ""
+    },
+    {
+      "adi": "gaav (the cow)",
+      "yil": "1969"
+    },
+    {
+      "adi": "game night",
+      "yil": "2018"
+    },
+    {
+      "adi": "gandhi",
+      "yil": "1982"
+    },
+    {
+      "adi": "gangs of new york",
+      "yil": "2002"
+    },
+    {
+      "adi": "garden state",
+      "yil": ""
+    },
+    {
+      "adi": "gattaca",
+      "yil": "1997"
+    },
+    {
+      "adi": "get out",
+      "yil": "2017"
+    },
+    {
+      "adi": "gettysburg",
+      "yil": "1993"
+    },
+    {
+      "adi": "ghost dog: the way of the samurai",
+      "yil": "1999"
+    },
+    {
+      "adi": "ghosts of mars",
+      "yil": ""
+    },
+    {
+      "adi": "gilda",
+      "yil": "1946"
+    },
+    {
+      "adi": "girl, interrupted",
+      "yil": "1999"
+    },
+    {
+      "adi": "gisaengchung (parasite)",
+      "yil": "2019"
+    },
+    {
+      "adi": "gladiator",
+      "yil": ""
+    },
+    {
+      "adi": "glass onion: a knives out mystery",
+      "yil": "2022"
+    },
+    {
+      "adi": "glengarry glen ross",
+      "yil": "1992"
+    },
+    {
+      "adi": "gloria",
+      "yil": "1980"
+    },
+    {
+      "adi": "gloria bell",
+      "yil": "2019"
+    },
+    {
+      "adi": "glory",
+      "yil": ""
+    },
+    {
+      "adi": "glory road",
+      "yil": ""
+    },
+    {
+      "adi": "god on trial",
+      "yil": "2008"
+    },
+    {
+      "adi": "gold diggers of 1933",
+      "yil": "1933"
+    },
+    {
+      "adi": "goldeneye",
+      "yil": "1985"
+    },
+    {
+      "adi": "goldfinger",
+      "yil": "1964"
+    },
+    {
+      "adi": "gone baby gone",
+      "yil": "2007"
+    },
+    {
+      "adi": "gone girl",
+      "yil": "2014"
+    },
+    {
+      "adi": "gone with the wind",
+      "yil": ""
+    },
+    {
+      "adi": "good fellas",
+      "yil": ""
+    },
+    {
+      "adi": "good night and good luck",
+      "yil": "2005"
+    },
+    {
+      "adi": "good will hunting",
+      "yil": ""
+    },
+    {
+      "adi": "goodbye lenin",
+      "yil": "2003"
+    },
+    {
+      "adi": "graduation",
+      "yil": "2016"
+    },
+    {
+      "adi": "gran torino",
+      "yil": "2008"
+    },
+    {
+      "adi": "gravity",
+      "yil": "2013"
+    },
+    {
+      "adi": "great expectations",
+      "yil": "1946"
+    },
+    {
+      "adi": "green book",
+      "yil": "2018"
+    },
+    {
+      "adi": "greta",
+      "yil": "2018"
+    },
+    {
+      "adi": "grindhouse (planet terror - death proof)",
+      "yil": ""
+    },
+    {
+      "adi": "grizzly man",
+      "yil": "2005"
+    },
+    {
+      "adi": "groundhog day",
+      "yil": ""
+    },
+    {
+      "adi": "guardians of the galaxy",
+      "yil": "2014"
+    },
+    {
+      "adi": "hable con ella (talk to her)",
+      "yil": ""
+    },
+    {
+      "adi": "haider",
+      "yil": "2014"
+    },
+    {
+      "adi": "hamoun",
+      "yil": "1990"
+    },
+    {
+      "adi": "hannah and her sisters",
+      "yil": "1986"
+    },
+    {
+      "adi": "hannibal",
+      "yil": ""
+    },
+    {
+      "adi": "hannibal rising",
+      "yil": ""
+    },
+    {
+      "adi": "happy endings",
+      "yil": ""
+    },
+    {
+      "adi": "harold and kumar go to white castle",
+      "yil": ""
+    },
+    {
+      "adi": "harsh times",
+      "yil": ""
+    },
+    {
+      "adi": "harvey",
+      "yil": "1950"
+    },
+    {
+      "adi": "haute tension",
+      "yil": ""
+    },
+    {
+      "adi": "he was a quiet man",
+      "yil": "2007"
+    },
+    {
+      "adi": "heat",
+      "yil": ""
+    },
+    {
+      "adi": "hell or high water",
+      "yil": "2016"
+    },
+    {
+      "adi": "her",
+      "yil": "2013"
+    },
+    {
+      "adi": "her",
+      "yil": "2013"
+    },
+    {
+      "adi": "high crimes",
+      "yil": "2002"
+    },
+    {
+      "adi": "high fidelity",
+      "yil": "2000"
+    },
+    {
+      "adi": "high noon",
+      "yil": ""
+    },
+    {
+      "adi": "high plains drifter",
+      "yil": "1973"
+    },
+    {
+      "adi": "himalaya - l\\enfance d\\un chef",
+      "yil": "1999"
+    },
+    {
+      "adi": "his girl friday",
+      "yil": "1940"
+    },
+    {
+      "adi": "hitch",
+      "yil": "2005"
+    },
+    {
+      "adi": "hodejegerne (head hunters)",
+      "yil": "2011"
+    },
+    {
+      "adi": "hoffa",
+      "yil": "1992"
+    },
+    {
+      "adi": "holler",
+      "yil": "2020"
+    },
+    {
+      "adi": "hollywood ending",
+      "yil": "2002"
+    },
+    {
+      "adi": "hostel",
+      "yil": ""
+    },
+    {
+      "adi": "hostel : part ii",
+      "yil": ""
+    },
+    {
+      "adi": "hostiles",
+      "yil": "2017"
+    },
+    {
+      "adi": "hot fuzz",
+      "yil": ""
+    },
+    {
+      "adi": "hotaru no haka (grave of fireflies)",
+      "yil": "1988"
+    },
+    {
+      "adi": "hotel rwanda",
+      "yil": ""
+    },
+    {
+      "adi": "how to have sex",
+      "yil": "2023"
+    },
+    {
+      "adi": "how to train your dragon",
+      "yil": "2010"
+    },
+    {
+      "adi": "howards end",
+      "yil": "1992"
+    },
+    {
+      "adi": "howls moving castle",
+      "yil": "2004"
+    },
+    {
+      "adi": "hundraåringen som klev ut genom fönstret och försvann",
+      "yil": "2013"
+    },
+    {
+      "adi": "hush",
+      "yil": "1998"
+    },
+    {
+      "adi": "i am a fugitive from chain gang",
+      "yil": "1932"
+    },
+    {
+      "adi": "i am legend",
+      "yil": ""
+    },
+    {
+      "adi": "i origins",
+      "yil": "2014"
+    },
+    {
+      "adi": "i want you back",
+      "yil": "2022"
+    },
+    {
+      "adi": "ice age 1, 2, 3, 4, 5",
+      "yil": ""
+    },
+    {
+      "adi": "identity",
+      "yil": "2003"
+    },
+    {
+      "adi": "idi i smotri ( come and see )",
+      "yil": ""
+    },
+    {
+      "adi": "ikiru",
+      "yil": "1952"
+    },
+    {
+      "adi": "il conformista (konformist)",
+      "yil": "1970"
+    },
+    {
+      "adi": "il conformista (the conformist)",
+      "yil": "1970"
+    },
+    {
+      "adi": "il posto",
+      "yil": "1961"
+    },
+    {
+      "adi": "ilha das flores",
+      "yil": "1990"
+    },
+    {
+      "adi": "im lauf der zeit (king of the road)",
+      "yil": "1976"
+    },
+    {
+      "adi": "in a lonely place",
+      "yil": "1950"
+    },
+    {
+      "adi": "in bruges",
+      "yil": "2008"
+    },
+    {
+      "adi": "in the heat of the night",
+      "yil": "1967"
+    },
+    {
+      "adi": "in the line of fire",
+      "yil": "1993"
+    },
+    {
+      "adi": "in the mouth of madness",
+      "yil": "1994"
+    },
+    {
+      "adi": "in the name of the father",
+      "yil": "1993"
+    },
+    {
+      "adi": "in time",
+      "yil": "2011"
+    },
+    {
+      "adi": "incendies",
+      "yil": "2010"
+    },
+    {
+      "adi": "inception",
+      "yil": "2010"
+    },
+    {
+      "adi": "indiana jones 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "inglourious basterds",
+      "yil": "2009"
+    },
+    {
+      "adi": "inherit the wind",
+      "yil": "1960"
+    },
+    {
+      "adi": "insanitarium",
+      "yil": ""
+    },
+    {
+      "adi": "inside llewyn davis",
+      "yil": "2013"
+    },
+    {
+      "adi": "inside man",
+      "yil": "2006"
+    },
+    {
+      "adi": "inside out",
+      "yil": "2015"
+    },
+    {
+      "adi": "insomnia",
+      "yil": ""
+    },
+    {
+      "adi": "interstellar",
+      "yil": "2014"
+    },
+    {
+      "adi": "into the wild",
+      "yil": "2007"
+    },
+    {
+      "adi": "intolerable cruelty",
+      "yil": "2003"
+    },
+    {
+      "adi": "intouchables",
+      "yil": "2011"
+    },
+    {
+      "adi": "irma la douce",
+      "yil": "1963"
+    },
+    {
+      "adi": "irrational man",
+      "yil": "2015"
+    },
+    {
+      "adi": "it happened one night",
+      "yil": ""
+    },
+    {
+      "adi": "jackie brown",
+      "yil": "1997"
+    },
+    {
+      "adi": "jagten (the hunt)",
+      "yil": "2012"
+    },
+    {
+      "adi": "jane eyre",
+      "yil": "2011"
+    },
+    {
+      "adi": "jaws",
+      "yil": ""
+    },
+    {
+      "adi": "jerry and marge go large",
+      "yil": "2022"
+    },
+    {
+      "adi": "jfk",
+      "yil": ""
+    },
+    {
+      "adi": "jodaeiye nader az simin (a seperation)",
+      "yil": "2011"
+    },
+    {
+      "adi": "johnny got his gun",
+      "yil": "1971"
+    },
+    {
+      "adi": "joker",
+      "yil": "2019"
+    },
+    {
+      "adi": "judgment at nuremberg",
+      "yil": "1961"
+    },
+    {
+      "adi": "judy",
+      "yil": "2019"
+    },
+    {
+      "adi": "julie & julia",
+      "yil": "2009"
+    },
+    {
+      "adi": "juno",
+      "yil": "2007"
+    },
+    {
+      "adi": "just like heaven",
+      "yil": "2005"
+    },
+    {
+      "adi": "k-pax",
+      "yil": "2001"
+    },
+    {
+      "adi": "kagemusha (the shadow warrior)",
+      "yil": "1980"
+    },
+    {
+      "adi": "kaguyahime no monogatari (the tale of the princess kaguya)",
+      "yil": "2013"
+    },
+    {
+      "adi": "kanal",
+      "yil": "1957"
+    },
+    {
+      "adi": "katok i skripka (the steamroller and the violin)",
+      "yil": "1961"
+    },
+    {
+      "adi": "kefernahum",
+      "yil": "2018"
+    },
+    {
+      "adi": "kill bill 1, 2",
+      "yil": ""
+    },
+    {
+      "adi": "killers of the flower moon",
+      "yil": "2023"
+    },
+    {
+      "adi": "kind hearts and coronets",
+      "yil": ""
+    },
+    {
+      "adi": "kingdom of the planet of the apes",
+      "yil": "2024"
+    },
+    {
+      "adi": "knives out",
+      "yil": "2019"
+    },
+    {
+      "adi": "knocked up",
+      "yil": ""
+    },
+    {
+      "adi": "ko to tamo peva (who is singing over there)",
+      "yil": "1980"
+    },
+    {
+      "adi": "kokuriko-zaka kara (from up on poppy hill)",
+      "yil": "2011"
+    },
+    {
+      "adi": "kolja (kolya)",
+      "yil": "1996"
+    },
+    {
+      "adi": "kon-tiki",
+      "yil": "2012"
+    },
+    {
+      "adi": "koroshiya 1 (ichi the killer)",
+      "yil": ""
+    },
+    {
+      "adi": "koyaanisqatsi",
+      "yil": "1982"
+    },
+    {
+      "adi": "kramer vs. kramer",
+      "yil": "1979"
+    },
+    {
+      "adi": "krótki film o milosci (a short film about love)",
+      "yil": "1988"
+    },
+    {
+      "adi": "krótki film o zabijaniu (a short film about killing)",
+      "yil": "1988"
+    },
+    {
+      "adi": "kursk",
+      "yil": "2018"
+    },
+    {
+      "adi": "kynodontas (dogtooth)",
+      "yil": "2009"
+    },
+    {
+      "adi": "l.a. confidential",
+      "yil": ""
+    },
+    {
+      "adi": "la battaglia di algeri (the battle of algiers)",
+      "yil": "1966"
+    },
+    {
+      "adi": "la belle et la bête (beauty and the Beast)",
+      "yil": "1946"
+    },
+    {
+      "adi": "la brigade (the kitchen brigade)",
+      "yil": "2022"
+    },
+    {
+      "adi": "la dictadura perfecta",
+      "yil": "2014"
+    },
+    {
+      "adi": "la dolce vita",
+      "yil": "1960"
+    },
+    {
+      "adi": "la double vie de veronique (the double life of veronique)",
+      "yil": "1991"
+    },
+    {
+      "adi": "la femme nikita",
+      "yil": "1990"
+    },
+    {
+      "adi": "la fine fleur (the rose maker)",
+      "yil": "2020"
+    },
+    {
+      "adi": "la grande illusion",
+      "yil": "1937"
+    },
+    {
+      "adi": "la guerre du feu (quest for fire)",
+      "yil": "1981"
+    },
+    {
+      "adi": "la haine",
+      "yil": ""
+    },
+    {
+      "adi": "la ley de herodes",
+      "yil": "1999"
+    },
+    {
+      "adi": "la meglio gioventù (the best of youth)",
+      "yil": "2003"
+    },
+    {
+      "adi": "la migliore offerta (the best offer)",
+      "yil": "2013"
+    },
+    {
+      "adi": "la notte (the night)",
+      "yil": "1961"
+    },
+    {
+      "adi": "la piel que habito (the skin i live in)",
+      "yil": "2011"
+    },
+    {
+      "adi": "la planete sauvage (fantastic planet)",
+      "yil": "1973"
+    },
+    {
+      "adi": "la regle du jeu (the rules of the game)",
+      "yil": "1939"
+    },
+    {
+      "adi": "la science des rêves (the science of sleep)",
+      "yil": "2006"
+    },
+    {
+      "adi": "la strada",
+      "yil": "1954"
+    },
+    {
+      "adi": "la vita e bella (life is beautiful)",
+      "yil": ""
+    },
+    {
+      "adi": "ladri di biciclette",
+      "yil": ""
+    },
+    {
+      "adi": "lady bird",
+      "yil": "2017"
+    },
+    {
+      "adi": "lady in the water",
+      "yil": ""
+    },
+    {
+      "adi": "lagaan: once upon a time in india",
+      "yil": "2001"
+    },
+    {
+      "adi": "lage raho munna bhai",
+      "yil": "2006"
+    },
+    {
+      "adi": "lakposhtha parvaz mikonand (turtles can fly)",
+      "yil": "2004"
+    },
+    {
+      "adi": "land",
+      "yil": "2021"
+    },
+    {
+      "adi": "laura",
+      "yil": "1944"
+    },
+    {
+      "adi": "lawless",
+      "yil": "2012"
+    },
+    {
+      "adi": "lawrence of arabia",
+      "yil": "1962"
+    },
+    {
+      "adi": "layer cake",
+      "yil": "2004"
+    },
+    {
+      "adi": "le hérisson",
+      "yil": "2009"
+    },
+    {
+      "adi": "le notti di cabiria",
+      "yil": ""
+    },
+    {
+      "adi": "le passe (the past)",
+      "yil": "2013"
+    },
+    {
+      "adi": "le procès (the trial)",
+      "yil": "1962"
+    },
+    {
+      "adi": "le puits et le pendule (the pit and the pendulum)",
+      "yil": "1964"
+    },
+    {
+      "adi": "le salaire de la peur",
+      "yil": ""
+    },
+    {
+      "adi": "le samourai",
+      "yil": ""
+    },
+    {
+      "adi": "le scaphandre et le papillon (the diving bell and the butterfly)",
+      "yil": "2007"
+    },
+    {
+      "adi": "le tableau (the painting)",
+      "yil": "2011"
+    },
+    {
+      "adi": "le trou (the hole)",
+      "yil": "1960"
+    },
+    {
+      "adi": "le voyage dans la lune (a trip to the moon)",
+      "yil": "1902"
+    },
+    {
+      "adi": "legends of the fall",
+      "yil": "1994"
+    },
+    {
+      "adi": "leon (the professional)",
+      "yil": ""
+    },
+    {
+      "adi": "les enfants du paradis (children of paradise)",
+      "yil": "1945"
+    },
+    {
+      "adi": "les miserables",
+      "yil": "2012"
+    },
+    {
+      "adi": "les quatre cents coups",
+      "yil": "the 400 blows"
+    },
+    {
+      "adi": "les rivieres pourpres 2 (crimson rivers)",
+      "yil": ""
+    },
+    {
+      "adi": "les triplettes de Belleville (The Triplets of Belleville)",
+      "yil": "2003"
+    },
+    {
+      "adi": "letter from an unknown woman",
+      "yil": "1948"
+    },
+    {
+      "adi": "letyat zhuravli (the cranes are flying)",
+      "yil": "1957"
+    },
+    {
+      "adi": "licorice pizza",
+      "yil": "2021"
+    },
+    {
+      "adi": "life of brian",
+      "yil": ""
+    },
+    {
+      "adi": "life of pi",
+      "yil": "2012"
+    },
+    {
+      "adi": "limelight",
+      "yil": "1952"
+    },
+    {
+      "adi": "limitless",
+      "yil": "2011"
+    },
+    {
+      "adi": "lincoln",
+      "yil": "2012"
+    },
+    {
+      "adi": "little children",
+      "yil": "2006"
+    },
+    {
+      "adi": "little miss sunshine",
+      "yil": ""
+    },
+    {
+      "adi": "little women",
+      "yil": "1994"
+    },
+    {
+      "adi": "live and let die",
+      "yil": "1973"
+    },
+    {
+      "adi": "live free or die hard (die hard 4)",
+      "yil": ""
+    },
+    {
+      "adi": "living in oblivion",
+      "yil": "1995"
+    },
+    {
+      "adi": "lock stock and two smoking barrels",
+      "yil": ""
+    },
+    {
+      "adi": "lola rennt (run lola run)",
+      "yil": ""
+    },
+    {
+      "adi": "lolita",
+      "yil": "1962"
+    },
+    {
+      "adi": "london",
+      "yil": ""
+    },
+    {
+      "adi": "long shot",
+      "yil": "2019"
+    },
+    {
+      "adi": "looper",
+      "yil": "2012"
+    },
+    {
+      "adi": "lord of the flies",
+      "yil": "1960"
+    },
+    {
+      "adi": "los cronocrímenes (timecrimes)",
+      "yil": "2007"
+    },
+    {
+      "adi": "los lunes al sol (mondays in the sun)",
+      "yil": "2002"
+    },
+    {
+      "adi": "los olvidados",
+      "yil": "1950"
+    },
+    {
+      "adi": "lost highway",
+      "yil": ""
+    },
+    {
+      "adi": "lost in translation",
+      "yil": "2003"
+    },
+    {
+      "adi": "love actually",
+      "yil": "2003"
+    },
+    {
+      "adi": "love life",
+      "yil": "2022"
+    },
+    {
+      "adi": "love streams",
+      "yil": "1984"
+    },
+    {
+      "adi": "luce",
+      "yil": "2019"
+    },
+    {
+      "adi": "lucky number slevin",
+      "yil": ""
+    },
+    {
+      "adi": "lucy",
+      "yil": "2014"
+    },
+    {
+      "adi": "m",
+      "yil": ""
+    },
+    {
+      "adi": "machuca",
+      "yil": "2004"
+    },
+    {
+      "adi": "mad max: fury road",
+      "yil": "2015"
+    },
+    {
+      "adi": "magnolia",
+      "yil": ""
+    },
+    {
+      "adi": "make way for tomorrow",
+      "yil": "1937"
+    },
+    {
+      "adi": "malena",
+      "yil": "2000"
+    },
+    {
+      "adi": "man of the year",
+      "yil": ""
+    },
+    {
+      "adi": "man on fire",
+      "yil": "2004"
+    },
+    {
+      "adi": "man on the moon",
+      "yil": "1999"
+    },
+    {
+      "adi": "mandariinid (tangerines )",
+      "yil": "2013"
+    },
+    {
+      "adi": "manderlay",
+      "yil": "2005"
+    },
+    {
+      "adi": "manhattan",
+      "yil": ""
+    },
+    {
+      "adi": "manhattan murder mystery",
+      "yil": "1993"
+    },
+    {
+      "adi": "manhunter",
+      "yil": "1986"
+    },
+    {
+      "adi": "mank",
+      "yil": "2020"
+    },
+    {
+      "adi": "manon des source (manon of the Spring)",
+      "yil": "1986"
+    },
+    {
+      "adi": "mar adentro (the sea inside)",
+      "yil": "2004"
+    },
+    {
+      "adi": "marley & me",
+      "yil": "2008"
+    },
+    {
+      "adi": "marmoulak",
+      "yil": "2004"
+    },
+    {
+      "adi": "marriage story",
+      "yil": "2019"
+    },
+    {
+      "adi": "mary and max",
+      "yil": "2009"
+    },
+    {
+      "adi": "mash",
+      "yil": "1970"
+    },
+    {
+      "adi": "match point",
+      "yil": ""
+    },
+    {
+      "adi": "maudie",
+      "yil": "2016"
+    },
+    {
+      "adi": "me myself and irene",
+      "yil": ""
+    },
+    {
+      "adi": "mean girls",
+      "yil": "2004"
+    },
+    {
+      "adi": "mean streets",
+      "yil": "1973"
+    },
+    {
+      "adi": "medianeras",
+      "yil": "2011"
+    },
+    {
+      "adi": "meet joe black",
+      "yil": ""
+    },
+    {
+      "adi": "meet the fockers",
+      "yil": ""
+    },
+    {
+      "adi": "meet the parents",
+      "yil": "2000"
+    },
+    {
+      "adi": "memento",
+      "yil": ""
+    },
+    {
+      "adi": "memories of murder",
+      "yil": "2003"
+    },
+    {
+      "adi": "men in black",
+      "yil": "1, 2, 3"
+    },
+    {
+      "adi": "metropia",
+      "yil": "2009"
+    },
+    {
+      "adi": "metropolis",
+      "yil": ""
+    },
+    {
+      "adi": "meu pe de laranja lima (my sweet orange tree)",
+      "yil": "2012"
+    },
+    {
+      "adi": "mia aioniotita kai mia mera (eternity and a day)",
+      "yil": "1998"
+    },
+    {
+      "adi": "midnight cowboy",
+      "yil": ""
+    },
+    {
+      "adi": "midnight in paris",
+      "yil": "2011"
+    },
+    {
+      "adi": "midnight run",
+      "yil": "1988"
+    },
+    {
+      "adi": "midsommar",
+      "yil": "2019"
+    },
+    {
+      "adi": "mighty aphrodite",
+      "yil": "1995"
+    },
+    {
+      "adi": "mildred pierce",
+      "yil": "1945"
+    },
+    {
+      "adi": "million dollar baby",
+      "yil": "2004"
+    },
+    {
+      "adi": "minari",
+      "yil": "2020"
+    },
+    {
+      "adi": "minority report",
+      "yil": "2002"
+    },
+    {
+      "adi": "miracle on 34th street",
+      "yil": "1947"
+    },
+    {
+      "adi": "mission impossible 3",
+      "yil": ""
+    },
+    {
+      "adi": "modern times",
+      "yil": ""
+    },
+    {
+      "adi": "moneyball",
+      "yil": "2011"
+    },
+    {
+      "adi": "mononoke-hime (princess mononoke)",
+      "yil": ""
+    },
+    {
+      "adi": "monster",
+      "yil": "2003"
+    },
+    {
+      "adi": "monster",
+      "yil": "2023"
+    },
+    {
+      "adi": "monster inc",
+      "yil": ""
+    },
+    {
+      "adi": "monty python and the holy grail",
+      "yil": ""
+    },
+    {
+      "adi": "moon",
+      "yil": "2009"
+    },
+    {
+      "adi": "moonlight",
+      "yil": "2016"
+    },
+    {
+      "adi": "moonraker",
+      "yil": "1979"
+    },
+    {
+      "adi": "moonrise kingdom",
+      "yil": "2012"
+    },
+    {
+      "adi": "moonstruck",
+      "yil": ""
+    },
+    {
+      "adi": "mou gaan dou (infernal affairs)",
+      "yil": "2002"
+    },
+    {
+      "adi": "mr and mrs smith",
+      "yil": ""
+    },
+    {
+      "adi": "mr. deeds goes to town",
+      "yil": "1936"
+    },
+    {
+      "adi": "mr. smith goes to washington",
+      "yil": ""
+    },
+    {
+      "adi": "mr.nobody",
+      "yil": "2009"
+    },
+    {
+      "adi": "mrs. harris goes to paris",
+      "yil": "2022"
+    },
+    {
+      "adi": "mujeres al borde de un ataque de nervios",
+      "yil": "1988"
+    },
+    {
+      "adi": "mulan",
+      "yil": "1998"
+    },
+    {
+      "adi": "mulholland dr.",
+      "yil": ""
+    },
+    {
+      "adi": "munich",
+      "yil": ""
+    },
+    {
+      "adi": "murder on the orient express",
+      "yil": "1974"
+    },
+    {
+      "adi": "my blueberry nights",
+      "yil": "2007"
+    },
+    {
+      "adi": "my dinner with andre",
+      "yil": "1981"
+    },
+    {
+      "adi": "my fair lady",
+      "yil": "1964"
+    },
+    {
+      "adi": "my left foot: the story of christy brown",
+      "yil": "1989"
+    },
+    {
+      "adi": "my man godfrey",
+      "yil": "1936"
+    },
+    {
+      "adi": "my name is khan",
+      "yil": "2010"
+    },
+    {
+      "adi": "my super ex-girlfriend",
+      "yil": ""
+    },
+    {
+      "adi": "mysterious skin",
+      "yil": "2004"
+    },
+    {
+      "adi": "mystic river",
+      "yil": ""
+    },
+    {
+      "adi": "nae meorisokui jiwoogae (a moment to remember)",
+      "yil": "2004"
+    },
+    {
+      "adi": "naked",
+      "yil": "1993"
+    },
+    {
+      "adi": "nashville",
+      "yil": "1975"
+    },
+    {
+      "adi": "nattevagten (nightwatch)",
+      "yil": "1994"
+    },
+    {
+      "adi": "natural born killers",
+      "yil": ""
+    },
+    {
+      "adi": "nebraska",
+      "yil": "2013"
+    },
+    {
+      "adi": "network",
+      "yil": "1976"
+    },
+    {
+      "adi": "never let me go",
+      "yil": "2010"
+    },
+    {
+      "adi": "news of the world",
+      "yil": "2020"
+    },
+    {
+      "adi": "newsies",
+      "yil": "1992"
+    },
+    {
+      "adi": "night at the museum",
+      "yil": ""
+    },
+    {
+      "adi": "nightcrawler",
+      "yil": "2014"
+    },
+    {
+      "adi": "nineteen eighty-four",
+      "yil": "1984"
+    },
+    {
+      "adi": "ninotchka",
+      "yil": "1939"
+    },
+    {
+      "adi": "no country for old men",
+      "yil": ""
+    },
+    {
+      "adi": "noah",
+      "yil": "2014"
+    },
+    {
+      "adi": "nocturnal animals",
+      "yil": "2016"
+    },
+    {
+      "adi": "nomadland",
+      "yil": "2020"
+    },
+    {
+      "adi": "north by northwest",
+      "yil": "1959"
+    },
+    {
+      "adi": "nosferatu",
+      "yil": "1922"
+    },
+    {
+      "adi": "nostalgia",
+      "yil": "1983"
+    },
+    {
+      "adi": "notorious",
+      "yil": ""
+    },
+    {
+      "adi": "novaya zemlya",
+      "yil": "2008"
+    },
+    {
+      "adi": "novecento (1900)",
+      "yil": "1976"
+    },
+    {
+      "adi": "now voyager",
+      "yil": "1942"
+    },
+    {
+      "adi": "now you see me",
+      "yil": "2013"
+    },
+    {
+      "adi": "nueve reinas (nine queens)",
+      "yil": "2000"
+    },
+    {
+      "adi": "nuovo cinema paradiso",
+      "yil": ""
+    },
+    {
+      "adi": "nymphomaniac 1, 2",
+      "yil": "2013"
+    },
+    {
+      "adi": "o brother, where art thou?",
+      "yil": "2000"
+    },
+    {
+      "adi": "oblivion",
+      "yil": "2013"
+    },
+    {
+      "adi": "ocean\\s 11",
+      "yil": "12"
+    },
+    {
+      "adi": "october sky",
+      "yil": "1999"
+    },
+    {
+      "adi": "office space",
+      "yil": "1999"
+    },
+    {
+      "adi": "offret (the sacrifice)",
+      "yil": "1986"
+    },
+    {
+      "adi": "oldboy",
+      "yil": ""
+    },
+    {
+      "adi": "olympus has fallen",
+      "yil": "2013"
+    },
+    {
+      "adi": "om det oändliga (about endless)",
+      "yil": "2019"
+    },
+    {
+      "adi": "on the waterfront",
+      "yil": ""
+    },
+    {
+      "adi": "once",
+      "yil": "2006"
+    },
+    {
+      "adi": "once upon a time in america",
+      "yil": ""
+    },
+    {
+      "adi": "once upon a time in hollywood",
+      "yil": "2019"
+    },
+    {
+      "adi": "once were warriors",
+      "yil": "1994"
+    },
+    {
+      "adi": "one flew over the cuckoos nest",
+      "yil": ""
+    },
+    {
+      "adi": "one week",
+      "yil": "1920"
+    },
+    {
+      "adi": "open season",
+      "yil": ""
+    },
+    {
+      "adi": "operation mincemeat",
+      "yil": "2021"
+    },
+    {
+      "adi": "oppenheimer",
+      "yil": "2023"
+    },
+    {
+      "adi": "ordet",
+      "yil": "1955"
+    },
+    {
+      "adi": "others",
+      "yil": ""
+    },
+    {
+      "adi": "out of sight",
+      "yil": "1998"
+    },
+    {
+      "adi": "out of the past",
+      "yil": "1947"
+    },
+    {
+      "adi": "outside in",
+      "yil": "2017"
+    },
+    {
+      "adi": "pain and glory",
+      "yil": "2019"
+    },
+    {
+      "adi": "pane, amore e fantasia (bread love and dreams)",
+      "yil": "1953"
+    },
+    {
+      "adi": "pane, amore e gelosia (frisky)",
+      "yil": "1954"
+    },
+    {
+      "adi": "pane, amore e..... (scandal in sorrento)",
+      "yil": "1955"
+    },
+    {
+      "adi": "papillon",
+      "yil": "1973"
+    },
+    {
+      "adi": "paris, texas",
+      "yil": "1984"
+    },
+    {
+      "adi": "paths of glory",
+      "yil": ""
+    },
+    {
+      "adi": "patton",
+      "yil": ""
+    },
+    {
+      "adi": "penguins of madagascar",
+      "yil": "2014"
+    },
+    {
+      "adi": "people i know",
+      "yil": ""
+    },
+    {
+      "adi": "pepi, luci, bom y otras chicas del monton",
+      "yil": "1980"
+    },
+    {
+      "adi": "perfect days",
+      "yil": "2023"
+    },
+    {
+      "adi": "perfume the story of a murderer",
+      "yil": ""
+    },
+    {
+      "adi": "persepolis",
+      "yil": "2007"
+    },
+    {
+      "adi": "persona",
+      "yil": "1966"
+    },
+    {
+      "adi": "philanthropy (filantropica)",
+      "yil": "2002"
+    },
+    {
+      "adi": "pi",
+      "yil": "1998"
+    },
+    {
+      "adi": "pieces of a woman",
+      "yil": "2020"
+    },
+    {
+      "adi": "pirates of the caribbean 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "pixar series",
+      "yil": ""
+    },
+    {
+      "adi": "pk",
+      "yil": "2014"
+    },
+    {
+      "adi": "planet of the apes",
+      "yil": ""
+    },
+    {
+      "adi": "platoon",
+      "yil": ""
+    },
+    {
+      "adi": "playtime",
+      "yil": "1967"
+    },
+    {
+      "adi": "point break",
+      "yil": ""
+    },
+    {
+      "adi": "point of no return",
+      "yil": "1993"
+    },
+    {
+      "adi": "ponyo",
+      "yil": "2008"
+    },
+    {
+      "adi": "prayers for bobby",
+      "yil": "2009"
+    },
+    {
+      "adi": "predestination",
+      "yil": "2015"
+    },
+    {
+      "adi": "pride & prejudice",
+      "yil": "2005"
+    },
+    {
+      "adi": "primal fear",
+      "yil": "1996"
+    },
+    {
+      "adi": "primer",
+      "yil": "2004"
+    },
+    {
+      "adi": "prisoners",
+      "yil": "2013"
+    },
+    {
+      "adi": "private life",
+      "yil": "2018"
+    },
+    {
+      "adi": "proxima",
+      "yil": "2019"
+    },
+    {
+      "adi": "przypadek",
+      "yil": "1987"
+    },
+    {
+      "adi": "psycho",
+      "yil": "1960"
+    },
+    {
+      "adi": "psychopathia sexualis",
+      "yil": ""
+    },
+    {
+      "adi": "public enemies",
+      "yil": "2009"
+    },
+    {
+      "adi": "pulp fiction",
+      "yil": ""
+    },
+    {
+      "adi": "pulse",
+      "yil": ""
+    },
+    {
+      "adi": "punishment park",
+      "yil": "1971"
+    },
+    {
+      "adi": "quiz show",
+      "yil": "1994"
+    },
+    {
+      "adi": "r.i.p.d.",
+      "yil": "2013"
+    },
+    {
+      "adi": "raazi",
+      "yil": "2018"
+    },
+    {
+      "adi": "radio days",
+      "yil": "1987"
+    },
+    {
+      "adi": "raftis (tailor)",
+      "yil": "2020"
+    },
+    {
+      "adi": "raging bull",
+      "yil": ""
+    },
+    {
+      "adi": "rain man",
+      "yil": "1988"
+    },
+    {
+      "adi": "raise the red lantern (Da hong deng long gao gao gua)",
+      "yil": "1991"
+    },
+    {
+      "adi": "ran",
+      "yil": ""
+    },
+    {
+      "adi": "rang de basanti",
+      "yil": "2006"
+    },
+    {
+      "adi": "rang-e khoda (the color of paradise)",
+      "yil": "1999"
+    },
+    {
+      "adi": "rango",
+      "yil": "2011"
+    },
+    {
+      "adi": "rashomon",
+      "yil": ""
+    },
+    {
+      "adi": "ratatouille",
+      "yil": ""
+    },
+    {
+      "adi": "ray",
+      "yil": "2004"
+    },
+    {
+      "adi": "rear window",
+      "yil": "1954"
+    },
+    {
+      "adi": "rebecca",
+      "yil": ""
+    },
+    {
+      "adi": "red",
+      "yil": "2010"
+    },
+    {
+      "adi": "red dragon",
+      "yil": "2002"
+    },
+    {
+      "adi": "red eye",
+      "yil": "2005"
+    },
+    {
+      "adi": "relatos salvajes",
+      "yil": "2014"
+    },
+    {
+      "adi": "repulsion",
+      "yil": "1965"
+    },
+    {
+      "adi": "requiem for a dream",
+      "yil": ""
+    },
+    {
+      "adi": "rescue dawn",
+      "yil": ""
+    },
+    {
+      "adi": "rescue dawn",
+      "yil": "2006"
+    },
+    {
+      "adi": "reservoir dogs",
+      "yil": ""
+    },
+    {
+      "adi": "resident evil 1, 2, 3, 4, 5",
+      "yil": ""
+    },
+    {
+      "adi": "revolutionary road",
+      "yil": "2008"
+    },
+    {
+      "adi": "richard jewell",
+      "yil": "2019"
+    },
+    {
+      "adi": "road to perdition",
+      "yil": ""
+    },
+    {
+      "adi": "robin hood: prince of thieves",
+      "yil": "1991"
+    },
+    {
+      "adi": "roma",
+      "yil": "1972"
+    },
+    {
+      "adi": "roma",
+      "yil": "2018"
+    },
+    {
+      "adi": "roman holiday",
+      "yil": "1953"
+    },
+    {
+      "adi": "ronin",
+      "yil": ""
+    },
+    {
+      "adi": "rope",
+      "yil": "1948"
+    },
+    {
+      "adi": "rose island",
+      "yil": "2020"
+    },
+    {
+      "adi": "rosetta",
+      "yil": "1999"
+    },
+    {
+      "adi": "ruben brandt, a gyujto",
+      "yil": "2018"
+    },
+    {
+      "adi": "rumble fish",
+      "yil": "1983"
+    },
+    {
+      "adi": "running scared",
+      "yil": "2012"
+    },
+    {
+      "adi": "rushmore",
+      "yil": "1998"
+    },
+    {
+      "adi": "sabrina",
+      "yil": "1954"
+    },
+    {
+      "adi": "safar e Ghandehar",
+      "yil": "2001"
+    },
+    {
+      "adi": "saltburn",
+      "yil": "2023"
+    },
+    {
+      "adi": "samsara",
+      "yil": "2011"
+    },
+    {
+      "adi": "sardar udham",
+      "yil": "2021"
+    },
+    {
+      "adi": "savages",
+      "yil": "2012"
+    },
+    {
+      "adi": "saving private ryan",
+      "yil": ""
+    },
+    {
+      "adi": "saw 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "say anything",
+      "yil": "1989"
+    },
+    {
+      "adi": "scarface",
+      "yil": ""
+    },
+    {
+      "adi": "scarlet street",
+      "yil": "1945"
+    },
+    {
+      "adi": "scener ur ett äktenskap (scenes from a marriage)",
+      "yil": "1974"
+    },
+    {
+      "adi": "scent of a woman",
+      "yil": ""
+    },
+    {
+      "adi": "schindlers list",
+      "yil": ""
+    },
+    {
+      "adi": "schinin no samurai",
+      "yil": ""
+    },
+    {
+      "adi": "school for scoundrels",
+      "yil": ""
+    },
+    {
+      "adi": "school of rock",
+      "yil": ""
+    },
+    {
+      "adi": "schutzengel",
+      "yil": "2012"
+    },
+    {
+      "adi": "scoop",
+      "yil": ""
+    },
+    {
+      "adi": "scott pilgrim vs. the world",
+      "yil": "2010"
+    },
+    {
+      "adi": "se7en",
+      "yil": ""
+    },
+    {
+      "adi": "searching",
+      "yil": "2018"
+    },
+    {
+      "adi": "searching for bobby fischer",
+      "yil": "1993"
+    },
+    {
+      "adi": "seconds",
+      "yil": "1966"
+    },
+    {
+      "adi": "secretary",
+      "yil": "2002"
+    },
+    {
+      "adi": "secrets & lies",
+      "yil": "1996"
+    },
+    {
+      "adi": "see no evil, hear no evil",
+      "yil": "1989"
+    },
+    {
+      "adi": "selma",
+      "yil": "2014"
+    },
+    {
+      "adi": "senna",
+      "yil": "2010"
+    },
+    {
+      "adi": "serenity",
+      "yil": "2005"
+    },
+    {
+      "adi": "serpico",
+      "yil": ""
+    },
+    {
+      "adi": "seven chances",
+      "yil": "1925"
+    },
+    {
+      "adi": "seven pounds",
+      "yil": "2008"
+    },
+    {
+      "adi": "seven years in tibet",
+      "yil": ""
+    },
+    {
+      "adi": "sex, lies adn videotape",
+      "yil": "1989"
+    },
+    {
+      "adi": "shabdo",
+      "yil": "2012"
+    },
+    {
+      "adi": "shadow of a doubt",
+      "yil": ""
+    },
+    {
+      "adi": "shall we dance",
+      "yil": ""
+    },
+    {
+      "adi": "shallow hal",
+      "yil": ""
+    },
+    {
+      "adi": "shark tale",
+      "yil": ""
+    },
+    {
+      "adi": "shaun of the dead",
+      "yil": ""
+    },
+    {
+      "adi": "sherlock holmes",
+      "yil": "2009"
+    },
+    {
+      "adi": "sherlock jr.",
+      "yil": "1924"
+    },
+    {
+      "adi": "shoot em up",
+      "yil": "2007"
+    },
+    {
+      "adi": "shopgirl",
+      "yil": ""
+    },
+    {
+      "adi": "short cuts",
+      "yil": "1993"
+    },
+    {
+      "adi": "shrek 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "shutter",
+      "yil": ""
+    },
+    {
+      "adi": "shutter island",
+      "yil": "2010"
+    },
+    {
+      "adi": "sicko",
+      "yil": ""
+    },
+    {
+      "adi": "sideways",
+      "yil": "2004"
+    },
+    {
+      "adi": "silence of the lambs",
+      "yil": ""
+    },
+    {
+      "adi": "silent hill",
+      "yil": ""
+    },
+    {
+      "adi": "silver linings playbook",
+      "yil": "2012"
+    },
+    {
+      "adi": "silverado",
+      "yil": "1985"
+    },
+    {
+      "adi": "sin city",
+      "yil": ""
+    },
+    {
+      "adi": "sin city: a dame to kill for",
+      "yil": "2014"
+    },
+    {
+      "adi": "singin in the rain",
+      "yil": ""
+    },
+    {
+      "adi": "sixth sense",
+      "yil": ""
+    },
+    {
+      "adi": "sjunde inseglet, det (the seventh seal)",
+      "yil": ""
+    },
+    {
+      "adi": "skyfall",
+      "yil": "2012"
+    },
+    {
+      "adi": "sleeper",
+      "yil": "1973"
+    },
+    {
+      "adi": "sleepers",
+      "yil": ""
+    },
+    {
+      "adi": "sleepy hollow",
+      "yil": "1999"
+    },
+    {
+      "adi": "sleuth",
+      "yil": "1972"
+    },
+    {
+      "adi": "sling blade",
+      "yil": ""
+    },
+    {
+      "adi": "slumdog millionaire",
+      "yil": "2008"
+    },
+    {
+      "adi": "small time",
+      "yil": "2014"
+    },
+    {
+      "adi": "smultronstället (wild strawberries)",
+      "yil": "1957"
+    },
+    {
+      "adi": "snatch",
+      "yil": ""
+    },
+    {
+      "adi": "snowden",
+      "yil": "2016"
+    },
+    {
+      "adi": "solyaris",
+      "yil": "1972"
+    },
+    {
+      "adi": "some like it hot",
+      "yil": ""
+    },
+    {
+      "adi": "sometimes always never",
+      "yil": "2018"
+    },
+    {
+      "adi": "soorarai pottru",
+      "yil": "2020"
+    },
+    {
+      "adi": "sorry to bother you",
+      "yil": "2018"
+    },
+    {
+      "adi": "source code",
+      "yil": "2011"
+    },
+    {
+      "adi": "south park: bigger longer & uncut",
+      "yil": ""
+    },
+    {
+      "adi": "spartacus",
+      "yil": "1960"
+    },
+    {
+      "adi": "special correspondents",
+      "yil": "2016"
+    },
+    {
+      "adi": "speed",
+      "yil": "1994"
+    },
+    {
+      "adi": "spider-man 3",
+      "yil": ""
+    },
+    {
+      "adi": "spirited away",
+      "yil": ""
+    },
+    {
+      "adi": "spotlight",
+      "yil": "2015"
+    },
+    {
+      "adi": "stalag 17",
+      "yil": "1953"
+    },
+    {
+      "adi": "stalker",
+      "yil": ""
+    },
+    {
+      "adi": "stand and deliver",
+      "yil": "1988"
+    },
+    {
+      "adi": "stand by me",
+      "yil": "1986"
+    },
+    {
+      "adi": "star wars 1, 2, 3, 4, 5, 6",
+      "yil": ""
+    },
+    {
+      "adi": "stardust",
+      "yil": ""
+    },
+    {
+      "adi": "state of play",
+      "yil": "2009"
+    },
+    {
+      "adi": "stay",
+      "yil": "2005"
+    },
+    {
+      "adi": "steamboat bill, jr.",
+      "yil": "1928"
+    },
+    {
+      "adi": "strange days",
+      "yil": "1995"
+    },
+    {
+      "adi": "stranger than paradise",
+      "yil": "1984"
+    },
+    {
+      "adi": "strangers on a train",
+      "yil": ""
+    },
+    {
+      "adi": "sully",
+      "yil": "2016"
+    },
+    {
+      "adi": "suna no onna (woman of the dunes)",
+      "yil": "1964"
+    },
+    {
+      "adi": "sunrise: a song of two humans",
+      "yil": "1927"
+    },
+    {
+      "adi": "sunset blvd.",
+      "yil": "1950"
+    },
+    {
+      "adi": "super star",
+      "yil": "2002"
+    },
+    {
+      "adi": "superbad",
+      "yil": "2007"
+    },
+    {
+      "adi": "sweet smell of success",
+      "yil": "1957"
+    },
+    {
+      "adi": "synecdoche, new york",
+      "yil": "2008"
+    },
+    {
+      "adi": "syriana",
+      "yil": ""
+    },
+    {
+      "adi": "séraphine",
+      "yil": "2008"
+    },
+    {
+      "adi": "taare zameen par",
+      "yil": "2007"
+    },
+    {
+      "adi": "taken",
+      "yil": "2008"
+    },
+    {
+      "adi": "taking lives",
+      "yil": "2004"
+    },
+    {
+      "adi": "talladega nights",
+      "yil": ""
+    },
+    {
+      "adi": "también la lluvia (even the rain)",
+      "yil": "2010"
+    },
+    {
+      "adi": "tampopo",
+      "yil": "1985"
+    },
+    {
+      "adi": "tanin no kao (the face of another)",
+      "yil": "1966"
+    },
+    {
+      "adi": "taxi driver",
+      "yil": ""
+    },
+    {
+      "adi": "taxi girl",
+      "yil": "1977"
+    },
+    {
+      "adi": "taxidi sta kythira (voyage to cythera)",
+      "yil": "1984"
+    },
+    {
+      "adi": "temple grandin",
+      "yil": "2010"
+    },
+    {
+      "adi": "tenet",
+      "yil": "2020\\r\\n"
+    },
+    {
+      "adi": "tengoku to jigoku (high and low)",
+      "yil": "1963"
+    },
+    {
+      "adi": "terminator 2 : judgement day",
+      "yil": ""
+    },
+    {
+      "adi": "the 12th man",
+      "yil": "2017"
+    },
+    {
+      "adi": "the 40 year old virgin",
+      "yil": "2005"
+    },
+    {
+      "adi": "the accountant",
+      "yil": "2016"
+    },
+    {
+      "adi": "the adjustment bureau",
+      "yil": "2011"
+    },
+    {
+      "adi": "the adventures of priscilla, queen of the desert",
+      "yil": "1994"
+    },
+    {
+      "adi": "the adventures of robin hood",
+      "yil": "1938"
+    },
+    {
+      "adi": "the african queen",
+      "yil": ""
+    },
+    {
+      "adi": "the american president",
+      "yil": "1995"
+    },
+    {
+      "adi": "the amityville",
+      "yil": ""
+    },
+    {
+      "adi": "the apartment",
+      "yil": ""
+    },
+    {
+      "adi": "the artist",
+      "yil": ""
+    },
+    {
+      "adi": "the avengers",
+      "yil": "2012"
+    },
+    {
+      "adi": "the awful truth",
+      "yil": "1937"
+    },
+    {
+      "adi": "the ballad of buster scruggs",
+      "yil": "2018"
+    },
+    {
+      "adi": "the bank job",
+      "yil": "2008"
+    },
+    {
+      "adi": "the banshees of inisherin",
+      "yil": "2022"
+    },
+    {
+      "adi": "the barefoot contessa",
+      "yil": "1954"
+    },
+    {
+      "adi": "the big lebowski",
+      "yil": ""
+    },
+    {
+      "adi": "the big parade",
+      "yil": "1925"
+    },
+    {
+      "adi": "the big short",
+      "yil": "2015"
+    },
+    {
+      "adi": "the big sleep",
+      "yil": ""
+    },
+    {
+      "adi": "the big white",
+      "yil": ""
+    },
+    {
+      "adi": "the black dahlia",
+      "yil": ""
+    },
+    {
+      "adi": "the blind side",
+      "yil": "2019"
+    },
+    {
+      "adi": "the blues brothers",
+      "yil": ""
+    },
+    {
+      "adi": "the bounty",
+      "yil": ""
+    },
+    {
+      "adi": "the bourne identity",
+      "yil": "2002"
+    },
+    {
+      "adi": "the bourne supremacy",
+      "yil": "2004"
+    },
+    {
+      "adi": "the bourne utimatum",
+      "yil": "2007"
+    },
+    {
+      "adi": "the boy in the striped pajamas",
+      "yil": "2008"
+    },
+    {
+      "adi": "the breakfast club",
+      "yil": "1985"
+    },
+    {
+      "adi": "the bridge on the river kwai",
+      "yil": ""
+    },
+    {
+      "adi": "the broken circle breakdown",
+      "yil": "2012"
+    },
+    {
+      "adi": "the brutalist",
+      "yil": "2024"
+    },
+    {
+      "adi": "the bucket list",
+      "yil": ""
+    },
+    {
+      "adi": "the burial",
+      "yil": "2023"
+    },
+    {
+      "adi": "the caine mutiny",
+      "yil": "1954"
+    },
+    {
+      "adi": "the call",
+      "yil": "2013"
+    },
+    {
+      "adi": "the cameraman",
+      "yil": "1928"
+    },
+    {
+      "adi": "the cave",
+      "yil": ""
+    },
+    {
+      "adi": "the circus",
+      "yil": "1928"
+    },
+    {
+      "adi": "the collection",
+      "yil": "2012"
+    },
+    {
+      "adi": "the commitments",
+      "yil": "1991"
+    },
+    {
+      "adi": "the company you keep",
+      "yil": "2012"
+    },
+    {
+      "adi": "the condemned",
+      "yil": "2007"
+    },
+    {
+      "adi": "the constant gardener",
+      "yil": "2005"
+    },
+    {
+      "adi": "the conversation",
+      "yil": ""
+    },
+    {
+      "adi": "the Cook, the thief, his wife & her Lover",
+      "yil": "1989"
+    },
+    {
+      "adi": "the crying game",
+      "yil": "1992"
+    },
+    {
+      "adi": "the curious case of benjamin button",
+      "yil": "2008"
+    },
+    {
+      "adi": "the dark knight",
+      "yil": ""
+    },
+    {
+      "adi": "the day after tomorrow",
+      "yil": ""
+    },
+    {
+      "adi": "the day the earth stood still",
+      "yil": "2008"
+    },
+    {
+      "adi": "the death of stalin",
+      "yil": "2018"
+    },
+    {
+      "adi": "the deer hunter",
+      "yil": ""
+    },
+    {
+      "adi": "the departed",
+      "yil": ""
+    },
+    {
+      "adi": "the dig",
+      "yil": "2021"
+    },
+    {
+      "adi": "the dirty dozen",
+      "yil": "1967"
+    },
+    {
+      "adi": "the doors",
+      "yil": ""
+    },
+    {
+      "adi": "the dreamers",
+      "yil": ""
+    },
+    {
+      "adi": "the elephant man",
+      "yil": ""
+    },
+    {
+      "adi": "the equalizer",
+      "yil": "2014"
+    },
+    {
+      "adi": "the exception",
+      "yil": "2016"
+    },
+    {
+      "adi": "the expandables",
+      "yil": "2010"
+    },
+    {
+      "adi": "the fabelmans",
+      "yil": "2022"
+    },
+    {
+      "adi": "the fall",
+      "yil": "2006"
+    },
+    {
+      "adi": "the family stone",
+      "yil": "2005"
+    },
+    {
+      "adi": "the fast and the furious 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "the father",
+      "yil": "2020"
+    },
+    {
+      "adi": "the first grader",
+      "yil": "2010"
+    },
+    {
+      "adi": "the fisher king",
+      "yil": "1991"
+    },
+    {
+      "adi": "the flinstones",
+      "yil": "1994"
+    },
+    {
+      "adi": "the frozen ground",
+      "yil": "2013"
+    },
+    {
+      "adi": "the game",
+      "yil": "1997"
+    },
+    {
+      "adi": "the general (buster keaton)",
+      "yil": ""
+    },
+    {
+      "adi": "the gentlemen",
+      "yil": "2019"
+    },
+    {
+      "adi": "the getaway",
+      "yil": "1972"
+    },
+    {
+      "adi": "the girl next door",
+      "yil": "2004"
+    },
+    {
+      "adi": "the girl on the train",
+      "yil": "2016"
+    },
+    {
+      "adi": "the girl with the dragon tattoo",
+      "yil": "2011"
+    },
+    {
+      "adi": "the godfather 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "the gold rush",
+      "yil": "1925"
+    },
+    {
+      "adi": "the good liar",
+      "yil": "2019"
+    },
+    {
+      "adi": "the good nurse",
+      "yil": "2022"
+    },
+    {
+      "adi": "the good the bad and the ugly",
+      "yil": ""
+    },
+    {
+      "adi": "the graduate",
+      "yil": ""
+    },
+    {
+      "adi": "the grand budapest hotel",
+      "yil": "2014"
+    },
+    {
+      "adi": "the grapes of wrath",
+      "yil": "1940"
+    },
+    {
+      "adi": "the great dictator",
+      "yil": ""
+    },
+    {
+      "adi": "the great escape",
+      "yil": ""
+    },
+    {
+      "adi": "the Guardian",
+      "yil": ""
+    },
+    {
+      "adi": "the guilt trip",
+      "yil": "2012"
+    },
+    {
+      "adi": "the guns of navarone",
+      "yil": "1961"
+    },
+    {
+      "adi": "the hangover 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "the hateful eight",
+      "yil": "2015"
+    },
+    {
+      "adi": "the haunting",
+      "yil": "1963"
+    },
+    {
+      "adi": "the heartbreak kid",
+      "yil": "2007"
+    },
+    {
+      "adi": "the heiress",
+      "yil": "1949"
+    },
+    {
+      "adi": "the help",
+      "yil": "2011"
+    },
+    {
+      "adi": "the hills have eyes",
+      "yil": ""
+    },
+    {
+      "adi": "the hobbit 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "the holiday",
+      "yil": "2006"
+    },
+    {
+      "adi": "the hunt for red october",
+      "yil": ""
+    },
+    {
+      "adi": "the hurt locker",
+      "yil": "2008"
+    },
+    {
+      "adi": "the hustler",
+      "yil": "1961"
+    },
+    {
+      "adi": "the ice storm",
+      "yil": "1997"
+    },
+    {
+      "adi": "the illusionist",
+      "yil": ""
+    },
+    {
+      "adi": "the imitation game",
+      "yil": "2014"
+    },
+    {
+      "adi": "the impossible",
+      "yil": "2012"
+    },
+    {
+      "adi": "the incredibles",
+      "yil": ""
+    },
+    {
+      "adi": "the insider",
+      "yil": "1999"
+    },
+    {
+      "adi": "the international",
+      "yil": "2009"
+    },
+    {
+      "adi": "the interpreter",
+      "yil": "2005"
+    },
+    {
+      "adi": "the invention of lying",
+      "yil": "2009"
+    },
+    {
+      "adi": "the irishman",
+      "yil": "2019"
+    },
+    {
+      "adi": "the island",
+      "yil": "2005"
+    },
+    {
+      "adi": "the italian job",
+      "yil": "2003"
+    },
+    {
+      "adi": "the jackal",
+      "yil": "1973"
+    },
+    {
+      "adi": "the jackal",
+      "yil": "1997"
+    },
+    {
+      "adi": "the kid",
+      "yil": "1921"
+    },
+    {
+      "adi": "the killing",
+      "yil": ""
+    },
+    {
+      "adi": "the king of comedy",
+      "yil": "1982"
+    },
+    {
+      "adi": "the kite runner",
+      "yil": "2007"
+    },
+    {
+      "adi": "the lady eve",
+      "yil": "1941"
+    },
+    {
+      "adi": "the lady vanishes",
+      "yil": "1938"
+    },
+    {
+      "adi": "the ladykillers",
+      "yil": ""
+    },
+    {
+      "adi": "the lake house",
+      "yil": ""
+    },
+    {
+      "adi": "the last emperor",
+      "yil": "1987"
+    },
+    {
+      "adi": "the last legion",
+      "yil": "2007"
+    },
+    {
+      "adi": "the last of the mohicans",
+      "yil": "1992"
+    },
+    {
+      "adi": "the last seduction",
+      "yil": "1994"
+    },
+    {
+      "adi": "the last stand",
+      "yil": "2013"
+    },
+    {
+      "adi": "the last word",
+      "yil": "2017"
+    },
+    {
+      "adi": "the legend of 1900",
+      "yil": "1998"
+    },
+    {
+      "adi": "the libertine",
+      "yil": ""
+    },
+    {
+      "adi": "the life and death of colonel blimp",
+      "yil": "1943"
+    },
+    {
+      "adi": "the life of david gale",
+      "yil": "2003"
+    },
+    {
+      "adi": "the lighthouse",
+      "yil": "2019"
+    },
+    {
+      "adi": "the lion king",
+      "yil": "1994"
+    },
+    {
+      "adi": "the little things",
+      "yil": "2021"
+    },
+    {
+      "adi": "the lobster",
+      "yil": "2015"
+    },
+    {
+      "adi": "the lodge",
+      "yil": "2019"
+    },
+    {
+      "adi": "the lord of the rings 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "the lost daughter",
+      "yil": "2021"
+    },
+    {
+      "adi": "the lost weekend",
+      "yil": "1945"
+    },
+    {
+      "adi": "the machinist",
+      "yil": "2004"
+    },
+    {
+      "adi": "the magnificent ambersons",
+      "yil": "1942"
+    },
+    {
+      "adi": "the magnificent seven",
+      "yil": "1960"
+    },
+    {
+      "adi": "the majestic",
+      "yil": ""
+    },
+    {
+      "adi": "the maltese falcon",
+      "yil": ""
+    },
+    {
+      "adi": "the man from earth",
+      "yil": "2007"
+    },
+    {
+      "adi": "the man who knew too much (1934)",
+      "yil": ""
+    },
+    {
+      "adi": "the man who shot the liberty valance",
+      "yil": "1962"
+    },
+    {
+      "adi": "the man who would be king",
+      "yil": ""
+    },
+    {
+      "adi": "the man with the golden gun",
+      "yil": "1974"
+    },
+    {
+      "adi": "the man with the iron fists",
+      "yil": "2012"
+    },
+    {
+      "adi": "the manchurian candidate",
+      "yil": ""
+    },
+    {
+      "adi": "the martian",
+      "yil": "2015"
+    },
+    {
+      "adi": "the matrix 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "the meaning of life",
+      "yil": "1983"
+    },
+    {
+      "adi": "the messenger",
+      "yil": ""
+    },
+    {
+      "adi": "the meyerowitz stories (new and selected)",
+      "yil": "2017"
+    },
+    {
+      "adi": "the mule",
+      "yil": "2018"
+    },
+    {
+      "adi": "the name of the rose",
+      "yil": "1986"
+    },
+    {
+      "adi": "the negotiator",
+      "yil": "1998"
+    },
+    {
+      "adi": "the net",
+      "yil": "1995"
+    },
+    {
+      "adi": "the nice guys",
+      "yil": "2016"
+    },
+    {
+      "adi": "the night of the hunter",
+      "yil": "1955"
+    },
+    {
+      "adi": "the nightmare before christmas",
+      "yil": ""
+    },
+    {
+      "adi": "the ninth gate",
+      "yil": "1999"
+    },
+    {
+      "adi": "the notebook (2004)",
+      "yil": ""
+    },
+    {
+      "adi": "the omen",
+      "yil": ""
+    },
+    {
+      "adi": "the other boleyn girl",
+      "yil": "2008"
+    },
+    {
+      "adi": "the outlaw josey wales",
+      "yil": "1976"
+    },
+    {
+      "adi": "the ox-bow incident",
+      "yil": "1943"
+    },
+    {
+      "adi": "the party",
+      "yil": "1968"
+    },
+    {
+      "adi": "the passanger",
+      "yil": "1975"
+    },
+    {
+      "adi": "the perks of being a wallflower",
+      "yil": "2012"
+    },
+    {
+      "adi": "the philadelphia story",
+      "yil": ""
+    },
+    {
+      "adi": "the pianist",
+      "yil": "2002"
+    },
+    {
+      "adi": "the piano",
+      "yil": "1993"
+    },
+    {
+      "adi": "the player",
+      "yil": "1992"
+    },
+    {
+      "adi": "the polar express",
+      "yil": ""
+    },
+    {
+      "adi": "the poseidon adventure",
+      "yil": "1972"
+    },
+    {
+      "adi": "the post",
+      "yil": "2017"
+    },
+    {
+      "adi": "the postman always rings twice",
+      "yil": "1981"
+    },
+    {
+      "adi": "the prestige",
+      "yil": ""
+    },
+    {
+      "adi": "the princess bride",
+      "yil": ""
+    },
+    {
+      "adi": "the professor and the madman",
+      "yil": "2019"
+    },
+    {
+      "adi": "the punisher",
+      "yil": ""
+    },
+    {
+      "adi": "the purple rose of cairo",
+      "yil": "1985"
+    },
+    {
+      "adi": "the pursuit of happyness",
+      "yil": "2006"
+    },
+    {
+      "adi": "the rainmaker",
+      "yil": "1997"
+    },
+    {
+      "adi": "the recruit",
+      "yil": "2003"
+    },
+    {
+      "adi": "the red shoes",
+      "yil": "1948"
+    },
+    {
+      "adi": "the remains of the day",
+      "yil": "1993"
+    },
+    {
+      "adi": "the revenant",
+      "yil": "2015"
+    },
+    {
+      "adi": "the road to guantanamo",
+      "yil": ""
+    },
+    {
+      "adi": "the rock",
+      "yil": ""
+    },
+    {
+      "adi": "the score",
+      "yil": "2001"
+    },
+    {
+      "adi": "the shape of water",
+      "yil": "2017"
+    },
+    {
+      "adi": "the shawshank redemption",
+      "yil": ""
+    },
+    {
+      "adi": "the sheltering sky",
+      "yil": ""
+    },
+    {
+      "adi": "the shining",
+      "yil": ""
+    },
+    {
+      "adi": "the simpsons movie",
+      "yil": ""
+    },
+    {
+      "adi": "the sisters brothers",
+      "yil": "2018"
+    },
+    {
+      "adi": "the skeleton key",
+      "yil": ""
+    },
+    {
+      "adi": "the social network",
+      "yil": "2010"
+    },
+    {
+      "adi": "the spanish prisoner",
+      "yil": "1997"
+    },
+    {
+      "adi": "the spy who loved me",
+      "yil": "1977"
+    },
+    {
+      "adi": "the stanford prison experiment",
+      "yil": "2015"
+    },
+    {
+      "adi": "the station agent",
+      "yil": "2003"
+    },
+    {
+      "adi": "the sting",
+      "yil": ""
+    },
+    {
+      "adi": "the straight story",
+      "yil": ""
+    },
+    {
+      "adi": "the substance",
+      "yil": "2024"
+    },
+    {
+      "adi": "the sum of all fears",
+      "yil": "2002"
+    },
+    {
+      "adi": "the sunset limited",
+      "yil": "2011"
+    },
+    {
+      "adi": "the sweetest thing",
+      "yil": "2002"
+    },
+    {
+      "adi": "the tall man",
+      "yil": "2012"
+    },
+    {
+      "adi": "the ten commandments",
+      "yil": "1956"
+    },
+    {
+      "adi": "the tender bar",
+      "yil": "2021"
+    },
+    {
+      "adi": "the theory of everything",
+      "yil": "2014"
+    },
+    {
+      "adi": "the thin blue line",
+      "yil": "1988"
+    },
+    {
+      "adi": "the thing",
+      "yil": "1982"
+    },
+    {
+      "adi": "the third man",
+      "yil": ""
+    },
+    {
+      "adi": "the thirteenth floor",
+      "yil": "1999"
+    },
+    {
+      "adi": "the town",
+      "yil": "2010"
+    },
+    {
+      "adi": "the transporter",
+      "yil": ""
+    },
+    {
+      "adi": "the treasure of the sierra madre",
+      "yil": ""
+    },
+    {
+      "adi": "the trial of the chicago 7",
+      "yil": ""
+    },
+    {
+      "adi": "the truman show",
+      "yil": "1998"
+    },
+    {
+      "adi": "the untouchables",
+      "yil": "1987"
+    },
+    {
+      "adi": "the usual suspects",
+      "yil": ""
+    },
+    {
+      "adi": "the verdict",
+      "yil": "1982"
+    },
+    {
+      "adi": "the vikings",
+      "yil": "1958"
+    },
+    {
+      "adi": "the virgin suicides",
+      "yil": ""
+    },
+    {
+      "adi": "the vow",
+      "yil": "2012"
+    },
+    {
+      "adi": "the vvitch",
+      "yil": "2015"
+    },
+    {
+      "adi": "the walk",
+      "yil": "2015"
+    },
+    {
+      "adi": "the wild bunch",
+      "yil": "1969"
+    },
+    {
+      "adi": "the wild robot",
+      "yil": "2024"
+    },
+    {
+      "adi": "the woman in the window",
+      "yil": "2021"
+    },
+    {
+      "adi": "the wrestler",
+      "yil": "2008"
+    },
+    {
+      "adi": "thelma and louise",
+      "yil": "1991"
+    },
+    {
+      "adi": "there will be blood",
+      "yil": ""
+    },
+    {
+      "adi": "they live",
+      "yil": "1988"
+    },
+    {
+      "adi": "this is 40",
+      "yil": "2012"
+    },
+    {
+      "adi": "three billboards outside ebbing, missouri",
+      "yil": "2017"
+    },
+    {
+      "adi": "three christs (state of mind)",
+      "yil": "2017"
+    },
+    {
+      "adi": "three days of the condor",
+      "yil": "1975"
+    },
+    {
+      "adi": "thunderball",
+      "yil": "1965"
+    },
+    {
+      "adi": "thx 1138",
+      "yil": "1971"
+    },
+    {
+      "adi": "to be or not to be",
+      "yil": "1942"
+    },
+    {
+      "adi": "to have and have not",
+      "yil": "1944"
+    },
+    {
+      "adi": "to kill a mockingbird",
+      "yil": ""
+    },
+    {
+      "adi": "tombstone",
+      "yil": "1993"
+    },
+    {
+      "adi": "tonari no Totoro (my neighbour totoro)",
+      "yil": "1988"
+    },
+    {
+      "adi": "tootsie",
+      "yil": "1982"
+    },
+    {
+      "adi": "topio stin omichli (landscape in the mist)",
+      "yil": "1988"
+    },
+    {
+      "adi": "total recall",
+      "yil": "1990"
+    },
+    {
+      "adi": "touch of evil",
+      "yil": ""
+    },
+    {
+      "adi": "toy story 1, 2, 3",
+      "yil": ""
+    },
+    {
+      "adi": "trailer park boy",
+      "yil": "1999"
+    },
+    {
+      "adi": "trailer park boys: countdown to liquor day",
+      "yil": "2009"
+    },
+    {
+      "adi": "trailer park boys: drunk, high & unepmloyed - live in austin",
+      "yil": "2015"
+    },
+    {
+      "adi": "trailer park boys: live at the north pole",
+      "yil": "2014"
+    },
+    {
+      "adi": "trailer park boys: live in f**kin dublin",
+      "yil": "2014"
+    },
+    {
+      "adi": "trailer park boys: say goodnight to the bad guys",
+      "yil": "2008"
+    },
+    {
+      "adi": "trailer park boys: swearnet",
+      "yil": "2014"
+    },
+    {
+      "adi": "trailer park boys: swearnet live",
+      "yil": "2014"
+    },
+    {
+      "adi": "trailer park boys: the movie",
+      "yil": "2006"
+    },
+    {
+      "adi": "trailer park boys: xmas special",
+      "yil": "2004"
+    },
+    {
+      "adi": "training day",
+      "yil": ""
+    },
+    {
+      "adi": "trainspotting",
+      "yil": ""
+    },
+    {
+      "adi": "transcendence",
+      "yil": "2014"
+    },
+    {
+      "adi": "transformers",
+      "yil": ""
+    },
+    {
+      "adi": "tremors",
+      "yil": "1990"
+    },
+    {
+      "adi": "triangle",
+      "yil": "2009"
+    },
+    {
+      "adi": "trois couleurs: Rouge  (three colors: red)",
+      "yil": "1994"
+    },
+    {
+      "adi": "tropa de elite 2",
+      "yil": "2010"
+    },
+    {
+      "adi": "trouble in paradise",
+      "yil": "1932"
+    },
+    {
+      "adi": "troy",
+      "yil": "2004"
+    },
+    {
+      "adi": "true grit",
+      "yil": "2010"
+    },
+    {
+      "adi": "true romance",
+      "yil": "1993"
+    },
+    {
+      "adi": "truth and justice",
+      "yil": "2019"
+    },
+    {
+      "adi": "tulitikkutehtaan tyttö (the match factory girl)",
+      "yil": "1990"
+    },
+    {
+      "adi": "twelve monkeys",
+      "yil": ""
+    },
+    {
+      "adi": "twister",
+      "yil": "1996"
+    },
+    {
+      "adi": "two for the money",
+      "yil": ""
+    },
+    {
+      "adi": "tôkyô monogatari (tokyo story)",
+      "yil": "1953"
+    },
+    {
+      "adi": "ultimate avengers",
+      "yil": ""
+    },
+    {
+      "adi": "umberto d.",
+      "yil": "1952"
+    },
+    {
+      "adi": "un chien andalou",
+      "yil": "1929"
+    },
+    {
+      "adi": "un coeur en hiver (a heart in winter)",
+      "yil": "1992"
+    },
+    {
+      "adi": "un prophete (a prophet)",
+      "yil": "2009"
+    },
+    {
+      "adi": "una pura formalità (a pure formality)",
+      "yil": "1994"
+    },
+    {
+      "adi": "unbreakable",
+      "yil": "2000"
+    },
+    {
+      "adi": "unbroken",
+      "yil": "2014"
+    },
+    {
+      "adi": "underground",
+      "yil": "1995"
+    },
+    {
+      "adi": "unforgiven",
+      "yil": ""
+    },
+    {
+      "adi": "united 93",
+      "yil": "2006"
+    },
+    {
+      "adi": "up",
+      "yil": "2009"
+    },
+    {
+      "adi": "up in the air",
+      "yil": "2009"
+    },
+    {
+      "adi": "v for vendetta",
+      "yil": ""
+    },
+    {
+      "adi": "vanilla sky",
+      "yil": "2001"
+    },
+    {
+      "adi": "vanishing point",
+      "yil": ""
+    },
+    {
+      "adi": "vantage point",
+      "yil": ""
+    },
+    {
+      "adi": "vargtimmen",
+      "yil": "1968"
+    },
+    {
+      "adi": "venezia, la luna e tu (venice, the moon and you)",
+      "yil": "1958"
+    },
+    {
+      "adi": "vera drake",
+      "yil": "2004"
+    },
+    {
+      "adi": "vertigo",
+      "yil": ""
+    },
+    {
+      "adi": "vicky cristina barcelona",
+      "yil": "2008"
+    },
+    {
+      "adi": "volver",
+      "yil": "2006"
+    },
+    {
+      "adi": "vozvrashchenie (the return)",
+      "yil": "2003"
+    },
+    {
+      "adi": "wag the dog",
+      "yil": "1997"
+    },
+    {
+      "adi": "waist deep",
+      "yil": ""
+    },
+    {
+      "adi": "waking life",
+      "yil": ""
+    },
+    {
+      "adi": "waking ned devine",
+      "yil": "1998"
+    },
+    {
+      "adi": "walk the line",
+      "yil": ""
+    },
+    {
+      "adi": "walkabout",
+      "yil": "1971"
+    },
+    {
+      "adi": "wallace & gromit in the curse of the were-rabbit",
+      "yil": "2005"
+    },
+    {
+      "adi": "wall·e",
+      "yil": "2008"
+    },
+    {
+      "adi": "war",
+      "yil": ""
+    },
+    {
+      "adi": "waterworld",
+      "yil": "1995"
+    },
+    {
+      "adi": "way down east",
+      "yil": "1920"
+    },
+    {
+      "adi": "we need to talk about kevin",
+      "yil": "2011"
+    },
+    {
+      "adi": "wedding crashers",
+      "yil": ""
+    },
+    {
+      "adi": "welcome to the dollhouse",
+      "yil": "1995"
+    },
+    {
+      "adi": "welcome to the punch",
+      "yil": "2013"
+    },
+    {
+      "adi": "what dreams may come",
+      "yil": ""
+    },
+    {
+      "adi": "what ever happened baby jane?",
+      "yil": "1962"
+    },
+    {
+      "adi": "what happens in vegas",
+      "yil": "2008"
+    },
+    {
+      "adi": "whats eating gilbert grape",
+      "yil": "1993"
+    },
+    {
+      "adi": "when harry met sally",
+      "yil": "1989"
+    },
+    {
+      "adi": "whiplash",
+      "yil": "2014"
+    },
+    {
+      "adi": "who is afraid of virginia wolf",
+      "yil": "1966"
+    },
+    {
+      "adi": "wild things",
+      "yil": "1998"
+    },
+    {
+      "adi": "willy wonka & the chocolate factory",
+      "yil": "1971"
+    },
+    {
+      "adi": "wind river",
+      "yil": "2017"
+    },
+    {
+      "adi": "withnail and i",
+      "yil": "1987"
+    },
+    {
+      "adi": "witness for the prosecution",
+      "yil": "1957"
+    },
+    {
+      "adi": "wizard of oz",
+      "yil": ""
+    },
+    {
+      "adi": "wo hu cang long (crouching tiger, hidden dragon)",
+      "yil": ""
+    },
+    {
+      "adi": "world war z",
+      "yil": "2013"
+    },
+    {
+      "adi": "wrong turn 1, 2",
+      "yil": ""
+    },
+    {
+      "adi": "year one",
+      "yil": ""
+    },
+    {
+      "adi": "yes man",
+      "yil": "2008"
+    },
+    {
+      "adi": "yesterday",
+      "yil": "2019"
+    },
+    {
+      "adi": "ying xiong",
+      "yil": ""
+    },
+    {
+      "adi": "yojimbo",
+      "yil": ""
+    },
+    {
+      "adi": "you kill me",
+      "yil": ""
+    },
+    {
+      "adi": "you only live twice",
+      "yil": "1967"
+    },
+    {
+      "adi": "youth",
+      "yil": "2015"
+    },
+    {
+      "adi": "zack and Miri Make a Porno",
+      "yil": "2008"
+    },
+    {
+      "adi": "zerkalo (mirror)",
+      "yil": "1975"
+    },
+    {
+      "adi": "zero de conduite: jeunes diables au collège",
+      "yil": "1933"
+    },
+    {
+      "adi": "zindagi na milegi dobara",
+      "yil": "2011"
+    },
+    {
+      "adi": "zodiac",
+      "yil": "2007"
+    },
+    {
+      "adi": "zwartboek (blackbook)",
+      "yil": "2006"
+    }
+  ],
+  "diziler": [
+    {
+      "adi": "1923",
+      "sezon": "1, 2.",
+      "aciklama": ""
+    },
+    {
+      "adi": "2 broke girls",
+      "sezon": "1, 2, 3, 4, 5, 6.",
+      "aciklama": ""
+    },
+    {
+      "adi": "after life",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "anne with an e",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "apartment 23",
+      "sezon": "1, 2.",
+      "aciklama": ""
+    },
+    {
+      "adi": "arrested development",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "atypical",
+      "sezon": "1, 2, 3, 4,",
+      "aciklama": ""
+    },
+    {
+      "adi": "barry",
+      "sezon": "1, 2, 3, 4.",
+      "aciklama": ""
+    },
+    {
+      "adi": "bates motel",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "battlestar galactica",
+      "sezon": "1, 2, 3, 4.",
+      "aciklama": ""
+    },
+    {
+      "adi": "behind her eyes",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "better call saul",
+      "sezon": "1, 2, 3, 4, 5, 6",
+      "aciklama": ""
+    },
+    {
+      "adi": "big love",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "black mirror",
+      "sezon": "1, 2, 3, 4, 5, 6, 7",
+      "aciklama": ""
+    },
+    {
+      "adi": "boardwalk empire",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "bodyguard",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "bojack horseman",
+      "sezon": "1, 2, 3, 4, 5, 6",
+      "aciklama": ""
+    },
+    {
+      "adi": "breaking bad",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "brooklyn nine-nine",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "carlos",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "carnivale",
+      "sezon": "1, 2.",
+      "aciklama": ""
+    },
+    {
+      "adi": "chernobyl",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "close enough",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "colony",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "community",
+      "sezon": "1, 2, 3, 4, 5, 6",
+      "aciklama": ""
+    },
+    {
+      "adi": "coupling",
+      "sezon": "1, 2, 3, 4.",
+      "aciklama": "uk"
+    },
+    {
+      "adi": "crisis in six scenes",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "csi: crime scene investigation",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "daredevil",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "deadwood",
+      "sezon": "1, 2, 3.",
+      "aciklama": ""
+    },
+    {
+      "adi": "dekalog",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "designated survivor",
+      "sezon": "1, 2, 3,",
+      "aciklama": ""
+    },
+    {
+      "adi": "desperate housewives",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8.",
+      "aciklama": ""
+    },
+    {
+      "adi": "dexter",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8. --- 9",
+      "aciklama": ""
+    },
+    {
+      "adi": "dexter: original sin",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "dexter: resurrection",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "dirk gentlys holistic detective agency",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "dirty john",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "disenchantment",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "downton abbey",
+      "sezon": "1, 2, 3, 4, 5, 6.",
+      "aciklama": ""
+    },
+    {
+      "adi": "easy",
+      "sezon": "1, 2, 3,",
+      "aciklama": ""
+    },
+    {
+      "adi": "el chapo",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "elite",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "elsbeth",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "entourage",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "fargo",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "firefly",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "five came back",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "fleabag",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "for life",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "friends",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10.",
+      "aciklama": ""
+    },
+    {
+      "adi": "fringe",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "futurama",
+      "sezon": "1, 2, 3, 4, 5, 6, 7.",
+      "aciklama": ""
+    },
+    {
+      "adi": "game of thrones",
+      "sezon": "1, 2, 3, 4, 5, 6 7, 8.",
+      "aciklama": ""
+    },
+    {
+      "adi": "gilmore girls",
+      "sezon": "1, 2, 3, 4, 5, 6, 7 --- 8",
+      "aciklama": ""
+    },
+    {
+      "adi": "goliath",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "good girls",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "hannibal",
+      "sezon": "1, 2, 3.",
+      "aciklama": ""
+    },
+    {
+      "adi": "homeland",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8.",
+      "aciklama": ""
+    },
+    {
+      "adi": "house of cards",
+      "sezon": "1, 2, 3, 4, 5, 6.",
+      "aciklama": ""
+    },
+    {
+      "adi": "how i met your mother",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9.",
+      "aciklama": ""
+    },
+    {
+      "adi": "how to get away with murder",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "i am not okay with this",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "i think you should leave now",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "in treatment",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "inventing anna",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "its always sunny in philadelphia",
+      "sezon": "1....................14",
+      "aciklama": ""
+    },
+    {
+      "adi": "la casa de papel",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "la foret (the forest)",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "las chicas del cable",
+      "sezon": "1, 2, 3, 4,",
+      "aciklama": ""
+    },
+    {
+      "adi": "law & order",
+      "sezon": "..... 6, 7, 8,",
+      "aciklama": ""
+    },
+    {
+      "adi": "love life",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "love, death & robots",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "luke cage",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "mad men",
+      "sezon": "1, 2,",
+      "aciklama": ""
+    },
+    {
+      "adi": "making a murderer",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "man seeking woman",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "manhunt: unabomber",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "mare of easttown",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "midnight diner",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "midnight diner: tokyo series",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "mindhunter",
+      "sezon": "1, 2,",
+      "aciklama": ""
+    },
+    {
+      "adi": "modern family",
+      "sezon": "1.........11",
+      "aciklama": ""
+    },
+    {
+      "adi": "monty python\\s flying circus, 1",
+      "sezon": "2",
+      "aciklama": "3"
+    },
+    {
+      "adi": "mr. robot",
+      "sezon": "1, 2,",
+      "aciklama": ""
+    },
+    {
+      "adi": "narcos",
+      "sezon": "1, 2, 3.",
+      "aciklama": ""
+    },
+    {
+      "adi": "narcos: mexico",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "nip tuck",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "north & south",
+      "sezon": "2004",
+      "aciklama": ""
+    },
+    {
+      "adi": "o mecanismo",
+      "sezon": "1, 2.",
+      "aciklama": ""
+    },
+    {
+      "adi": "olive kitteridge",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "on becoming a god in central florida",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "orange is the new black",
+      "sezon": "1, 2, 3, 4, 5, 6,",
+      "aciklama": ""
+    },
+    {
+      "adi": "orphan black",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "outlander",
+      "sezon": "1, 2, 3, 4, 5, 6, 7",
+      "aciklama": ""
+    },
+    {
+      "adi": "oz",
+      "sezon": "1, 2, 3, 4, 5, 6.",
+      "aciklama": ""
+    },
+    {
+      "adi": "ozark",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "pablo escobar: el patrón del mal",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "peaky blinders",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "person of interest",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "poldark",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "prison break",
+      "sezon": "1, 2, 3, 4.",
+      "aciklama": ""
+    },
+    {
+      "adi": "ratched",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "real detective",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "rectify",
+      "sezon": "1, 2, 3, 4.",
+      "aciklama": ""
+    },
+    {
+      "adi": "rick and morty",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "rome",
+      "sezon": "1, 2.",
+      "aciklama": ""
+    },
+    {
+      "adi": "safe",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "seinfeld",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9.",
+      "aciklama": ""
+    },
+    {
+      "adi": "sense and sensibility",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "sex education",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "sex life",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "sexify",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "shameless",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11",
+      "aciklama": ""
+    },
+    {
+      "adi": "sherlock",
+      "sezon": "1, 2, 3, 4,",
+      "aciklama": ""
+    },
+    {
+      "adi": "six feet under",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "skins",
+      "sezon": "1, 2, 3, 4, 5, 6, 7",
+      "aciklama": ""
+    },
+    {
+      "adi": "south park",
+      "sezon": "1............................22",
+      "aciklama": ""
+    },
+    {
+      "adi": "spartacus",
+      "sezon": "1, 0, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "squid game",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "star trek: the next generation",
+      "sezon": "1.....7",
+      "aciklama": ""
+    },
+    {
+      "adi": "stranger things",
+      "sezon": "1, 2,",
+      "aciklama": ""
+    },
+    {
+      "adi": "suits",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9",
+      "aciklama": ""
+    },
+    {
+      "adi": "superstore",
+      "sezon": "1, 2,",
+      "aciklama": ""
+    },
+    {
+      "adi": "taboo",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "that \\70s show, 1",
+      "sezon": "2",
+      "aciklama": "3"
+    },
+    {
+      "adi": "the 100",
+      "sezon": "1, 2, 3, 4, 5,",
+      "aciklama": ""
+    },
+    {
+      "adi": "the 4400",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "the bear",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "the blacklist",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+      "aciklama": ""
+    },
+    {
+      "adi": "the crown",
+      "sezon": "1, 2.",
+      "aciklama": ""
+    },
+    {
+      "adi": "the end of the f...ing world",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "the gilded age",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "the good fight",
+      "sezon": "1, 2, 3, 4, 5, 6",
+      "aciklama": ""
+    },
+    {
+      "adi": "the good place",
+      "sezon": "1, 2, 3,",
+      "aciklama": ""
+    },
+    {
+      "adi": "the good wife",
+      "sezon": "1, 2, 3, 4, 5, 6, 7.",
+      "aciklama": ""
+    },
+    {
+      "adi": "the it crowd",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "the last of us",
+      "sezon": "1,",
+      "aciklama": ""
+    },
+    {
+      "adi": "the lost room",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "the marvelous mrs. maisel",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "the mentalist",
+      "sezon": "1, 2,",
+      "aciklama": ""
+    },
+    {
+      "adi": "the messiah",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "the night of",
+      "sezon": "1.",
+      "aciklama": ""
+    },
+    {
+      "adi": "the patient",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "the people vs. o.j. simpson",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "the simpsons",
+      "sezon": "1.......................................35",
+      "aciklama": ""
+    },
+    {
+      "adi": "the sinner",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "the sopranos",
+      "sezon": "1, 2, 3, 4, 5, 6.",
+      "aciklama": ""
+    },
+    {
+      "adi": "the spy",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "the white queen",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "the wire",
+      "sezon": "1, 2, 3, 4, 5.",
+      "aciklama": ""
+    },
+    {
+      "adi": "this is us",
+      "sezon": "1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "trailer park boys",
+      "sezon": "1, 2, 3.......11, 12",
+      "aciklama": ""
+    },
+    {
+      "adi": "trailer park boys: out of park - europe",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "trailer park boys: out of park - usa",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "trailer park boys: the animated series",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "trotsky",
+      "sezon": "1",
+      "aciklama": ""
+    },
+    {
+      "adi": "true detective",
+      "sezon": "1, 2, 3, 4",
+      "aciklama": ""
+    },
+    {
+      "adi": "two and a half men",
+      "sezon": "1, 2",
+      "aciklama": ""
+    },
+    {
+      "adi": "two guys and a girl",
+      "sezon": "1, 2, 3, 4.",
+      "aciklama": ""
+    },
+    {
+      "adi": "unorthodox",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "vikings",
+      "sezon": "1, 2, 3 , 4, 5, 6",
+      "aciklama": ""
+    },
+    {
+      "adi": "weeds",
+      "sezon": "1, 2, 3, 4, 5, 6, 7, 8.",
+      "aciklama": ""
+    },
+    {
+      "adi": "when they see us",
+      "sezon": "",
+      "aciklama": ""
+    },
+    {
+      "adi": "white collar",
+      "sezon": "1, 2, 3, 4, 5, 6.",
+      "aciklama": ""
+    },
+    {
+      "adi": "you",
+      "sezon": "1, 2, 3, 4, 5",
+      "aciklama": ""
+    },
+    {
+      "adi": "you me her",
+      "sezon": "1, 2, 3, 4,",
+      "aciklama": ""
+    }
+  ],
+  "belgeseller": [
+    {
+      "adi": "america: freedom to fascism",
+      "aciklama": ""
+    },
+    {
+      "adi": "an inconvenient truth",
+      "aciklama": ""
+    },
+    {
+      "adi": "bbc - human instinct",
+      "aciklama": ""
+    },
+    {
+      "adi": "cave of forgotten dreams",
+      "aciklama": "2010"
+    },
+    {
+      "adi": "citizenfour",
+      "aciklama": "2014"
+    },
+    {
+      "adi": "cosmos: a spacetime odyssey",
+      "aciklama": ""
+    },
+    {
+      "adi": "guns, sems and steel",
+      "aciklama": ""
+    },
+    {
+      "adi": "home",
+      "aciklama": "2009"
+    },
+    {
+      "adi": "human planet",
+      "aciklama": "2011"
+    },
+    {
+      "adi": "inside job",
+      "aciklama": "2010"
+    },
+    {
+      "adi": "journey to the edge of the universe",
+      "aciklama": "2008"
+    },
+    {
+      "adi": "life",
+      "aciklama": "2009"
+    },
+    {
+      "adi": "mars (national geographic)",
+      "aciklama": "2016"
+    },
+    {
+      "adi": "planet earth 1, 2",
+      "aciklama": "2006, 2016"
+    },
+    {
+      "adi": "religulous",
+      "aciklama": "2008"
+    },
+    {
+      "adi": "samsara",
+      "aciklama": "2011"
+    },
+    {
+      "adi": "the century of the self",
+      "aciklama": "2002"
+    },
+    {
+      "adi": "the Corporation",
+      "aciklama": "2003"
+    },
+    {
+      "adi": "the cove",
+      "aciklama": "2009"
+    },
+    {
+      "adi": "the fog og war",
+      "aciklama": "2003"
+    },
+    {
+      "adi": "the untold history of the united states",
+      "aciklama": "2012"
+    },
+    {
+      "adi": "zeitgeist 1, 2, 3",
+      "aciklama": ""
+    },
+    {
+      "adi": "zero days",
+      "aciklama": "2016"
+    }
+  ]
+}
