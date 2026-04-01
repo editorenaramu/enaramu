@@ -1,974 +1,4 @@
 {
-"belgeseller":[
- {
-  "no": 9,
-  "adi": "journey to the edge of the universe",
-  "aciklama": "2008"
- },
- {
-  "no": 3,
-  "adi": "zeitgeist 1, 2, 3"
- },
- {
-  "no": 12,
-  "adi": "the Corporation",
-  "aciklama": "2003"
- },
- {
-  "no": 5,
-  "adi": "bbc - human instinct"
- },
- {
-  "no": 17,
-  "adi": "an inconvenient truth"
- },
- {
-  "no": 7,
-  "adi": "america: freedom to fascism"
- },
- {
-  "no": 8,
-  "adi": "nature's great events",
-  "aciklama": "(nature's most amazing events) 1, 2, 3, 4, 5, 6"
- },
- {
-  "no": 10,
-  "adi": "cave of forgotten dreams",
-  "aciklama": "2010"
- },
- {
-  "no": 11,
-  "adi": "inside job",
-  "aciklama": "2010"
- },
- {
-  "no": 13,
-  "adi": "religulous",
-  "aciklama": "2008"
- },
- {
-  "no": 14,
-  "adi": "the century of the self",
-  "aciklama": "2002"
- },
- {
-  "no": 20,
-  "adi": "planet earth 1, 2",
-  "aciklama": "2006, 2016"
- },
- {
-  "no": 16,
-  "adi": "the fog og war",
-  "aciklama": "2003"
- },
- {
-  "no": 18,
-  "adi": "carl sagan's Cosmos"
- },
- {
-  "no": 19,
-  "adi": "guns, sems and steel"
- },
- {
-  "no": 21,
-  "adi": "cosmos: a spacetime odyssey"
- },
- {
-  "no": 22,
-  "adi": "life",
-  "aciklama": "2009"
- },
- {
-  "no": 23,
-  "adi": "human planet",
-  "aciklama": "2011"
- },
- {
-  "no": 24,
-  "adi": "citizenfour",
-  "aciklama": "2014"
- },
- {
-  "no": 25,
-  "adi": "home",
-  "aciklama": "2009"
- },
- {
-  "no": 26,
-  "adi": "andrew marr's history of the world",
-  "aciklama": "2012"
- },
- {
-  "no": 27,
-  "adi": "mars (national geographic)",
-  "aciklama": "2016"
- },
- {
-  "no": 28,
-  "adi": "the untold history of the united states",
-  "aciklama": "2012"
- },
- {
-  "no": 30,
-  "adi": "zero days",
-  "aciklama": "2016"
- },
- {
-  "no": 31,
-  "adi": "samsara",
-  "aciklama": "2011"
- },
- {
-  "no": 32,
-  "adi": "the cove",
-  "aciklama": "2009"
- }
-],
-"diziler":[
- {
-  "no": 1,
-  "adi": "coupling",
-  "sezon": "1, 2, 3, 4.",
-  "aciklama": "uk"
- },
- {
-  "no": 2,
-  "adi": "desperate housewives",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
- },
- {
-  "no": 3,
-  "adi": "friends",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10."
- },
- {
-  "no": 4,
-  "adi": "how i met your mother",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9."
- },
- {
-  "no": 6,
-  "adi": "nip tuck",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 7,
-  "adi": "prison break",
-  "sezon": "1, 2, 3, 4."
- },
- {
-  "no": 8,
-  "adi": "the simpsons",
-  "sezon": "1.......................................35"
- },
- {
-  "no": 9,
-  "adi": "south park",
-  "sezon": "1............................22"
- },
- {
-  "no": 10,
-  "adi": "the 4400",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 11,
-  "adi": "that '70s show",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
- },
- {
-  "no": 12,
-  "adi": "six feet under",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 13,
-  "adi": "carnivale",
-  "sezon": "1, 2."
- },
- {
-  "no": 14,
-  "adi": "seinfeld",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9."
- },
- {
-  "no": 21,
-  "adi": "its always sunny in philadelphia",
-  "sezon": "1....................14"
- },
- {
-  "no": 15,
-  "adi": "dexter",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8. --- 9"
- },
- {
-  "no": 16,
-  "adi": "oz",
-  "sezon": "1, 2, 3, 4, 5, 6."
- },
- {
-  "no": 17,
-  "adi": "the lost room"
- },
- {
-  "no": 20,
-  "adi": "entourage",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 18,
-  "adi": "csi: crime scene investigation",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 19,
-  "adi": "weeds",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
- },
- {
-  "no": 22,
-  "adi": "breaking bad",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 23,
-  "adi": "two and a half men",
-  "sezon": "1, 2"
- },
- {
-  "no": 24,
-  "adi": "firefly",
-  "sezon": "1."
- },
- {
-  "no": 25,
-  "adi": "two guys and a girl",
-  "sezon": "1, 2, 3, 4."
- },
- {
-  "no": 26,
-  "adi": "the good wife",
-  "sezon": "1, 2, 3, 4, 5, 6, 7."
- },
- {
-  "no": 27,
-  "adi": "2 broke girls",
-  "sezon": "1, 2, 3, 4, 5, 6."
- },
- {
-  "no": 28,
-  "adi": "game of thrones",
-  "sezon": "1, 2, 3, 4, 5, 6 7, 8."
- },
- {
-  "no": 29,
-  "adi": "arrested development",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 30,
-  "adi": "hannibal",
-  "sezon": "1, 2, 3."
- },
- {
-  "no": 31,
-  "adi": "person of interest",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 32,
-  "adi": "sherlock",
-  "sezon": "1, 2, 3, 4,"
- },
- {
-  "no": 33,
-  "adi": "true detective",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 34,
-  "adi": "mr. robot",
-  "sezon": "1, 2,"
- },
- {
-  "no": 35,
-  "adi": "homeland",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
- },
- {
-  "no": 36,
-  "adi": "fringe",
-  "sezon": "1"
- },
- {
-  "no": 37,
-  "adi": "better call saul",
-  "sezon": "1, 2, 3, 4, 5, 6"
- },
- {
-  "no": 38,
-  "adi": "house of cards",
-  "sezon": "1, 2, 3, 4, 5, 6."
- },
- {
-  "no": 39,
-  "adi": "boardwalk empire",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 40,
-  "adi": "dekalog",
-  "sezon": "1."
- },
- {
-  "no": 41,
-  "adi": "black mirror",
-  "sezon": "1, 2, 3, 4, 5, 6, 7"
- },
- {
-  "no": 42,
-  "adi": "the mentalist",
-  "sezon": "1, 2,"
- },
- {
-  "no": 43,
-  "adi": "rick and morty",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 44,
-  "adi": "making a murderer"
- },
- {
-  "no": 45,
-  "adi": "fargo",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 46,
-  "adi": "narcos",
-  "sezon": "1, 2, 3."
- },
- {
-  "no": 47,
-  "adi": "daredevil",
-  "sezon": "1, 2"
- },
- {
-  "no": 48,
-  "adi": "orphan black",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 49,
-  "adi": "suits",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9"
- },
- {
-  "no": 50,
-  "adi": "deadwood",
-  "sezon": "1, 2, 3."
- },
- {
-  "no": 51,
-  "adi": "shameless",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11"
- },
- {
-  "no": 52,
-  "adi": "orange is the new black",
-  "sezon": "1, 2, 3, 4, 5, 6, "
- },
- {
-  "no": 53,
-  "adi": "futurama",
-  "sezon": "1, 2, 3, 4, 5, 6, 7."
- },
- {
-  "no": 54,
-  "adi": "how to get away with murder",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 55,
-  "adi": "rome",
-  "sezon": "1, 2."
- },
- {
-  "no": 56,
-  "adi": "peaky blinders",
-  "sezon": "1, 2"
- },
- {
-  "no": 57,
-  "adi": "carlos",
-  "sezon": "1."
- },
- {
-  "no": 58,
-  "adi": "the sopranos",
-  "sezon": "1, 2, 3, 4, 5, 6."
- },
- {
-  "no": 59,
-  "adi": "north & south",
-  "sezon": "2004"
- },
- {
-  "no": 60,
-  "adi": "downton abbey",
-  "sezon": "1, 2, 3, 4, 5, 6."
- },
- {
-  "no": 61,
-  "adi": "battlestar galactica",
-  "sezon": "1, 2, 3, 4."
- },
- {
-  "no": 63,
-  "adi": "dirk gentlys holistic detective agency",
-  "sezon": "1, 2"
- },
- {
-  "no": 64,
-  "adi": "luke cage",
-  "sezon": "1, "
- },
- {
-  "no": 65,
-  "adi": "apartment 23",
-  "sezon": "1, 2."
- },
- {
-  "no": 66,
-  "adi": "white collar",
-  "sezon": "1, 2, 3, 4, 5, 6."
- },
- {
-  "no": 67,
-  "adi": "vikings",
-  "sezon": "1, 2, 3 , 4, 5, 6"
- },
- {
-  "no": 68,
-  "adi": "the crown",
-  "sezon": "1, 2."
- },
- {
-  "no": 69,
-  "adi": "bates motel",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 115,
-  "adi": "ratched",
-  "sezon": "1,"
- },
- {
-  "no": 70,
-  "adi": "stranger things",
-  "sezon": "1, 2, "
- },
- {
-  "no": 71,
-  "adi": "the 100",
-  "sezon": "1, 2, 3, 4, 5, "
- },
- {
-  "no": 72,
-  "adi": "narcos: mexico",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 73,
-  "adi": "the blacklist",
-  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
- },
- {
-  "no": 74,
-  "adi": "chernobyl",
-  "sezon": "1."
- },
- {
-  "no": 75,
-  "adi": "taboo",
-  "sezon": "1, "
- },
- {
-  "no": 76,
-  "adi": "easy",
-  "sezon": "1, 2, 3,"
- },
- {
-  "no": 77,
-  "adi": "poldark",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 78,
-  "adi": "mindhunter",
-  "sezon": "1, 2, "
- },
- {
-  "no": 79,
-  "adi": "disenchantment",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 80,
-  "adi": "the sinner",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 81,
-  "adi": "the spy"
- },
- {
-  "no": 82,
-  "adi": "el chapo",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 83,
-  "adi": "ozark",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 84,
-  "adi": "pablo escobar: el patrÃ³n del mal",
-  "sezon": "1."
- },
- {
-  "no": 85,
-  "adi": "you me her",
-  "sezon": "1, 2, 3, 4,"
- },
- {
-  "no": 86,
-  "adi": "atypical",
-  "sezon": "1, 2, 3, 4,"
- },
- {
-  "no": 87,
-  "adi": "sex education",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 88,
-  "adi": "the end of the f...ing world",
-  "sezon": "1, 2"
- },
- {
-  "no": 90,
-  "adi": "outlander",
-  "sezon": "1, 2, 3, 4, 5, 6, 7"
- },
- {
-  "no": 91,
-  "adi": "la casa de papel",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 92,
-  "adi": "o mecanismo",
-  "sezon": "1, 2."
- },
- {
-  "no": 93,
-  "adi": "you",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 94,
-  "adi": "unorthodox"
- },
- {
-  "no": 95,
-  "adi": "i am not okay with this",
-  "sezon": "1, "
- },
- {
-  "no": 96,
-  "adi": "dirty john",
-  "sezon": "1, 2"
- },
- {
-  "no": 97,
-  "adi": "modern family",
-  "sezon": "1.........11"
- },
- {
-  "no": 98,
-  "adi": "skins",
-  "sezon": "1, 2, 3, 4, 5, 6, 7"
- },
- {
-  "no": 99,
-  "adi": "brooklyn nine-nine"
- },
- {
-  "no": 100,
-  "adi": "bojack horseman",
-  "sezon": "1, 2, 3, 4, 5, 6"
- },
- {
-  "no": 101,
-  "adi": "the it crowd",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 102,
-  "adi": "when they see us"
- },
- {
-  "no": 103,
-  "adi": "mad men",
-  "sezon": "1, 2,"
- },
- {
-  "no": 104,
-  "adi": "love, death & robots",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 105,
-  "adi": "bodyguard",
-  "sezon": "1"
- },
- {
-  "no": 108,
-  "adi": "anne with an e",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 109,
-  "adi": "trotsky",
-  "sezon": "1"
- },
- {
-  "no": 110,
-  "adi": "after life",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 111,
-  "adi": "designated survivor",
-  "sezon": "1, 2, 3,"
- },
- {
-  "no": 112,
-  "adi": "las chicas del cable",
-  "sezon": "1, 2, 3, 4,"
- },
- {
-  "no": 113,
-  "adi": "the queen's gambit"
- },
- {
-  "no": 114,
-  "adi": "monty python's flying circus",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 116,
-  "adi": "community",
-  "sezon": "1, 2, 3, 4, 5, 6"
- },
- {
-  "no": 117,
-  "adi": "la foret (the forest)",
-  "sezon": "1"
- },
- {
-  "no": 118,
-  "adi": "safe",
-  "sezon": "1,"
- },
- {
-  "no": 119,
-  "adi": "manhunt: unabomber"
- },
- {
-  "no": 120,
-  "adi": "behind her eyes",
-  "sezon": "1"
- },
- {
-  "no": 121,
-  "adi": "elite",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 122,
-  "adi": "sense and sensibility",
-  "sezon": "1."
- },
- {
-  "no": 123,
-  "adi": "star trek: the next generation",
-  "sezon": "1.....7"
- },
- {
-  "no": 124,
-  "adi": "five came back",
-  "sezon": "1"
- },
- {
-  "no": 125,
-  "adi": "sexify",
-  "sezon": "1,"
- },
- {
-  "no": 126,
-  "adi": "real detective",
-  "sezon": "1, 2"
- },
- {
-  "no": 127,
-  "adi": "on becoming a god in central florida"
- },
- {
-  "no": 128,
-  "adi": "sex life",
-  "sezon": "1, "
- },
- {
-  "no": 129,
-  "adi": "i think you should leave now",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 130,
-  "adi": "the people vs. o.j. simpson"
- },
- {
-  "no": 131,
-  "adi": "good girls",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 132,
-  "adi": "close enough",
-  "sezon": "1, 2"
- },
- {
-  "no": 133,
-  "adi": "trailer park boys",
-  "sezon": "1, 2, 3.......11, 12"
- },
- {
-  "no": 134,
-  "adi": "colony",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 135,
-  "adi": "the good place",
-  "sezon": "1, 2, 3,"
- },
- {
-  "no": 136,
-  "adi": "superstore",
-  "sezon": "1, 2,"
- },
- {
-  "no": 137,
-  "adi": "for life",
-  "sezon": "1, 2"
- },
- {
-  "no": 138,
-  "adi": "inventing anna",
-  "sezon": "1"
- },
- {
-  "no": 139,
-  "adi": "the marvelous mrs. maisel",
-  "sezon": "1, 2, 3, 4, 5"
- },
- {
-  "no": 140,
-  "adi": "the good fight",
-  "sezon": "1, 2, 3, 4, 5, 6"
- },
- {
-  "no": 141,
-  "adi": "midnight diner",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 142,
-  "adi": "the white queen"
- },
- {
-  "no": 143,
-  "adi": "fleabag",
-  "sezon": "1, 2"
- },
- {
-  "no": 144,
-  "adi": "goliath",
-  "sezon": "1, 2, 3, 4"
- },
- {
-  "no": 145,
-  "adi": "law & order",
-  "sezon": "..... 6, 7, 8,"
- },
- {
-  "no": 146,
-  "adi": "midnight diner: tokyo series",
-  "sezon": "1, 2"
- },
- {
-  "no": 147,
-  "adi": "squid game",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 148,
-  "adi": "gilmore girls",
-  "sezon": "1, 2, 3, 4, 5, 6, 7 --- 8"
- },
- {
-  "no": 149,
-  "adi": "crisis in six scenes",
-  "sezon": "1"
- },
- {
-  "no": 150,
-  "adi": "trailer park boys: out of park - europe"
- },
- {
-  "no": 151,
-  "adi": "trailer park boys: out of park - usa"
- },
- {
-  "no": 152,
-  "adi": "trailer park boys: the animated series",
-  "sezon": "1, 2"
- },
- {
-  "no": 153,
-  "adi": "man seeking woman",
-  "sezon": "1, 2"
- },
- {
-  "no": 154,
-  "adi": "love life",
-  "sezon": "1, 2"
- },
- {
-  "no": 155,
-  "adi": "the messiah",
-  "sezon": "1"
- },
- {
-  "no": 156,
-  "adi": "this is us",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 157,
-  "adi": "the last of us",
-  "sezon": "1, "
- },
- {
-  "no": 158,
-  "adi": "the bear",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 159,
-  "adi": "spartacus",
-  "sezon": "1, 0, 2, 3"
- },
- {
-  "no": 160,
-  "adi": "1923",
-  "sezon": "1, 2."
- },
- {
-  "no": 161,
-  "adi": "elsbeth",
-  "sezon": "1, 2"
- },
- {
-  "no": 162,
-  "adi": "the handmaid's tale",
-  "sezon": "1, 2"
- },
- {
-  "no": 163,
-  "adi": "the gilded age",
-  "sezon": "1, "
- },
- {
-  "no": 164,
-  "adi": "dexter: original sin",
-  "sezon": "1"
- },
- {
-  "no": 165,
-  "adi": "dexter: resurrection",
-  "sezon": "1"
- },
- {
-  "no": 166,
-  "adi": "the patient",
-  "sezon": "1"
- },
- {
-  "no": 167,
-  "adi": "olive kitteridge",
-  "sezon": "1"
- },
- {
-  "no": 168,
-  "adi": "big love",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 169,
-  "adi": "the wire",
-  "sezon": "1, 2, 3, 4, 5."
- },
- {
-  "no": 170,
-  "adi": "in treatment",
-  "sezon": "1, 2, 3"
- },
- {
-  "no": 171,
-  "adi": "the night of",
-  "sezon": "1."
- },
- {
-  "no": 172,
-  "adi": "barry",
-  "sezon": "1, 2, 3, 4."
- },
- {
-  "no": 173,
-  "adi": "mare of easttown",
-  "sezon": "1."
- },
- {
-  "no": 174,
-  "adi": "rectify",
-  "sezon": "1, 2, 3, 4."
- },
- {
-  "no": 175,
-  "adi": "tell me you love me",
-  "sezon": "1."
- },
-  {
-  "no": 176,
-  "adi": "the knick",
-  "sezon": "1, 2."
- }
-],
 "filmler":[
  {
   "no": 1,
@@ -7452,5 +6482,975 @@
   "adi": "kingdom of heaven",
   "yil": "2005"
  }
-]
+],
+"diziler":[
+ {
+  "no": 1,
+  "adi": "coupling",
+  "sezon": "1, 2, 3, 4.",
+  "aciklama": "uk"
+ },
+ {
+  "no": 2,
+  "adi": "desperate housewives",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
+ },
+ {
+  "no": 3,
+  "adi": "friends",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10."
+ },
+ {
+  "no": 4,
+  "adi": "how i met your mother",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9."
+ },
+ {
+  "no": 6,
+  "adi": "nip tuck",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 7,
+  "adi": "prison break",
+  "sezon": "1, 2, 3, 4."
+ },
+ {
+  "no": 8,
+  "adi": "the simpsons",
+  "sezon": "1.......................................35"
+ },
+ {
+  "no": 9,
+  "adi": "south park",
+  "sezon": "1............................22"
+ },
+ {
+  "no": 10,
+  "adi": "the 4400",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 11,
+  "adi": "that '70s show",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
+ },
+ {
+  "no": 12,
+  "adi": "six feet under",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 13,
+  "adi": "carnivale",
+  "sezon": "1, 2."
+ },
+ {
+  "no": 14,
+  "adi": "seinfeld",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9."
+ },
+ {
+  "no": 21,
+  "adi": "its always sunny in philadelphia",
+  "sezon": "1....................14"
+ },
+ {
+  "no": 15,
+  "adi": "dexter",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8. --- 9"
+ },
+ {
+  "no": 16,
+  "adi": "oz",
+  "sezon": "1, 2, 3, 4, 5, 6."
+ },
+ {
+  "no": 17,
+  "adi": "the lost room"
+ },
+ {
+  "no": 20,
+  "adi": "entourage",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 18,
+  "adi": "csi: crime scene investigation",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 19,
+  "adi": "weeds",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
+ },
+ {
+  "no": 22,
+  "adi": "breaking bad",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 23,
+  "adi": "two and a half men",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 24,
+  "adi": "firefly",
+  "sezon": "1."
+ },
+ {
+  "no": 25,
+  "adi": "two guys and a girl",
+  "sezon": "1, 2, 3, 4."
+ },
+ {
+  "no": 26,
+  "adi": "the good wife",
+  "sezon": "1, 2, 3, 4, 5, 6, 7."
+ },
+ {
+  "no": 27,
+  "adi": "2 broke girls",
+  "sezon": "1, 2, 3, 4, 5, 6."
+ },
+ {
+  "no": 28,
+  "adi": "game of thrones",
+  "sezon": "1, 2, 3, 4, 5, 6 7, 8."
+ },
+ {
+  "no": 29,
+  "adi": "arrested development",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 30,
+  "adi": "hannibal",
+  "sezon": "1, 2, 3."
+ },
+ {
+  "no": 31,
+  "adi": "person of interest",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 32,
+  "adi": "sherlock",
+  "sezon": "1, 2, 3, 4,"
+ },
+ {
+  "no": 33,
+  "adi": "true detective",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 34,
+  "adi": "mr. robot",
+  "sezon": "1, 2,"
+ },
+ {
+  "no": 35,
+  "adi": "homeland",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8."
+ },
+ {
+  "no": 36,
+  "adi": "fringe",
+  "sezon": "1"
+ },
+ {
+  "no": 37,
+  "adi": "better call saul",
+  "sezon": "1, 2, 3, 4, 5, 6"
+ },
+ {
+  "no": 38,
+  "adi": "house of cards",
+  "sezon": "1, 2, 3, 4, 5, 6."
+ },
+ {
+  "no": 39,
+  "adi": "boardwalk empire",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 40,
+  "adi": "dekalog",
+  "sezon": "1."
+ },
+ {
+  "no": 41,
+  "adi": "black mirror",
+  "sezon": "1, 2, 3, 4, 5, 6, 7"
+ },
+ {
+  "no": 42,
+  "adi": "the mentalist",
+  "sezon": "1, 2,"
+ },
+ {
+  "no": 43,
+  "adi": "rick and morty",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 44,
+  "adi": "making a murderer"
+ },
+ {
+  "no": 45,
+  "adi": "fargo",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 46,
+  "adi": "narcos",
+  "sezon": "1, 2, 3."
+ },
+ {
+  "no": 47,
+  "adi": "daredevil",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 48,
+  "adi": "orphan black",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 49,
+  "adi": "suits",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9"
+ },
+ {
+  "no": 50,
+  "adi": "deadwood",
+  "sezon": "1, 2, 3."
+ },
+ {
+  "no": 51,
+  "adi": "shameless",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11"
+ },
+ {
+  "no": 52,
+  "adi": "orange is the new black",
+  "sezon": "1, 2, 3, 4, 5, 6, "
+ },
+ {
+  "no": 53,
+  "adi": "futurama",
+  "sezon": "1, 2, 3, 4, 5, 6, 7."
+ },
+ {
+  "no": 54,
+  "adi": "how to get away with murder",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 55,
+  "adi": "rome",
+  "sezon": "1, 2."
+ },
+ {
+  "no": 56,
+  "adi": "peaky blinders",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 57,
+  "adi": "carlos",
+  "sezon": "1."
+ },
+ {
+  "no": 58,
+  "adi": "the sopranos",
+  "sezon": "1, 2, 3, 4, 5, 6."
+ },
+ {
+  "no": 59,
+  "adi": "north & south",
+  "sezon": "2004"
+ },
+ {
+  "no": 60,
+  "adi": "downton abbey",
+  "sezon": "1, 2, 3, 4, 5, 6."
+ },
+ {
+  "no": 61,
+  "adi": "battlestar galactica",
+  "sezon": "1, 2, 3, 4."
+ },
+ {
+  "no": 63,
+  "adi": "dirk gentlys holistic detective agency",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 64,
+  "adi": "luke cage",
+  "sezon": "1, "
+ },
+ {
+  "no": 65,
+  "adi": "apartment 23",
+  "sezon": "1, 2."
+ },
+ {
+  "no": 66,
+  "adi": "white collar",
+  "sezon": "1, 2, 3, 4, 5, 6."
+ },
+ {
+  "no": 67,
+  "adi": "vikings",
+  "sezon": "1, 2, 3 , 4, 5, 6"
+ },
+ {
+  "no": 68,
+  "adi": "the crown",
+  "sezon": "1, 2."
+ },
+ {
+  "no": 69,
+  "adi": "bates motel",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 115,
+  "adi": "ratched",
+  "sezon": "1,"
+ },
+ {
+  "no": 70,
+  "adi": "stranger things",
+  "sezon": "1, 2, "
+ },
+ {
+  "no": 71,
+  "adi": "the 100",
+  "sezon": "1, 2, 3, 4, 5, "
+ },
+ {
+  "no": 72,
+  "adi": "narcos: mexico",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 73,
+  "adi": "the blacklist",
+  "sezon": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+ },
+ {
+  "no": 74,
+  "adi": "chernobyl",
+  "sezon": "1."
+ },
+ {
+  "no": 75,
+  "adi": "taboo",
+  "sezon": "1, "
+ },
+ {
+  "no": 76,
+  "adi": "easy",
+  "sezon": "1, 2, 3,"
+ },
+ {
+  "no": 77,
+  "adi": "poldark",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 78,
+  "adi": "mindhunter",
+  "sezon": "1, 2, "
+ },
+ {
+  "no": 79,
+  "adi": "disenchantment",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 80,
+  "adi": "the sinner",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 81,
+  "adi": "the spy"
+ },
+ {
+  "no": 82,
+  "adi": "el chapo",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 83,
+  "adi": "ozark",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 84,
+  "adi": "pablo escobar: el patrÃ³n del mal",
+  "sezon": "1."
+ },
+ {
+  "no": 85,
+  "adi": "you me her",
+  "sezon": "1, 2, 3, 4,"
+ },
+ {
+  "no": 86,
+  "adi": "atypical",
+  "sezon": "1, 2, 3, 4,"
+ },
+ {
+  "no": 87,
+  "adi": "sex education",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 88,
+  "adi": "the end of the f...ing world",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 90,
+  "adi": "outlander",
+  "sezon": "1, 2, 3, 4, 5, 6, 7"
+ },
+ {
+  "no": 91,
+  "adi": "la casa de papel",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 92,
+  "adi": "o mecanismo",
+  "sezon": "1, 2."
+ },
+ {
+  "no": 93,
+  "adi": "you",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 94,
+  "adi": "unorthodox"
+ },
+ {
+  "no": 95,
+  "adi": "i am not okay with this",
+  "sezon": "1, "
+ },
+ {
+  "no": 96,
+  "adi": "dirty john",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 97,
+  "adi": "modern family",
+  "sezon": "1.........11"
+ },
+ {
+  "no": 98,
+  "adi": "skins",
+  "sezon": "1, 2, 3, 4, 5, 6, 7"
+ },
+ {
+  "no": 99,
+  "adi": "brooklyn nine-nine"
+ },
+ {
+  "no": 100,
+  "adi": "bojack horseman",
+  "sezon": "1, 2, 3, 4, 5, 6"
+ },
+ {
+  "no": 101,
+  "adi": "the it crowd",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 102,
+  "adi": "when they see us"
+ },
+ {
+  "no": 103,
+  "adi": "mad men",
+  "sezon": "1, 2,"
+ },
+ {
+  "no": 104,
+  "adi": "love, death & robots",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 105,
+  "adi": "bodyguard",
+  "sezon": "1"
+ },
+ {
+  "no": 108,
+  "adi": "anne with an e",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 109,
+  "adi": "trotsky",
+  "sezon": "1"
+ },
+ {
+  "no": 110,
+  "adi": "after life",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 111,
+  "adi": "designated survivor",
+  "sezon": "1, 2, 3,"
+ },
+ {
+  "no": 112,
+  "adi": "las chicas del cable",
+  "sezon": "1, 2, 3, 4,"
+ },
+ {
+  "no": 113,
+  "adi": "the queen's gambit"
+ },
+ {
+  "no": 114,
+  "adi": "monty python's flying circus",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 116,
+  "adi": "community",
+  "sezon": "1, 2, 3, 4, 5, 6"
+ },
+ {
+  "no": 117,
+  "adi": "la foret (the forest)",
+  "sezon": "1"
+ },
+ {
+  "no": 118,
+  "adi": "safe",
+  "sezon": "1,"
+ },
+ {
+  "no": 119,
+  "adi": "manhunt: unabomber"
+ },
+ {
+  "no": 120,
+  "adi": "behind her eyes",
+  "sezon": "1"
+ },
+ {
+  "no": 121,
+  "adi": "elite",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 122,
+  "adi": "sense and sensibility",
+  "sezon": "1."
+ },
+ {
+  "no": 123,
+  "adi": "star trek: the next generation",
+  "sezon": "1.....7"
+ },
+ {
+  "no": 124,
+  "adi": "five came back",
+  "sezon": "1"
+ },
+ {
+  "no": 125,
+  "adi": "sexify",
+  "sezon": "1,"
+ },
+ {
+  "no": 126,
+  "adi": "real detective",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 127,
+  "adi": "on becoming a god in central florida"
+ },
+ {
+  "no": 128,
+  "adi": "sex life",
+  "sezon": "1, "
+ },
+ {
+  "no": 129,
+  "adi": "i think you should leave now",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 130,
+  "adi": "the people vs. o.j. simpson"
+ },
+ {
+  "no": 131,
+  "adi": "good girls",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 132,
+  "adi": "close enough",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 133,
+  "adi": "trailer park boys",
+  "sezon": "1, 2, 3.......11, 12"
+ },
+ {
+  "no": 134,
+  "adi": "colony",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 135,
+  "adi": "the good place",
+  "sezon": "1, 2, 3,"
+ },
+ {
+  "no": 136,
+  "adi": "superstore",
+  "sezon": "1, 2,"
+ },
+ {
+  "no": 137,
+  "adi": "for life",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 138,
+  "adi": "inventing anna",
+  "sezon": "1"
+ },
+ {
+  "no": 139,
+  "adi": "the marvelous mrs. maisel",
+  "sezon": "1, 2, 3, 4, 5"
+ },
+ {
+  "no": 140,
+  "adi": "the good fight",
+  "sezon": "1, 2, 3, 4, 5, 6"
+ },
+ {
+  "no": 141,
+  "adi": "midnight diner",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 142,
+  "adi": "the white queen"
+ },
+ {
+  "no": 143,
+  "adi": "fleabag",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 144,
+  "adi": "goliath",
+  "sezon": "1, 2, 3, 4"
+ },
+ {
+  "no": 145,
+  "adi": "law & order",
+  "sezon": "..... 6, 7, 8,"
+ },
+ {
+  "no": 146,
+  "adi": "midnight diner: tokyo series",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 147,
+  "adi": "squid game",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 148,
+  "adi": "gilmore girls",
+  "sezon": "1, 2, 3, 4, 5, 6, 7 --- 8"
+ },
+ {
+  "no": 149,
+  "adi": "crisis in six scenes",
+  "sezon": "1"
+ },
+ {
+  "no": 150,
+  "adi": "trailer park boys: out of park - europe"
+ },
+ {
+  "no": 151,
+  "adi": "trailer park boys: out of park - usa"
+ },
+ {
+  "no": 152,
+  "adi": "trailer park boys: the animated series",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 153,
+  "adi": "man seeking woman",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 154,
+  "adi": "love life",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 155,
+  "adi": "the messiah",
+  "sezon": "1"
+ },
+ {
+  "no": 156,
+  "adi": "this is us",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 157,
+  "adi": "the last of us",
+  "sezon": "1, "
+ },
+ {
+  "no": 158,
+  "adi": "the bear",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 159,
+  "adi": "spartacus",
+  "sezon": "1, 0, 2, 3"
+ },
+ {
+  "no": 160,
+  "adi": "1923",
+  "sezon": "1, 2."
+ },
+ {
+  "no": 161,
+  "adi": "elsbeth",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 162,
+  "adi": "the handmaid's tale",
+  "sezon": "1, 2"
+ },
+ {
+  "no": 163,
+  "adi": "the gilded age",
+  "sezon": "1, "
+ },
+ {
+  "no": 164,
+  "adi": "dexter: original sin",
+  "sezon": "1"
+ },
+ {
+  "no": 165,
+  "adi": "dexter: resurrection",
+  "sezon": "1"
+ },
+ {
+  "no": 166,
+  "adi": "the patient",
+  "sezon": "1"
+ },
+ {
+  "no": 167,
+  "adi": "olive kitteridge",
+  "sezon": "1"
+ },
+ {
+  "no": 168,
+  "adi": "big love",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 169,
+  "adi": "the wire",
+  "sezon": "1, 2, 3, 4, 5."
+ },
+ {
+  "no": 170,
+  "adi": "in treatment",
+  "sezon": "1, 2, 3"
+ },
+ {
+  "no": 171,
+  "adi": "the night of",
+  "sezon": "1."
+ },
+ {
+  "no": 172,
+  "adi": "barry",
+  "sezon": "1, 2, 3, 4."
+ },
+ {
+  "no": 173,
+  "adi": "mare of easttown",
+  "sezon": "1."
+ },
+ {
+  "no": 174,
+  "adi": "rectify",
+  "sezon": "1, 2, 3, 4."
+ },
+ {
+  "no": 175,
+  "adi": "tell me you love me",
+  "sezon": "1."
+ },
+  {
+  "no": 176,
+  "adi": "the knick",
+  "sezon": "1, 2."
+ }
+],
+ "belgeseller":[
+ {
+  "no": 9,
+  "adi": "journey to the edge of the universe",
+  "aciklama": "2008"
+ },
+ {
+  "no": 3,
+  "adi": "zeitgeist 1, 2, 3"
+ },
+ {
+  "no": 12,
+  "adi": "the Corporation",
+  "aciklama": "2003"
+ },
+ {
+  "no": 5,
+  "adi": "bbc - human instinct"
+ },
+ {
+  "no": 17,
+  "adi": "an inconvenient truth"
+ },
+ {
+  "no": 7,
+  "adi": "america: freedom to fascism"
+ },
+ {
+  "no": 8,
+  "adi": "nature's great events",
+  "aciklama": "(nature's most amazing events) 1, 2, 3, 4, 5, 6"
+ },
+ {
+  "no": 10,
+  "adi": "cave of forgotten dreams",
+  "aciklama": "2010"
+ },
+ {
+  "no": 11,
+  "adi": "inside job",
+  "aciklama": "2010"
+ },
+ {
+  "no": 13,
+  "adi": "religulous",
+  "aciklama": "2008"
+ },
+ {
+  "no": 14,
+  "adi": "the century of the self",
+  "aciklama": "2002"
+ },
+ {
+  "no": 20,
+  "adi": "planet earth 1, 2",
+  "aciklama": "2006, 2016"
+ },
+ {
+  "no": 16,
+  "adi": "the fog og war",
+  "aciklama": "2003"
+ },
+ {
+  "no": 18,
+  "adi": "carl sagan's Cosmos"
+ },
+ {
+  "no": 19,
+  "adi": "guns, sems and steel"
+ },
+ {
+  "no": 21,
+  "adi": "cosmos: a spacetime odyssey"
+ },
+ {
+  "no": 22,
+  "adi": "life",
+  "aciklama": "2009"
+ },
+ {
+  "no": 23,
+  "adi": "human planet",
+  "aciklama": "2011"
+ },
+ {
+  "no": 24,
+  "adi": "citizenfour",
+  "aciklama": "2014"
+ },
+ {
+  "no": 25,
+  "adi": "home",
+  "aciklama": "2009"
+ },
+ {
+  "no": 26,
+  "adi": "andrew marr's history of the world",
+  "aciklama": "2012"
+ },
+ {
+  "no": 27,
+  "adi": "mars (national geographic)",
+  "aciklama": "2016"
+ },
+ {
+  "no": 28,
+  "adi": "the untold history of the united states",
+  "aciklama": "2012"
+ },
+ {
+  "no": 30,
+  "adi": "zero days",
+  "aciklama": "2016"
+ },
+ {
+  "no": 31,
+  "adi": "samsara",
+  "aciklama": "2011"
+ },
+ {
+  "no": 32,
+  "adi": "the cove",
+  "aciklama": "2009"
+ }
+] 
 }
