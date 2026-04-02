@@ -95,6 +95,17 @@
     .then(r => r.json())
     .then(veri => {
 
+  // Sayım bilgisini göster
+ const filmSayisi = (veri.filmler || []).length;
+ const diziSayisi = (veri.diziler || []).length;
+ const belgeselSayisi = (veri.belgeseller || []).length;
+ const sayimEl = document.createElement("p");
+ sayimEl.style.cssText = "font-size:10px;color:#84BA79;margin:1px 0 4px 0;";
+ sayimEl.textContent =
+ filmSayisi + " film · " + diziSayisi + " dizi · " + belgeselSayisi + " belgesel";
+ document.getElementById("guncelleme").insertAdjacentElement("afterend", sayimEl);
+
+
       const siraVer = (arr) => arr.slice().sort((a, b) =>
         a.adi.localeCompare(b.adi, "tr", {sensitivity: "base"}));
 
