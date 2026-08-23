@@ -1,31 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
-  <meta name="description" content=".." />
   <meta charset="utf-8">
-  <title>sohbet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
-<!--  <meta http-equiv="refresh" content="0; url=https://m.enaramu.com">-->
+  <title>Sohbet Yönlendirme</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-color: #f8fafc;
+      --accent-color: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --border-color: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-item {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      text-align: center;
+      background-color: rgba(56, 189, 248, 0.05);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all 0.2s ease;
+    }
+
+    .link-item:hover {
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+    }
+
+    .link-item:active {
+      transform: translateY(0);
+    }
+  </style>
 </head>
-
 <body>
-  
+
 <div class="container">
-<h2><a href=https://selin.gt.tc/m>selin.gt.tc/m</a></h2><br><br>
-                                                            
-<h2><a href=https://m.enaramu.com>m.enaramu.com</a></h2><br><br>
-
-<h2><a href= https://yerel.enaramu.com>yerel yedek</a></h2><br><br>
-
-<h2><a href=https://enaramu.com/mapus.pdf>mapus</a></h2><br><br>
-
-
- 
+  <a href="https://selin.gt.tc/m" class="link-item">aslolan</a>
+  <a href="https://m.enaramu.com" class="link-item">ikincil</a>
+  <a href="https://yerel.enaramu.com" class="link-item">yerel yedek</a>
+  <a href="https://enaramu.com/mapus.pdf" class="link-item">mapus</a>
 </div>
-
 
 </body>
 </html>
