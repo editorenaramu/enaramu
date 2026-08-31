@@ -125,10 +125,13 @@
     }
   }
 
-  async function deleteImage(key) {
+ async function deleteImage(key) {
     if (!confirm("Bu resim kalıcı olarak silinsin mi?")) return;
     
-    const btn = document.querySelector(`#card-${key} .btn-delete`);
+    // Nokta (.) karakterinin CSS seçicisini bozmaması için getElementById kullanıldı
+    const card = document.getElementById(`card-${key}`);
+    const btn = card.querySelector('.btn-delete');
+    
     const originalText = btn.textContent;
     btn.textContent = "Siliniyor...";
     btn.disabled = true;
@@ -136,10 +139,9 @@
     try {
       const response = await fetch(`${API_URL}/api/images?key=${key}`, { method: 'DELETE' });
       if (response.ok) {
-        document.getElementById(`card-${key}`).remove();
+        card.remove();
         showMsg("Resim silindi.");
         
-        // Eğer son resim silindiyse "Henüz resim yok" uyarısını göster
         if (galleryDiv.children.length === 0) {
            galleryDiv.innerHTML = "<p class='empty-message'>Henüz hiç resim bulunmuyor.</p>";
            galleryDiv.style.display = "block";
@@ -155,7 +157,6 @@
       btn.disabled = false;
     }
   }
-
   // Sayfa açıldığında resimleri yükle
   loadImages();
 </script>
