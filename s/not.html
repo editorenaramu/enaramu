@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Metin Kayıt</title>
+  <style>
+    /* Orijinal CSS tasarımın birebir aynısı */
+    * { box-sizing: border-box; }
+    html { margin: 0; padding: 0; }
+    body { min-height: 100vh; margin: 0; padding: 1rem 0.5rem; font-family: sans-serif; font-size: 15px; color: #333; background-color: #f8f9fa; display: flex; flex-direction: column; align-items: center; }
+    .container { width: 100%; max-width: 40rem; display: flex; flex-direction: column; gap: 1.25rem; }
+    .card { background: #ffffff; border-radius: 12px; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eaeaea; }
+    h2, h3 { margin: 0 0 1rem 0; font-size: 1.15rem; font-weight: 600; color: #222; }
+    form { display: flex; flex-direction: column; gap: 0.75rem; }
+    input[type="text"], textarea { width: 100%; padding: 0.75rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.95rem; font-family: inherit; outline: none; background-color: #fafafa; transition: all 0.2s; }
+    input[type="text"]:focus, textarea:focus { border-color: #28a745; background-color: #fff; box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15); }
+    textarea { height: 140px; resize: vertical; line-height: 1.5; }
+    button { background-color: #28a745; color: white; border: none; padding: 0.75rem; border-radius: 20px; font-weight: bold; font-size: 0.95rem; cursor: pointer; transition: 0.2s; }
+    button:hover { filter: brightness(0.95); }
+    .alert { background-color: #f8d7da; color: #721c24; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid #f5c6cb; margin-bottom: 1rem; font-size: 0.95rem; display: none; }
+    .file-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem; }
+    .file-wrapper { background: #ffffff; border: 1px solid #eaeaea; border-radius: 10px; overflow: hidden; transition: 0.15s; }
+    .file-wrapper:hover { border-color: #ccc; }
+    .file-item { display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1rem; }
+    .file-info { display: flex; flex-direction: column; gap: 0.2rem; }
+    .file-title { color: #007bff; font-weight: 600; font-size: 0.95rem; word-break: break-all; margin: 0;}
+    .file-meta { font-size: 0.75rem; color: #888; }
+    .file-actions { display: flex; gap: 0.5rem; flex-shrink: 0; }
+    .duzenle-btn { background-color: #e7f1ff; color: #007bff; border: 1px solid #cce5ff; padding: 0.35rem 0.75rem; border-radius: 6px; font-size: 0.8rem; cursor: pointer; }
+    .duzenle-btn:hover { background-color: #007bff; color: #ffffff; }
+    .sil-btn { color: #dc3545; background-color: #fff5f5; border: 1px solid #ffe3e3; padding: 0.35rem 0.75rem; border-radius: 6px; font-size: 0.8rem; cursor: pointer; }
+    .sil-btn:hover { background-color: #dc3545; color: #ffffff; }
+    .edit-container { display: none; padding: 1rem; background-color: #fafafa; border-top: 1px solid #eaeaea; }
+    .edit-container.active { display: block; }
+    .empty-state { text-align: center; color: #888; font-size: 0.9rem; padding: 1.5rem 0; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Yeni Not Ekle -->
+  <div class="card">
+    <h2>Yeni Metin Ekle</h2>
+    <div id="alertBox" class="alert"></div>
+    <form id="newNoteForm">
+      <input type="text" id="baslik" placeholder="Başlık girin..." required autocomplete="off">
+      <textarea id="icerik" placeholder="İçeriğinizi buraya yazın..." required></textarea>
+      <button type="submit">Kaydet</button>
+    </form>
+  </div>
+
+  <!-- Kayıtlı Notlar -->
+  <div class="card">
+    <h3>Kayıtlı Metinler</h3>
+    <div id="notesContainer"><div class="empty-state">Yükleniyor...</div></div>
+  </div>
+</div>
+
+<script>
+  const API_URL = "https://s-api.salmezun.workers.dev/api/notes";
+  const alertBox = document.getElementById('alertBox');
+  
+  function showAlert(msg) {
+    alertBox.textContent = msg;
+    alertBox.style.display = 'block';
+    setTimeout(() => alertBox.style.display = 'none', 4000);
+  }
+
+  // Notları Listeleme
+  async function loadNotes() {
+    try {
+      const res = await fetch(API_URL);
+      const notes = await res.json();
+      const container = document.getElementById('notesContainer');
+      
+      if (notes.length === 0) {
+        container.innerHTML = '<div class="empty-state">Henüz kayıtlı bir metin bulunmuyor.</div>';
+        return;
+      }
+
+      let html = '<ul class="file-list">';
+      notes.forEach(note => {
+        const date = new Date(note.time * 1000);
+        const dateStr = date.toLocaleDateString('tr-TR') + ' - ' + date.toLocaleTimeString('tr-TR', {hour: '2-digit', minute:'2-digit'});
+        // İçeriğin yaklaşık byte boyutunu hesapla
+        const size = (new Blob([note.content]).size / 1024).toFixed(1) + ' KB';
+        
+        // Zararlı HTML kodlarını engellemek için kaçış işlemi
+        const safeTitle = note.title.replace(/</g, "&lt;");
+        const safeContent = note.content.replace(/</g, "&lt;");
+
+        html += `
+          <li class="file-wrapper" id="note-${note.id}">
+            <div class="file-item">
+              <div class="file-info">
+                <p class="file-title">${safeTitle}.txt</p>
+                <span class="file-meta">${dateStr} • ${size}</span>
+              </div>
+              <div class="file-actions">
+                <button type="button" class="duzenle-btn" onclick="toggleEdit(${note.id})">Düzenle</button>
+                <button type="button" class="sil-btn" onclick="deleteNote(${note.id})">Sil</button>
+              </div>
+            </div>
+            <div class="edit-container" id="edit-${note.id}">
+              <form onsubmit="updateNote(event, ${note.id})">
+                <textarea id="edit-content-${note.id}" required>${safeContent}</textarea>
+                <button type="submit">Güncelle</button>
+              </form>
+            </div>
+          </li>
+        `;
+      });
+      html += '</ul>';
+      container.innerHTML = html;
+    } catch (e) {
+      document.getElementById('notesContainer').innerHTML = '<div class="empty-state">Bağlantı hatası.</div>';
+    }
+  }
+
+  // Yeni Not Gönderme
+  document.getElementById('newNoteForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const title = document.getElementById('baslik').value;
+    const content = document.getElementById('icerik').value;
+    
+    const formData = new FormData();
+    formData.append("title", title);
+    formData.append("content", content);
+
+    const req = await fetch(API_URL, { method: "POST", body: formData });
+    
+    if (req.ok) {
+      document.getElementById('newNoteForm').reset();
+      loadNotes();
+    } else if (req.status === 429) {
+      showAlert("Flood Koruması: 1 dakikada en fazla 3 kayıt yapabilirsiniz.");
+    } else {
+      showAlert("Kayıt sırasında hata oluştu.");
+    }
+  });
+
+  // Not Güncelleme
+  async function updateNote(e, id) {
+    e.preventDefault();
+    const content = document.getElementById(`edit-content-${id}`).value;
+    
+    const formData = new FormData();
+    formData.append("id", id);
+    formData.append("content", content);
+
+    await fetch(API_URL, { method: "PUT", body: formData });
+    loadNotes();
+  }
+
+  // Not Silme
+  async function deleteNote(id) {
+    if (!confirm("Bu dosyayı silmek istediğinize emin misiniz?")) return;
+    await fetch(`${API_URL}?id=${id}`, { method: "DELETE" });
+    document.getElementById(`note-${id}`).remove();
+    
+    // Son not silindiyse listeyi yenile
+    if(document.querySelectorAll('.file-wrapper').length === 0) loadNotes();
+  }
+
+  // Form Aç Kapa
+  function toggleEdit(id) {
+    const el = document.getElementById(`edit-${id}`);
+    const isActive = el.classList.contains('active');
+    document.querySelectorAll('.edit-container').forEach(f => f.classList.remove('active'));
+    if (!isActive) el.classList.add('active');
+  }
+
+  // Sayfa açıldığında notları yükle
+  loadNotes();
+</script>
+
+</body>
+</html>
