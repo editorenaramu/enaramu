@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resim Yükle</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-color: #f8fafc;
+      --accent-color: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --border-color: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .file-input-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      border: 2px dashed var(--border-color);
+      border-radius: 12px;
+      background-color: rgba(15, 23, 42, 0.4);
+      transition: border-color 0.2s ease;
+      cursor: pointer;
+    }
+    .file-input-wrapper:hover { border-color: var(--accent-color); }
+    input[type="file"] { width: 100%; color: var(--text-color); font-size: 0.9rem; cursor: pointer; }
+    input[type="file"]::file-selector-button {
+      background-color: var(--border-color);
+      color: var(--text-color);
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      margin-right: 12px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    input[type="file"]::file-selector-button:hover { background-color: #475569; }
+    .btn-submit {
+      width: 100%;
+      padding: 14px 20px;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .btn-submit:hover { background-color: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25); }
+    .btn-submit:active { transform: translateY(0); }
+    .info-text { color: #94a3b8; font-size: 0.85rem; line-height: 1.4; margin-top: 8px; }
+    .alert { padding: 14px 16px; border-radius: 10px; margin-bottom: 16px; font-size: 0.95rem; font-weight: 500; display: none; }
+    .alert-success { background-color: rgba(34, 197, 94, 0.15); border: 1px solid #22c55e; color: #4ade80; }
+    .alert-error { background-color: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #f87171; }
+    .btn-link {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 20px;
+      background-color: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border-color);
+      color: var(--accent-color);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .btn-link:hover { background-color: var(--accent-color); color: var(--bg-color); }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div id="alertBox" class="alert"></div>
+
+  <form id="uploadForm">
+    <div class="form-group">
+      <div class="file-input-wrapper">
+        <input type="file" id="fileInput" accept="image/*" required>
+      </div>
+      <button type="submit" id="submitBtn" class="btn-submit">Resmi Gönder</button>
+    </div>
+    <p class="info-text">Dosya yüklendi yazısı çıkana kadar bekleyiniz.</p>
+  </form>
+  
+  <a href="../index.html" class="btn-link">Sohbete Dön</a>
+</div>
+
+<script>
+  const API_URL = "https://s-api.salmezun.workers.dev";
+  const form = document.getElementById('uploadForm');
+  const fileInput = document.getElementById('fileInput');
+  const alertBox = document.getElementById('alertBox');
+  const submitBtn = document.getElementById('submitBtn');
+
+  function showAlert(msg, isSuccess) {
+    alertBox.style.display = 'block';
+    alertBox.className = 'alert ' + (isSuccess ? 'alert-success' : 'alert-error');
+    alertBox.innerHTML = msg;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const file = fileInput.files[0];
+    if (!file) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Boyutlandırılıyor & Yükleniyor...";
+    alertBox.style.display = 'none';
+
+    // Resmi tarayıcıda küçült
+    const img = new Image();
+    img.src = URL.createObjectURL(file);
+    
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      let width = img.width;
+      let height = img.height;
+
+      if (width > 660) {
+        height = Math.round((height * 660) / width);
+        width = 660;
+      }
+
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, width, height);
+
+      // %80 JPG kalitesinde dışa aktar ve yolla
+      canvas.toBlob(async (blob) => {
+        const formData = new FormData();
+        formData.append("resim", blob, file.name);
+
+        try {
+          const req = await fetch(`${API_URL}/api/upload`, { method: "POST", body: formData });
+          if(req.ok) {
+            showAlert("Dosya başarıyla yüklendi.", true);
+            form.reset();
+          } else {
+            showAlert("Dosya yüklenemedi. Sunucu hatası.", false);
+          }
+        } catch (err) {
+          showAlert("Bağlantı hatası.", false);
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Resmi Gönder";
+        }
+      }, 'image/jpeg', 0.80);
+    };
+
+    img.onerror = () => {
+      showAlert("Geçersiz resim dosyası.", false);
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Resmi Gönder";
+    };
+  });
+</script>
+
+</body>
+</html>
