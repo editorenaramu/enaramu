@@ -17,44 +17,35 @@
     button { background: #3498db; color: #fff; border: none; padding: 12px; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.2s; }
     button:hover { background: #2980b9; }
     button:disabled { background: #95a5a6; cursor: not-allowed; }
-    .msg { display: none; padding: 10px; background: #d4edda; color: #155724; border-radius: 8px; margin-bottom: 15px; font-weight: bold; text-align: center;}
-    ul { list-style: none; padding: 0; margin: 0; }
-    li { background: #fdfdfd; border: 1px solid #eee; margin-bottom: 8px; padding: 12px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;}
-    .info strong { color: #2c3e50; display: block; font-size: 1.05rem; }
-    .info span { color: #7f8c8d; font-size: 0.85rem; }
-    .btn-del { background: #fee2e2; color: #ef4444; border: 1px solid #fca5a5; padding: 6px 10px; border-radius: 6px; font-size: 0.8rem; cursor: pointer; font-weight: bold; }
-    .btn-del:hover { background: #ef4444; color: #fff; }
+    .msg { display: none; padding: 12px; background: #d4edda; color: #155724; border-radius: 8px; margin-bottom: 15px; font-weight: bold; text-align: center;}
   </style>
 </head>
 <body>
 
 <div class="container">
-  <div id="msgBox" class="msg">✔ Veri eklendi ve GitHub'a kaydedildi!</div>
+  <div id="msgBox" class="msg">✔ Başarıyla GitHub'a eklendi!</div>
 
   <div class="card">
     <h2>🎬 Film Ekle</h2>
     <form id="formMovie">
-      <input type="text" id="mName" placeholder="Film adı" required>
-      <input type="text" id="mYear" placeholder="Yıl" required>
-      <button type="submit" id="btnMovie">Ekle</button>
+      <input type="text" id="mName" placeholder="Film adı" required autocomplete="off">
+      <input type="text" id="mYear" placeholder="Yıl" required autocomplete="off">
+      <button type="submit" id="btnMovie">Film Ekle</button>
     </form>
-    <ul id="movieList" style="margin-top: 15px;">Yükleniyor...</ul>
   </div>
 
   <div class="card">
     <h2>📺 Dizi Ekle</h2>
     <form id="formSeries">
-      <input type="text" id="sName" placeholder="Dizi adı" required>
-      <input type="text" id="sSeason" placeholder="Sezonlar (1,2,3...)" required>
-      <input type="text" id="sDesc" placeholder="Açıklama (Opsiyonel)">
-      <button type="submit" id="btnSeries">Ekle</button>
+      <input type="text" id="sName" placeholder="Dizi adı" required autocomplete="off">
+      <input type="text" id="sSeason" placeholder="Sezonlar (1,2,3...)" required autocomplete="off">
+      <input type="text" id="sDesc" placeholder="Açıklama (Opsiyonel)" autocomplete="off">
+      <button type="submit" id="btnSeries">Dizi Ekle</button>
     </form>
-    <ul id="seriesList" style="margin-top: 15px;">Yükleniyor...</ul>
   </div>
 </div>
 
 <script>
-  // Kendi GitHub bilgilerin (Eski config.php'den alındı)
   const GH_TOKEN = "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";
   const GH_REPO = "editorenaramu/enaramu";
   const GH_FILE = "veri.json";
@@ -66,133 +57,81 @@
     "Content-Type": "application/json"
   };
 
-  function showMsg() {
+  function showMsg(text) {
     const box = document.getElementById('msgBox');
+    box.textContent = text;
     box.style.display = 'block';
     setTimeout(() => box.style.display = 'none', 3000);
   }
 
-  // GitHub'dan veri.json dosyasını çek
-  async function fetchGitHubData() {
-    try {
-      const res = await fetch(API_BASE, { headers });
-      const data = await res.json();
-      const jsonContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
-      return { json: jsonContent, sha: data.sha };
-    } catch (e) {
-      console.error("GitHub veri çekme hatası", e);
-      return null;
-    }
-  }
-
-  // Listeleri ekrana bas
-  async function loadData() {
-    const remote = await fetchGitHubData();
-    if (!remote) return;
-
-    const { filmler = [], diziler = [] } = remote.json;
-
-    document.getElementById('movieList').innerHTML = filmler.length ? filmler.map((m, idx) => `
-      <li>
-        <div class="info"><strong>${m.adi}</strong><span>Yıl: ${m.yil}</span></div>
-        <button class="btn-del" onclick="deleteItem('movie', ${idx})">Sil</button>
-      </li>`).join('') : '<li style="color:#888; justify-content:center;">Film yok</li>';
-
-    document.getElementById('seriesList').innerHTML = diziler.length ? diziler.map((s, idx) => `
-      <li>
-        <div class="info"><strong>${s.adi}</strong><span>Sezon: ${s.sezon} | ${s.aciklama || ''}</span></div>
-        <button class="btn-del" onclick="deleteItem('series', ${idx})">Sil</button>
-      </li>`).join('') : '<li style="color:#888; justify-content:center;">Dizi yok</li>';
-  }
-
-  // GitHub'a güncel JSON dosyasını gönder (Commit at)
-  async function updateGitHub(newJson, btnId) {
+  async function addToGitHub(newItem, type) {
+    const btnId = type === 'movie' ? 'btnMovie' : 'btnSeries';
     const btn = document.getElementById(btnId);
     btn.disabled = true;
     btn.textContent = "Kaydediliyor...";
 
-    // Önce güncel SHA kodunu tekrar al (çakışma olmasın diye)
-    const current = await fetchGitHubData();
-    if(!current) { alert("Bağlantı hatası"); btn.disabled = false; btn.textContent = "Ekle"; return; }
+    try {
+      // 1. Mevcut dosyayı ve SHA kodunu al
+      const getRes = await fetch(API_BASE, { headers });
+      if (!getRes.ok) throw new Error("Dosya okunamadı");
+      const data = await getRes.json();
+      
+      // İçeriği çöz
+      const jsonContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+      
+      // Listeye yeni veriyi ekle
+      if (type === 'movie') {
+        jsonContent.filmler = jsonContent.filmler || [];
+        jsonContent.filmler.push(newItem);
+      } else {
+        jsonContent.diziler = jsonContent.diziler || [];
+        jsonContent.diziler.push(newItem);
+      }
 
-    const body = {
-      message: "Web arayüzünden veri eklendi/silindi",
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(newJson, null, 2)))),
-      sha: current.sha
-    };
+      // 2. GitHub'a güncelleme isteği at (PUT)
+      const putRes = await fetch(API_BASE, {
+        method: "PUT",
+        headers,
+        body: JSON.stringify({
+          message: "Arayüzden yeni veri eklendi",
+          content: btoa(unescape(encodeURIComponent(JSON.stringify(jsonContent, null, 2)))),
+          sha: data.sha
+        })
+      });
 
-    const res = await fetch(API_BASE, {
-      method: "PUT",
-      headers,
-      body: JSON.stringify(body)
-    });
-
-    btn.disabled = false;
-    btn.textContent = "Ekle";
-
-    if (res.ok) {
-      showMsg();
-      loadData();
-    } else {
-      alert("GitHub kayıt hatası!");
+      if (putRes.ok) {
+        showMsg("✔ Başarıyla eklendi!");
+        if (type === 'movie') document.getElementById('formMovie').reset();
+        else document.getElementById('formSeries').reset();
+      } else {
+        alert("GitHub kayıt hatası!");
+      }
+    } catch (err) {
+      alert("Bir hata oluştu: " + err.message);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = type === 'movie' ? "Film Ekle" : "Dizi Ekle";
     }
   }
 
-  // Film Ekle
-  document.getElementById('formMovie').addEventListener('submit', async (e) => {
+  // Film Form Submit
+  document.getElementById('formMovie').addEventListener('submit', (e) => {
     e.preventDefault();
-    const remote = await fetchGitHubData();
-    if(!remote) return;
-    
-    remote.json.filmler = remote.json.filmler || [];
-    remote.json.filmler.push({
+    addToGitHub({
       adi: document.getElementById('mName').value.trim(),
       yil: document.getElementById('mYear').value.trim()
-    });
-
-    e.target.reset();
-    await updateGitHub(remote.json, 'btnMovie');
+    }, 'movie');
   });
 
-  // Dizi Ekle
-  document.getElementById('formSeries').addEventListener('submit', async (e) => {
+  // Dizi Form Submit
+  document.getElementById('formSeries').addEventListener('submit', (e) => {
     e.preventDefault();
-    const remote = await fetchGitHubData();
-    if(!remote) return;
-
-    remote.json.diziler = remote.json.diziler || [];
-    remote.json.diziler.push({
+    addToGitHub({
       adi: document.getElementById('sName').value.trim(),
       sezon: document.getElementById('sSeason').value.trim(),
       aciklama: document.getElementById('sDesc').value.trim()
-    });
-
-    e.target.reset();
-    await updateGitHub(remote.json, 'btnSeries');
+    }, 'series');
   });
-
-  // Veri Silme
-  async function deleteItem(type, index) {
-    if (!confirm("Silinsin mi?")) return;
-    const remote = await fetchGitHubData();
-    if(!remote) return;
-
-    if(type === 'movie') remote.json.filmler.splice(index, 1);
-    if(type === 'series') remote.json.diziler.splice(index, 1);
-
-    // Silme işleminde buton ID'si olmadığı için doğrudan update çağırıyoruz
-    const current = await fetchGitHubData();
-    const body = {
-      message: "Veri silindi",
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(remote.json, null, 2)))),
-      sha: current.sha
-    };
-
-    await fetch(API_BASE, { method: "PUT", headers, body: JSON.stringify(body) });
-    loadData();
-  }
-
-  loadData();
 </script>
 
 </body>
