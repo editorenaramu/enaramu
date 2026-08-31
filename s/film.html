@@ -46,16 +46,7 @@
 </div>
 
 <script>
-  const GH_TOKEN = "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";
-  const GH_REPO = "editorenaramu/enaramu";
-  const GH_FILE = "veri.json";
-  const API_BASE = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
-
-  const headers = {
-    "Authorization": `token ${GH_TOKEN}`,
-    "Accept": "application/vnd.github.v3+json",
-    "Content-Type": "application/json"
-  };
+  const API_URL = "https://s-api.salmezun.workers.dev/api/movies";
 
   function showMsg(text) {
     const box = document.getElementById('msgBox');
@@ -64,73 +55,50 @@
     setTimeout(() => box.style.display = 'none', 3000);
   }
 
-  async function addToGitHub(newItem, type) {
-    const btnId = type === 'movie' ? 'btnMovie' : 'btnSeries';
+  async function sendToServer(formData, btnId, formElement) {
     const btn = document.getElementById(btnId);
     btn.disabled = true;
     btn.textContent = "Kaydediliyor...";
 
     try {
-      // 1. Mevcut dosyayı ve SHA kodunu al
-      const getRes = await fetch(API_BASE, { headers });
-      if (!getRes.ok) throw new Error("Dosya okunamadı");
-      const data = await getRes.json();
-      
-      // İçeriği çöz
-      const jsonContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
-      
-      // Listeye yeni veriyi ekle
-      if (type === 'movie') {
-        jsonContent.filmler = jsonContent.filmler || [];
-        jsonContent.filmler.push(newItem);
-      } else {
-        jsonContent.diziler = jsonContent.diziler || [];
-        jsonContent.diziler.push(newItem);
-      }
-
-      // 2. GitHub'a güncelleme isteği at (PUT)
-      const putRes = await fetch(API_BASE, {
-        method: "PUT",
-        headers,
-        body: JSON.stringify({
-          message: "Arayüzden yeni veri eklendi",
-          content: btoa(unescape(encodeURIComponent(JSON.stringify(jsonContent, null, 2)))),
-          sha: data.sha
-        })
+      const res = await fetch(API_URL, {
+        method: "POST",
+        body: formData
       });
 
-      if (putRes.ok) {
-        showMsg("✔ Başarıyla eklendi!");
-        if (type === 'movie') document.getElementById('formMovie').reset();
-        else document.getElementById('formSeries').reset();
+      if (res.ok) {
+        showMsg("✔ Başarıyla GitHub'a eklendi!");
+        formElement.reset();
       } else {
-        alert("GitHub kayıt hatası!");
+        alert("Kayıt sırasında hata oluştu!");
       }
     } catch (err) {
-      alert("Bir hata oluştu: " + err.message);
+      alert("Bağlantı hatası.");
     } finally {
       btn.disabled = false;
-      btn.textContent = type === 'movie' ? "Film Ekle" : "Dizi Ekle";
+      btn.textContent = btnId === 'btnMovie' ? "Film Ekle" : "Dizi Ekle";
     }
   }
 
   // Film Form Submit
   document.getElementById('formMovie').addEventListener('submit', (e) => {
     e.preventDefault();
-    addToGitHub({
-      adi: document.getElementById('mName').value.trim(),
-      yil: document.getElementById('mYear').value.trim()
-    }, 'movie');
+    const fd = new FormData();
+    fd.append("type", "movie");
+    fd.append("name", document.getElementById('mName').value.trim());
+    fd.append("year", document.getElementById('mYear').value.trim());
+    sendToServer(fd, 'btnMovie', e.target);
   });
 
   // Dizi Form Submit
   document.getElementById('formSeries').addEventListener('submit', (e) => {
     e.preventDefault();
-    addToGitHub({
-      adi: document.getElementById('sName').value.trim(),
-      sezon: document.getElementById('sSeason').value.trim(),
-      aciklama: document.getElementById('sDesc').value.trim()
-    }, 'series');
+    const fd = new FormData();
+    fd.append("type", "series");
+    fd.append("name", document.getElementById('sName').value.trim());
+    fd.append("season", document.getElementById('sSeason').value.trim());
+    fd.append("desc", document.getElementById('sDesc').value.trim());
+    sendToServer(fd, 'btnSeries', e.target);
   });
 </script>
 
