@@ -164,9 +164,18 @@
     document.body.style.backgroundColor = initialBg;
 
     function linkify(text) {
-        return text.replace(/(https?:\/\/[^\s]+)/g,
-            url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`)
-    }
+    // http, https, www veya doğrudan alan adı ile başlayan linkleri yakalar
+    const regex = /\b((?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b(?:[-a-zA-Z0-9@:%_\+.~#?&//=]*))/gi;
+    
+    return text.replace(regex, (url) => {
+        let href = url;
+        // Eğer linkin başında http:// veya https:// yoksa, tarayıcının hata vermemesi için href içine gizlice ekle
+        if (!/^https?:\/\//i.test(href)) {
+            href = 'https://' + href;
+        }
+        return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    });
+}
 
     const messageList     = document.querySelector("ul#messages")
     const messageTemplate = messageList.querySelector("template").content.querySelector("li")
