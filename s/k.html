@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0">
+<title>..</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiYmV5Ymkgc29oYmV0Iiwic2hvcnRfbmFtZSI6ImJleWJpIiwic3RhcnRfdXJsIjoiaHR0cHM6Ly9zZWxpbi5ndC50Yy9tL2suaHRtbCIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiMzMzMzMzMiLCJpY29ucyI6W3sic3JjIjoiaHR0cHM6Ly9zZWxpbi5ndC50Yy9tL2ljb24tMTkyLnBuZyIsInNpemVzIjoiMTkyeDE5MiIsInR5cGUiOiJpbWFnZS9wbmcifSx7InNyYyI6Imljb24tNTEyLnBuZyIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9wbmcifV19">
+<meta name="theme-color" content="#333333">
+<script>
+    // URL'den 'r' arka plan parametresini alma
+    const urlParams = new URLSearchParams(window.location.search);
+    const rInput = (urlParams.get('r') || '').trim();
+    const allowedColors = ["ffffff", "000000"];
+    const bg = allowedColors.includes(rInput) ? rInput : "ffffff";
+    window.initialBg = "#" + bg;
+</script>
+<style>
+    html { 
+        margin: 0; 
+        padding: 0; 
+    }
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        box-sizing: border-box;
+        padding: 0.8em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: medium;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6em;
+        background-color: #ffffff;
+    }
+
+    table { width: 100%; max-width: 40rem; margin: 0 auto; text-align: center; font-size: 0.9rem; flex: 0 0 auto; }
+    table a { color: #555; text-decoration: none; }
+
+    ul#messages {
+        height: 42rem;
+        overflow-y: auto;
+        margin: 0 auto;
+        padding: 15px;
+        list-style: none;
+        border: none;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        width: 100%;
+        max-width: 40rem;
+        box-sizing: border-box;
+        scrollbar-width: none;
+        flex-shrink: 0;
+    }
+    ul#messages::-webkit-scrollbar { display: none; }
+    
+    ul#messages li { 
+        max-width: 75%; 
+        padding: 8px 14px; 
+        border-radius: 18px; 
+        position: relative; 
+        line-height: 1.4; 
+        word-wrap: break-word; 
+        display: inline-flex; 
+        align-items: flex-end; 
+        gap: 6px; 
+        margin: 0;
+    }
+
+    .message-out { align-self: flex-end; background-color: #e6e6e6; color: black; border-bottom-right-radius: 4px; }
+    .message-in { align-self: flex-start; background-color: #f1f1f1; color: black; border-bottom-left-radius: 4px; }
+    ul#messages li.pending { opacity: 0.5; align-self: flex-end; background-color: #e6e6e6; border-bottom-right-radius: 4px; }
+
+    .date-divider { 
+        align-self: center !important; 
+        background-color: #e9ecef !important; 
+        color: #555 !important; 
+        padding: 4px 14px !important; 
+        border-radius: 14px !important; 
+        font-size: 0.8rem; 
+        font-weight: 500; 
+        margin: 10px 0 !important; 
+    }
+
+    .message-time { font-size: 0.65rem; color: #888; white-space: nowrap; margin-bottom: -1px; }
+
+    ul#messages li a { color: #007bff; text-decoration: none; }
+    ul#messages li a:hover { text-decoration: underline; }
+
+    ul#messages li.last-cemil .msg-text { font-weight: bold; color: red; }
+
+    form {
+        flex: 0 0 auto;
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+        outline: none;
+        width: 100%;
+        max-width: 40rem;
+        box-sizing: border-box;
+    }
+    form p { margin: 0; padding: 6px 8px; display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; border-radius: 30px; background: #fff; }
+    form p input { font-size: 1rem; min-width: 0; border: none; background: transparent; width: 100%; }
+    form p input[name=content] { flex: 1 1 auto; padding: 8px 12px; outline: none; }
+    
+    button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        flex-shrink: 0;
+    }
+    button:hover { filter: brightness(0.9); }
+
+    .logs-container {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto;
+        font-size: 0.85rem;
+    }
+    .logs-container h2 { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; margin: 8px 0 4px 0; color: #555; }
+    .logs-container pre { white-space: pre-wrap; word-wrap: break-word; margin: 0 0 10px 0; font-family: monospace; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 6px; }
+
+    .controls { flex: 0 0 auto; text-align: center; font-size: 0.9rem; margin-top: 10px; }
+    .controls a { color: #888; text-decoration: none; margin: 0 10px; }
+</style>
+</head>
+<body>
+<script>document.body.style.backgroundColor = window.initialBg;</script>
+
+<table>
+<tr>
+    <td><a href="r/rk.php">resimler</a></td>
+    <td><a href="r/kindex.php">resim yükle</a></td>
+    <td><a href="https://us04web.zoom.us/j/4664446764?pwd=wHOKdxxEYSzx409OWba5KaQFlcAdoL.1">Zoom</a></td>
+    <td><a target="_blank" href="https://selin.gt.tc/beycan/ka.php">üçlü</a></td>
+</tr>
+</table>
+
+<ul id="messages">
+    <li>yükleniyor…</li>
+    <template>
+        <li class="pending">
+            <span class="msg-text">…</span>
+            <span class="message-time"></span>
+        </li>
+    </template>
+</ul>
+
+<form method="post" action="k.html">
+    <p>
+        <input type="hidden" name="name" value="kagan">
+        <input type="text" name="content" placeholder="Mesaj" autofocus autocomplete="off">
+        <button id="send-btn">yolla</button>
+    </p>
+</form>
+
+<div class="logs-container" id="logs-area">
+    <!-- Loglar JavaScript ile dinamik çekilip işlenecektir -->
+</div>
+
+<div class="controls">
+    <a href="?r=000000">karart</a>
+    <a href="?r=ffffff">aydınlat</a>
+</div>
+
+<script type="module">
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function linkify(text) {
+        return text.replace(/(https?:\/\/[^\s]+)/g,
+            url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`)
+    }
+
+    const messageList     = document.querySelector("ul#messages")
+    const messageTemplate = messageList.querySelector("template").content.querySelector("li")
+    const sendBtn         = document.getElementById("send-btn")
+    const contentInput    = document.querySelector("input[name=content]")
+    window.lastDateDivider = "";
+
+    messageList.querySelector("li").remove()
+
+    function applyTheme(lastSender) {
+        const isCemil = lastSender === "cemil"
+        const isDark  = window.initialBg === "#000000"
+
+        if (isCemil) {
+            document.body.style.backgroundColor = "white"
+            document.body.style.visibility      = "visible"
+            contentInput.style.backgroundColor  = "white"
+            sendBtn.style.backgroundColor       = "red"
+            sendBtn.style.color                 = "white"
+        } else if (isDark) {
+            document.body.style.backgroundColor = "black"
+            document.body.style.visibility      = "hidden"
+        } else {
+            document.body.style.backgroundColor = "white"
+            document.body.style.visibility      = "visible"
+            contentInput.style.backgroundColor  = "white"
+            sendBtn.style.backgroundColor       = ""      
+            sendBtn.style.color                 = "white"
+        }
+    }
+
+    function updateLastCemilHighlight() {
+        for (const li of messageList.querySelectorAll("li.last-cemil"))
+            li.classList.remove("last-cemil")
+
+        const all = Array.from(messageList.querySelectorAll("li:not(.pending):not(.date-divider)"))
+        if (all.length === 0) return
+
+        const last    = all[all.length - 1]
+        const isCemil = last.classList.contains("from-cemil")
+        if (isCemil) last.classList.add("last-cemil")
+        applyTheme(isCemil ? "cemil" : "kagan")
+    }
+
+    document.querySelector("form").addEventListener("submit", async event => {
+        event.preventDefault()
+        const name    = event.target.name.value
+        const content = event.target.content.value
+        if (!name || !content) return
+
+        await fetch(event.target.action, { method: "POST", body: new URLSearchParams({name, content}) })
+
+        const el = messageTemplate.cloneNode(true)
+        el.classList.add("from-kagan", "message-out")
+        el.querySelector(".msg-text").textContent = content
+        messageList.append(el)
+        
+        messageList.scrollTop = messageList.scrollHeight
+        event.target.content.value = ""
+        event.target.content.focus()
+        updateLastCemilHighlight()
+    })
+
+    async function poll_for_new_messages() {
+        try {
+            const response = await fetch("messages.json", { cache: "no-cache" })
+            if (!response.ok) return
+
+            const messages = await response.json()
+            const atBottom = (messageList.scrollHeight - messageList.scrollTop - messageList.clientHeight) < 50
+
+            for (const li of messageList.querySelectorAll("li.pending")) li.remove()
+
+            const lastId = parseInt(messageList.dataset.lastMessageId ?? "-1")
+            let hasNew = false
+
+            for (const msg of messages) {
+                if (msg.id > lastId) {
+                    const date = new Date(msg.time * 1000)
+                    
+                    const dateStr = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+                    if (window.lastDateDivider !== dateStr) {
+                        const divider = document.createElement('li');
+                        divider.className = 'date-divider';
+                        divider.textContent = dateStr;
+                        messageList.append(divider);
+                        window.lastDateDivider = dateStr;
+                    }
+
+                    const timeStr = new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit' }).format(date);
+
+                    const el = messageTemplate.cloneNode(true)
+                    el.classList.remove("pending")
+                    
+                    el.classList.add(msg.name === "cemil" ? "from-cemil" : "from-kagan")
+                    el.classList.add(msg.name === "kagan" ? "message-out" : "message-in")
+
+                    el.querySelector(".msg-text").innerHTML = linkify(msg.content)
+                    el.querySelector(".message-time").textContent = ".... " + timeStr
+
+                    messageList.append(el)
+                    messageList.dataset.lastMessageId = msg.id
+                    hasNew = true
+                }
+            }
+
+            for (const li of Array.from(messageList.querySelectorAll("li:not(.date-divider)")).slice(0, -1000)) li.remove()
+            if (hasNew) updateLastCemilHighlight()
+            if (atBottom) messageList.scrollTop = messageList.scrollHeight - messageList.clientHeight
+
+        } catch (_) {}
+    }
+
+    async function render_logs() {
+        const logsContainer = document.getElementById("logs-area");
+        const files = ['log.txt', 'r/log.txt'];
+        const simdiRef = Math.floor(Date.now() / 1000) + (7 * 3600);
+        
+        const d = new Date();
+        d.setHours(0, 0, 0, 0);
+        const bugunBaslangic = Math.floor(d.getTime() / 1000);
+
+        let html = "";
+
+        for (const file of files) {
+            const delLink = "?del_log=" + encodeURIComponent(file);
+            html += `<h2><span>${escapeHtml(file)}</span> <a href="${delLink}" style="color:#d9534f; font-size:0.75rem; font-weight:normal; text-decoration:none;">[son kaydı sil]</a></h2>\n`;
+
+            try {
+                const res = await fetch(file, { cache: "no-cache" });
+                if (!res.ok) throw new Error();
+                
+                const text = await res.text();
+                const lines = text.split(/\r?\n/);
+                const last15Lines = lines.slice(-15).reverse();
+
+                html += "<pre>";
+                let ilkDoluBulundu = false;
+
+                for (const satir of last15Lines) {
+                    if (satir.trim() === "") {
+                        html += "\n";
+                        continue;
+                    }
+
+                    const pos = satir.indexOf("- ");
+                    let zaman = false;
+                    let escaped = "";
+
+                    if (pos !== -1) {
+                        const ip = satir.substring(0, pos).trim();
+                        const kalan = satir.substring(pos + 2);
+                        const tarihSaat = kalan.substring(0, 19).trim();
+                        
+                        zaman = Math.floor(new Date(tarihSaat.replace(' ', 'T')).getTime() / 1000);
+                        const temizSatir = ip + " - " + tarihSaat;
+                        escaped = escapeHtml(temizSatir);
+                    } else {
+                        escaped = escapeHtml(satir);
+                    }
+
+                    let isRed = false;
+                    if (!ilkDoluBulundu) {
+                        ilkDoluBulundu = true;
+                        if (zaman && !isNaN(zaman)) {
+                            const fark = simdiRef - zaman;
+                            if (fark >= 0 && fark <= 3 * 3600) {
+                                isRed = true;
+                            }
+                        }
+                    }
+
+                    if (isRed) {
+                        html += `<span style="color:red">${escaped}</span>\n`;
+                    } else if (zaman && !isNaN(zaman) && zaman < bugunBaslangic) {
+                        html += `<span style="color:#888">${escaped}</span>\n`;
+                    } else {
+                        html += `${escaped}\n`;
+                    }
+                }
+                html += "</pre>\n";
+            } catch (_) {
+                html += `<p style="color:#888; margin:0;">Dosya bulunamadı.</p>\n`;
+            }
+        }
+        logsContainer.innerHTML = html;
+    }
+
+    poll_for_new_messages();
+    setInterval(poll_for_new_messages, 3000);
+    render_logs();
+</script>
+</body>
+</html>
