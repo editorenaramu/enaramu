@@ -71,10 +71,12 @@
         showMsg("✔ Başarıyla GitHub'a eklendi!");
         formElement.reset();
       } else {
-        alert("Kayıt sırasında hata oluştu!");
+        // BURASI DEĞİŞTİ: Sunucudan gelen gerçek hata mesajını okuyoruz
+        const errText = await res.text();
+        alert("Hata Detayı: " + errText);
       }
     } catch (err) {
-      alert("Bağlantı hatası.");
+      alert("Bağlantı hatası: " + err.message);
     } finally {
       btn.disabled = false;
       btn.textContent = btnId === 'btnMovie' ? "Film Ekle" : "Dizi Ekle";
