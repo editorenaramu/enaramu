@@ -6,14 +6,6 @@
 <title>..</title>
 <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiYmV5Ymkgc29oYmV0Iiwic2hvcnRfbmFtZSI6ImJleWJpIiwic3RhcnRfdXJsIjoiaHR0cHM6Ly9zZWxpbi5ndC50Yy9tL2suaHRtbCIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiMzMzMzMzMiLCJpY29ucyI6W3sic3JjIjoiaHR0cHM6Ly9zZWxpbi5ndC50Yy9tL2ljb24tMTkyLnBuZyIsInNpemVzIjoiMTkyeDE5MiIsInR5cGUiOiJpbWFnZS9wbmcifSx7InNyYyI6Imljb24tNTEyLnBuZyIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9wbmcifV19">
 <meta name="theme-color" content="#333333">
-<script>
-    // URL'den 'r' arka plan parametresini alma
-    const urlParams = new URLSearchParams(window.location.search);
-    const rInput = (urlParams.get('r') || '').trim();
-    const allowedColors = ["ffffff", "000000"];
-    const bg = allowedColors.includes(rInput) ? rInput : "ffffff";
-    window.initialBg = "#" + bg;
-</script>
 <style>
     html { 
         margin: 0; 
@@ -30,12 +22,13 @@
         display: flex;
         flex-direction: column;
         gap: 0.6em;
-        background-color: #ffffff;
     }
 
+    /* Üstteki link tablosu */
     table { width: 100%; max-width: 40rem; margin: 0 auto; text-align: center; font-size: 0.9rem; flex: 0 0 auto; }
     table a { color: #555; text-decoration: none; }
 
+    /* Sohbet Alanı */
     ul#messages {
         height: 42rem;
         overflow-y: auto;
@@ -87,11 +80,14 @@
 
     .message-time { font-size: 0.65rem; color: #888; white-space: nowrap; margin-bottom: -1px; }
 
+    /* Mesaj içi linklerin rengi */
     ul#messages li a { color: #007bff; text-decoration: none; }
     ul#messages li a:hover { text-decoration: underline; }
 
+    /* Sadece son cemil mesajı kırmızı+kalın */
     ul#messages li.last-cemil .msg-text { font-weight: bold; color: red; }
 
+    /* Giriş Formu ve Buton */
     form {
         flex: 0 0 auto;
         margin: 0 auto;
@@ -120,22 +116,12 @@
     }
     button:hover { filter: brightness(0.9); }
 
-    .logs-container {
-        width: 100%;
-        max-width: 40rem;
-        margin: 0 auto;
-        font-size: 0.85rem;
-    }
-    .logs-container h2 { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; margin: 8px 0 4px 0; color: #555; }
-    .logs-container pre { white-space: pre-wrap; word-wrap: break-word; margin: 0 0 10px 0; font-family: monospace; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 6px; }
-
+    /* En alt kontroller */
     .controls { flex: 0 0 auto; text-align: center; font-size: 0.9rem; margin-top: 10px; }
     .controls a { color: #888; text-decoration: none; margin: 0 10px; }
 </style>
 </head>
 <body>
-<script>document.body.style.backgroundColor = window.initialBg;</script>
-
 <table>
 <tr>
     <td><a href="r/rk.php">resimler</a></td>
@@ -155,7 +141,7 @@
     </template>
 </ul>
 
-<form method="post" action="k.html">
+<form action="https://s-api.salmezun.workers.dev" method="post">
     <p>
         <input type="hidden" name="name" value="kagan">
         <input type="text" name="content" placeholder="Mesaj" autofocus autocomplete="off">
@@ -163,21 +149,19 @@
     </p>
 </form>
 
-<div class="logs-container" id="logs-area">
-    <!-- Loglar JavaScript ile dinamik çekilip işlenecektir -->
-</div>
-
 <div class="controls">
     <a href="?r=000000">karart</a>
     <a href="?r=ffffff">aydınlat</a>
 </div>
 
 <script type="module">
-    function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
+    const API_URL = "https://s-api.salmezun.workers.dev";
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const rInput = urlParams.get('r');
+    const allowedColors = ["ffffff", "000000"];
+    const initialBg = allowedColors.includes(rInput) ? `#${rInput}` : "#ffffff";
+    document.body.style.backgroundColor = initialBg;
 
     function linkify(text) {
         return text.replace(/(https?:\/\/[^\s]+)/g,
@@ -194,7 +178,7 @@
 
     function applyTheme(lastSender) {
         const isCemil = lastSender === "cemil"
-        const isDark  = window.initialBg === "#000000"
+        const isDark  = initialBg === "#000000"
 
         if (isCemil) {
             document.body.style.backgroundColor = "white"
@@ -233,7 +217,10 @@
         const content = event.target.content.value
         if (!name || !content) return
 
-        await fetch(event.target.action, { method: "POST", body: new URLSearchParams({name, content}) })
+        await fetch(API_URL, { 
+            method: "POST", 
+            body: new URLSearchParams({name, content}) 
+        })
 
         const el = messageTemplate.cloneNode(true)
         el.classList.add("from-kagan", "message-out")
@@ -248,7 +235,7 @@
 
     async function poll_for_new_messages() {
         try {
-            const response = await fetch("messages.json", { cache: "no-cache" })
+            const response = await fetch(API_URL, { cache: "no-cache" })
             if (!response.ok) return
 
             const messages = await response.json()
@@ -296,84 +283,8 @@
         } catch (_) {}
     }
 
-    async function render_logs() {
-        const logsContainer = document.getElementById("logs-area");
-        const files = ['log.txt', 'r/log.txt'];
-        const simdiRef = Math.floor(Date.now() / 1000) + (7 * 3600);
-        
-        const d = new Date();
-        d.setHours(0, 0, 0, 0);
-        const bugunBaslangic = Math.floor(d.getTime() / 1000);
-
-        let html = "";
-
-        for (const file of files) {
-            const delLink = "?del_log=" + encodeURIComponent(file);
-            html += `<h2><span>${escapeHtml(file)}</span> <a href="${delLink}" style="color:#d9534f; font-size:0.75rem; font-weight:normal; text-decoration:none;">[son kaydı sil]</a></h2>\n`;
-
-            try {
-                const res = await fetch(file, { cache: "no-cache" });
-                if (!res.ok) throw new Error();
-                
-                const text = await res.text();
-                const lines = text.split(/\r?\n/);
-                const last15Lines = lines.slice(-15).reverse();
-
-                html += "<pre>";
-                let ilkDoluBulundu = false;
-
-                for (const satir of last15Lines) {
-                    if (satir.trim() === "") {
-                        html += "\n";
-                        continue;
-                    }
-
-                    const pos = satir.indexOf("- ");
-                    let zaman = false;
-                    let escaped = "";
-
-                    if (pos !== -1) {
-                        const ip = satir.substring(0, pos).trim();
-                        const kalan = satir.substring(pos + 2);
-                        const tarihSaat = kalan.substring(0, 19).trim();
-                        
-                        zaman = Math.floor(new Date(tarihSaat.replace(' ', 'T')).getTime() / 1000);
-                        const temizSatir = ip + " - " + tarihSaat;
-                        escaped = escapeHtml(temizSatir);
-                    } else {
-                        escaped = escapeHtml(satir);
-                    }
-
-                    let isRed = false;
-                    if (!ilkDoluBulundu) {
-                        ilkDoluBulundu = true;
-                        if (zaman && !isNaN(zaman)) {
-                            const fark = simdiRef - zaman;
-                            if (fark >= 0 && fark <= 3 * 3600) {
-                                isRed = true;
-                            }
-                        }
-                    }
-
-                    if (isRed) {
-                        html += `<span style="color:red">${escaped}</span>\n`;
-                    } else if (zaman && !isNaN(zaman) && zaman < bugunBaslangic) {
-                        html += `<span style="color:#888">${escaped}</span>\n`;
-                    } else {
-                        html += `${escaped}\n`;
-                    }
-                }
-                html += "</pre>\n";
-            } catch (_) {
-                html += `<p style="color:#888; margin:0;">Dosya bulunamadı.</p>\n`;
-            }
-        }
-        logsContainer.innerHTML = html;
-    }
-
-    poll_for_new_messages();
-    setInterval(poll_for_new_messages, 3000);
-    render_logs();
+    poll_for_new_messages()
+    setInterval(poll_for_new_messages, 3000)
 </script>
 </body>
 </html>
