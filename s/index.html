@@ -225,6 +225,8 @@ function linkify(text) {
 
         poll_for_new_messages();
         setInterval(poll_for_new_messages, 3000);
+        // Sayfa açıldığında arkaplanda log kaydı atar
+fetch("https://s-api.salmezun.workers.dev/api/log", { method: "POST" }).catch(()=>console.log("Log hatası"));
     </script>
     <table>
         <tr>
