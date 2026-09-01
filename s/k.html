@@ -256,7 +256,7 @@
     // ==========================================
     // --- ZİYARETÇİ LOGLARI YÖNETİMİ ---
     // ==========================================
-    async function loadLogs() {
+async function loadLogs() {
         try {
             const res = await fetch(logApiUrl);
             const logs = await res.json();
@@ -276,10 +276,10 @@
                 const d = new Date((log.time + 10800) * 1000); 
                 const dateStr = d.toISOString().replace('T', ' ').substring(0, 19);
                 
-                // HTML Escaping (Güvenlik)
-                const safeIp = log.ip.replace(/</g, "&lt;");
-                const safeUa = log.user_agent.replace(/</g, "&lt;");
-                const line = `${safeIp} - ${dateStr} - UA: ${safeUa}`;
+                const safeIp = log.ip.replace(/</g, "<");
+                
+                // Sadece IP ve Tarih-Saat gösteriliyor (User Agent çıkarıldı)
+                const line = `${safeIp} - ${dateStr}`;
                 
                 const diff = now - log.time;
                 let colorClass = "";
