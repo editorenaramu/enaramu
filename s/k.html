@@ -4,13 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0">
 <title>..</title>
-<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiYmV5Ymkgc29oYmV0Iiwic2hvcnRfbmFtZSI6ImJleWJpIiwic3RhcnRfdXJsIjoiaHR0cHM6Ly9zZWxpbi5ndC50Yy9tL2suaHRtbCIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiMzMzMzMzMiLCJpY29ucyI6W3sic3JjIjoiaHR0cHM6Ly9zZWxpbi5ndC50Yy9tL2ljb24tMTkyLnBuZyIsInNpemVzIjoiMTkyeDE5MiIsInR5cGUiOiJpbWFnZS9wbmcifSx7InNyYyI6Imljb24tNTEyLnBuZyIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9wbmcifV19">
 <meta name="theme-color" content="#333333">
 <style>
-    html { 
-        margin: 0; 
-        padding: 0; 
-    }
+    html { margin: 0; padding: 0; }
     body {
         min-height: 100vh;
         min-height: 100dvh;
@@ -23,101 +19,56 @@
         flex-direction: column;
         gap: 0.6em;
     }
-
-    /* Üstteki link tablosu */
     table { width: 100%; max-width: 40rem; margin: 0 auto; text-align: center; font-size: 0.9rem; flex: 0 0 auto; }
     table a { color: #555; text-decoration: none; }
-
-    /* Sohbet Alanı */
     ul#messages {
-  flex: 1 1 0px;
-            min-height: 0;
-            overflow-y: auto;
-            margin: 0 auto;
-            padding: 15px;
-            list-style: none;
-            background: #fff;
-            border-radius: 12px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            width: 100%;
-            max-width: 40rem;
-            box-sizing: border-box;
-            scrollbar-width: none;
-    }
-    ul#messages::-webkit-scrollbar { display: none; }
-    
-    ul#messages li { 
-        max-width: 75%; 
-        padding: 8px 14px; 
-        border-radius: 18px; 
-        position: relative; 
-        line-height: 1.4; 
-        word-wrap: break-word; 
-        display: inline-flex; 
-        align-items: flex-end; 
-        gap: 6px; 
-        margin: 0;
-    }
-
-    .message-out { align-self: flex-end; background-color: #e6e6e6; color: black; border-bottom-right-radius: 4px; }
-    .message-in { align-self: flex-start; background-color: #f1f1f1; color: black; border-bottom-left-radius: 4px; }
-    ul#messages li.pending { opacity: 0.5; align-self: flex-end; background-color: #e6e6e6; border-bottom-right-radius: 4px; }
-
-    .date-divider { 
-        align-self: center !important; 
-        background-color: #e9ecef !important; 
-        color: #555 !important; 
-        padding: 4px 14px !important; 
-        border-radius: 14px !important; 
-        font-size: 0.8rem; 
-        font-weight: 500; 
-        margin: 10px 0 !important; 
-    }
-
-    .message-time { font-size: 0.65rem; color: #888; white-space: nowrap; margin-bottom: -1px; }
-
-    /* Mesaj içi linklerin rengi */
-    ul#messages li a { color: #007bff; text-decoration: none; }
-    ul#messages li a:hover { text-decoration: underline; }
-
-    /* Sadece son cemil mesajı kırmızı+kalın */
-    ul#messages li.last-cemil .msg-text { font-weight: bold; color: red; }
-
-    /* Giriş Formu ve Buton */
-    form {
-        flex: 0 0 auto;
+        flex: 1 1 0px;
+        min-height: 0;
+        overflow-y: auto;
         margin: 0 auto;
-        padding: 0;
-        border: none;
-        outline: none;
+        padding: 15px;
+        list-style: none;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         width: 100%;
         max-width: 40rem;
         box-sizing: border-box;
+        scrollbar-width: none;
     }
+    ul#messages::-webkit-scrollbar { display: none; }
+    ul#messages li { 
+        max-width: 75%; padding: 8px 14px; border-radius: 18px; position: relative; 
+        line-height: 1.4; word-wrap: break-word; display: inline-flex; align-items: flex-end; gap: 6px; margin: 0;
+    }
+    .message-out { align-self: flex-end; background-color: #e6e6e6; color: black; border-bottom-right-radius: 4px; }
+    .message-in { align-self: flex-start; background-color: #f1f1f1; color: black; border-bottom-left-radius: 4px; }
+    ul#messages li.pending { opacity: 0.5; align-self: flex-end; background-color: #e6e6e6; border-bottom-right-radius: 4px; }
+    .date-divider { 
+        align-self: center !important; background-color: #e9ecef !important; color: #555 !important; 
+        padding: 4px 14px !important; border-radius: 14px !important; font-size: 0.8rem; font-weight: 500; margin: 10px 0 !important; 
+    }
+    .message-time { font-size: 0.65rem; color: #888; white-space: nowrap; margin-bottom: -1px; }
+    ul#messages li a { color: #007bff; text-decoration: none; }
+    ul#messages li a:hover { text-decoration: underline; }
+    ul#messages li.last-cemil .msg-text { font-weight: bold; color: red; }
+    
+    form { flex: 0 0 auto; margin: 0 auto; padding: 0; border: none; outline: none; width: 100%; max-width: 40rem; box-sizing: border-box; }
     form p { margin: 0; padding: 6px 8px; display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; border-radius: 30px; background: #fff; }
     form p input { font-size: 1rem; min-width: 0; border: none; background: transparent; width: 100%; }
     form p input[name=content] { flex: 1 1 auto; padding: 8px 12px; outline: none; }
-    
-    button {
-        background-color: #28a745;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-weight: bold;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        flex-shrink: 0;
-    }
+    button { background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: background-color 0.2s; flex-shrink: 0; }
     button:hover { filter: brightness(0.9); }
-
-    /* En alt kontroller */
     .controls { flex: 0 0 auto; text-align: center; font-size: 0.9rem; margin-top: 10px; }
     .controls a { color: #888; text-decoration: none; margin: 0 10px; }
+    
+    /* Log Alanı CSS */
+    .logs-container { width: 100%; max-width: 40rem; margin: 0 auto; font-size: 0.85rem; }
+    .logs-container h2 { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; margin: 8px 0 4px 0; color: #555; }
+    .logs-container pre { white-space: pre-wrap; word-wrap: break-word; margin: 0 0 10px 0; font-family: monospace; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 6px; }
 </style>
 </head>
 <body>
@@ -140,7 +91,8 @@
     </template>
 </ul>
 
-<form action="https://s-api.salmezun.workers.dev" method="post">
+<!-- Action adresi kendi domainine çevrildi -->
+<form action="https://api.enaramu.com" method="post">
     <p>
         <input type="hidden" name="name" value="kagan">
         <input type="text" name="content" placeholder="Mesaj" autofocus autocomplete="off">
@@ -153,111 +105,119 @@
     <a href="?r=ffffff">aydınlat</a>
 </div>
 
+<!-- DİKKAT: Log HTML yapısı script'ten önceye alındı! -->
+<div class="logs-container">
+    <h2><span>Ziyaretçi Logları</span> <a href="#" id="delLogBtn" style="color:#d9534f; font-size:0.75rem; font-weight:normal; text-decoration:none;">[son kaydı sil]</a></h2>
+    <pre id="logOutput">Yükleniyor...</pre>
+</div>
+
 <script type="module">
-    const API_URL = "https://s-api.salmezun.workers.dev";
+    // Özel alan adımızı kullanıyoruz (Reklam engelleyicilere takılmaz)
+    const API_URL = "https://api.enaramu.com";
+    const logApiUrl = "https://api.enaramu.com/api/log";
     
+    // Tema ayarları (Sadece bir kere tanımlandı)
     const urlParams = new URLSearchParams(window.location.search);
     const rInput = urlParams.get('r');
     const allowedColors = ["ffffff", "000000"];
     const initialBg = allowedColors.includes(rInput) ? `#${rInput}` : "#ffffff";
     document.body.style.backgroundColor = initialBg;
 
+    // Linkleri Tıklanabilir Yapma
     function linkify(text) {
-    // http, https, www veya doğrudan alan adı ile başlayan linkleri yakalar
-    const regex = /\b((?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b(?:[-a-zA-Z0-9@:%_\+.~#?&//=]*))/gi;
-    
-    return text.replace(regex, (url) => {
-        let href = url;
-        // Eğer linkin başında http:// veya https:// yoksa, tarayıcının hata vermemesi için href içine gizlice ekle
-        if (!/^https?:\/\//i.test(href)) {
-            href = 'https://' + href;
-        }
-        return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
-    });
-}
+        const regex = /\b((?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b(?:[-a-zA-Z0-9@:%_\+.~#?&//=]*))/gi;
+        return text.replace(regex, (url) => {
+            let href = url;
+            if (!/^https?:\/\//i.test(href)) { href = 'https://' + href; }
+            return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+        });
+    }
 
-    const messageList     = document.querySelector("ul#messages")
-    const messageTemplate = messageList.querySelector("template").content.querySelector("li")
-    const sendBtn         = document.getElementById("send-btn")
-    const contentInput    = document.querySelector("input[name=content]")
+    // Sohbet Değişkenleri
+    const messageList     = document.querySelector("ul#messages");
+    const messageTemplate = messageList.querySelector("template").content.querySelector("li");
+    const sendBtn         = document.getElementById("send-btn");
+    const contentInput    = document.querySelector("input[name=content]");
     window.lastDateDivider = "";
 
-    messageList.querySelector("li").remove()
+    messageList.querySelector("li").remove(); // "yükleniyor..." yazısını kaldır
 
     function applyTheme(lastSender) {
-        const isCemil = lastSender === "cemil"
-        const isDark  = initialBg === "#000000"
+        const isCemil = lastSender === "cemil";
+        const isDark  = initialBg === "#000000";
 
         if (isCemil) {
-            document.body.style.backgroundColor = "white"
-            document.body.style.visibility      = "visible"
-            contentInput.style.backgroundColor  = "white"
-            sendBtn.style.backgroundColor       = "red"
-            sendBtn.style.color                 = "white"
+            document.body.style.backgroundColor = "white";
+            document.body.style.visibility      = "visible";
+            contentInput.style.backgroundColor  = "white";
+            sendBtn.style.backgroundColor       = "red";
+            sendBtn.style.color                 = "white";
         } else if (isDark) {
-            document.body.style.backgroundColor = "black"
-            document.body.style.visibility      = "hidden"
+            document.body.style.backgroundColor = "black";
+            document.body.style.visibility      = "hidden";
         } else {
-            document.body.style.backgroundColor = "white"
-            document.body.style.visibility      = "visible"
-            contentInput.style.backgroundColor  = "white"
-            sendBtn.style.backgroundColor       = ""      
-            sendBtn.style.color                 = "white"
+            document.body.style.backgroundColor = "white";
+            document.body.style.visibility      = "visible";
+            contentInput.style.backgroundColor  = "white";
+            sendBtn.style.backgroundColor       = "";      
+            sendBtn.style.color                 = "white";
         }
     }
 
     function updateLastCemilHighlight() {
-        for (const li of messageList.querySelectorAll("li.last-cemil"))
-            li.classList.remove("last-cemil")
-
-        const all = Array.from(messageList.querySelectorAll("li:not(.pending):not(.date-divider)"))
-        if (all.length === 0) return
-
-        const last    = all[all.length - 1]
-        const isCemil = last.classList.contains("from-cemil")
-        if (isCemil) last.classList.add("last-cemil")
-        applyTheme(isCemil ? "cemil" : "kagan")
+        for (const li of messageList.querySelectorAll("li.last-cemil")) li.classList.remove("last-cemil");
+        const all = Array.from(messageList.querySelectorAll("li:not(.pending):not(.date-divider)"));
+        if (all.length === 0) return;
+        const last    = all[all.length - 1];
+        const isCemil = last.classList.contains("from-cemil");
+        if (isCemil) last.classList.add("last-cemil");
+        applyTheme(isCemil ? "cemil" : "kagan");
     }
 
+    // Mesaj Gönderme İşlemi
     document.querySelector("form").addEventListener("submit", async event => {
-        event.preventDefault()
-        const name    = event.target.name.value
-        const content = event.target.content.value
-        if (!name || !content) return
+        event.preventDefault();
+        const name    = event.target.name.value;
+        const content = event.target.content.value;
+        if (!name || !content) return;
 
+        // Backend'e yolla
         await fetch(API_URL, { 
             method: "POST", 
             body: new URLSearchParams({name, content}) 
-        })
+        });
 
-        const el = messageTemplate.cloneNode(true)
-        el.classList.add("from-kagan", "message-out")
-        el.querySelector(".msg-text").textContent = content
-        messageList.append(el)
+        // Ekrana anında ekle (Optimistic UI)
+        const el = messageTemplate.cloneNode(true);
+        el.classList.add("from-kagan", "message-out");
+        el.querySelector(".msg-text").textContent = content;
+        messageList.append(el);
         
-        messageList.scrollTop = messageList.scrollHeight
-        event.target.content.value = ""
-        event.target.content.focus()
-        updateLastCemilHighlight()
-    })
+        messageList.scrollTop = messageList.scrollHeight;
+        event.target.content.value = "";
+        event.target.content.focus();
+        updateLastCemilHighlight();
+    });
 
+    // Mesajları Sürekli Çekme (Polling)
     async function poll_for_new_messages() {
         try {
-            const response = await fetch(API_URL, { cache: "no-cache" })
-            if (!response.ok) return
+            const response = await fetch(API_URL, { cache: "no-cache" });
+            if (!response.ok) return;
 
-            const messages = await response.json()
-            const atBottom = (messageList.scrollHeight - messageList.scrollTop - messageList.clientHeight) < 50
+            const messages = await response.json();
+            const atBottom = (messageList.scrollHeight - messageList.scrollTop - messageList.clientHeight) < 50;
 
-            for (const li of messageList.querySelectorAll("li.pending")) li.remove()
+            for (const li of messageList.querySelectorAll("li.pending")) li.remove();
 
-            const lastId = parseInt(messageList.dataset.lastMessageId ?? "-1")
-            let hasNew = false
+            const lastId = parseInt(messageList.dataset.lastMessageId ?? "-1");
+            let hasNew = false;
 
             for (const msg of messages) {
                 if (msg.id > lastId) {
-                    const date = new Date(msg.time * 1000)
+                    const date = new Date(msg.time * 1000);
                     
+                    // Tarih Ayracı
                     const dateStr = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
                     if (window.lastDateDivider !== dateStr) {
                         const divider = document.createElement('li');
@@ -269,117 +229,98 @@
 
                     const timeStr = new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit' }).format(date);
 
-                    const el = messageTemplate.cloneNode(true)
-                    el.classList.remove("pending")
+                    const el = messageTemplate.cloneNode(true);
+                    el.classList.remove("pending");
                     
-                    el.classList.add(msg.name === "cemil" ? "from-cemil" : "from-kagan")
-                    el.classList.add(msg.name === "kagan" ? "message-out" : "message-in")
+                    el.classList.add(msg.name === "cemil" ? "from-cemil" : "from-kagan");
+                    el.classList.add(msg.name === "kagan" ? "message-out" : "message-in");
 
-                    el.querySelector(".msg-text").innerHTML = linkify(msg.content)
-                    el.querySelector(".message-time").textContent = ".... " + timeStr
+                    el.querySelector(".msg-text").innerHTML = linkify(msg.content);
+                    el.querySelector(".message-time").textContent = ".... " + timeStr;
 
-                    messageList.append(el)
-                    messageList.dataset.lastMessageId = msg.id
-                    hasNew = true
+                    messageList.append(el);
+                    messageList.dataset.lastMessageId = msg.id;
+                    hasNew = true;
                 }
             }
 
-            for (const li of Array.from(messageList.querySelectorAll("li:not(.date-divider)")).slice(0, -1000)) li.remove()
-            if (hasNew) updateLastCemilHighlight()
-            if (atBottom) messageList.scrollTop = messageList.scrollHeight - messageList.clientHeight
-
+            for (const li of Array.from(messageList.querySelectorAll("li:not(.date-divider)")).slice(0, -1000)) li.remove();
+            if (hasNew) updateLastCemilHighlight();
+            if (atBottom) messageList.scrollTop = messageList.scrollHeight - messageList.clientHeight;
         } catch (_) {}
     }
 
-    poll_for_new_messages()
-setInterval(poll_for_new_messages, 3000)
-// --- ZİYARETÇİ LOGLARI (Okuma, Renklendirme ve Silme) ---
-  const logApiUrl = "https://s-api.salmezun.workers.dev/api/log";
-  
-  async function loadLogs() {
-      try {
-          const res = await fetch(logApiUrl);
-          const logs = await res.json();
-          
-          if (logs.length === 0) {
-              document.getElementById('logOutput').innerHTML = '<span style="color:#888">Dosya bulunamadı.</span>';
-              return;
-          }
+    poll_for_new_messages();
+    setInterval(poll_for_new_messages, 3000);
 
-          const now = Math.floor(Date.now() / 1000);
-          const todayStart = new Date().setHours(0,0,0,0) / 1000;
-          
-          let html = "";
-          let firstRedFound = false;
+    // ==========================================
+    // --- ZİYARETÇİ LOGLARI YÖNETİMİ ---
+    // ==========================================
+    async function loadLogs() {
+        try {
+            const res = await fetch(logApiUrl);
+            const logs = await res.json();
+            
+            if (logs.length === 0) {
+                document.getElementById('logOutput').innerHTML = '<span style="color:#888">Dosya bulunamadı.</span>';
+                return;
+            }
 
-          // Worker verileri en yeniden en eskiye sıralı getiriyor
-          logs.forEach(log => {
-              // Türkiye saati (+3)
-              const d = new Date((log.time + 10800) * 1000); 
-              const dateStr = d.toISOString().replace('T', ' ').substring(0, 19);
-              
-              const safeIp = log.ip.replace(/</g, "<");
-              const safeUa = log.user_agent.replace(/</g, "<");
-              const line = `${safeIp} - ${dateStr} - UA: ${safeUa}`;
-              
-              const diff = now - log.time;
-              let colorClass = "";
-              
-              // İlk dolu kayıt 3 saatten yeniyse kırmızı yap
-              if (!firstRedFound && diff >= 0 && diff <= (3 * 3600)) {
-                  firstRedFound = true;
-                  colorClass = 'style="color:red"';
-              } 
-              // Dünden kalmaysa gri yap
-              else if (log.time < todayStart) {
-                  colorClass = 'style="color:#888"';
-              }
+            const now = Math.floor(Date.now() / 1000);
+            const todayStart = new Date().setHours(0,0,0,0) / 1000;
+            
+            let html = "";
+            let firstRedFound = false;
 
-              if (colorClass) {
-                  html += `<span ${colorClass}>${line}</span>\n`;
-              } else {
-                  html += `${line}\n`;
-              }
-          });
-          
-          document.getElementById('logOutput').innerHTML = html;
-      } catch (e) {
-          document.getElementById('logOutput').innerHTML = '<span style="color:#888">Bağlantı hatası.</span>';
-      }
-  }
+            logs.forEach(log => {
+                const d = new Date((log.time + 10800) * 1000); 
+                const dateStr = d.toISOString().replace('T', ' ').substring(0, 19);
+                
+                // HTML Escaping (Güvenlik)
+                const safeIp = log.ip.replace(/</g, "&lt;");
+                const safeUa = log.user_agent.replace(/</g, "&lt;");
+                const line = `${safeIp} - ${dateStr} - UA: ${safeUa}`;
+                
+                const diff = now - log.time;
+                let colorClass = "";
+                
+                if (!firstRedFound && diff >= 0 && diff <= (3 * 3600)) {
+                    firstRedFound = true;
+                    colorClass = 'style="color:red"';
+                } else if (log.time < todayStart) {
+                    colorClass = 'style="color:#888"';
+                }
 
-  // Son Kaydı Sil Butonu
-  document.getElementById('delLogBtn').addEventListener('click', async (e) => {
-      e.preventDefault();
-      if(!confirm("Son kaydı (en üsttekini) silmek istediğinize emin misiniz?")) return;
-      
-      const btn = document.getElementById('delLogBtn');
-      btn.textContent = "[siliniyor...]";
-      btn.style.pointerEvents = "none";
-      
-      await fetch(logApiUrl, { method: "DELETE" });
-      
-      btn.textContent = "[son kaydı sil]";
-      btn.style.pointerEvents = "auto";
-      
-      loadLogs(); // Sayfayı yenilemeden listeyi güncelle
-  });
+                if (colorClass) {
+                    html += `<span ${colorClass}>${line}</span>\n`;
+                } else {
+                    html += `${line}\n`;
+                }
+            });
+            
+            document.getElementById('logOutput').innerHTML = html;
+        } catch (e) {
+            document.getElementById('logOutput').innerHTML = '<span style="color:#888">Bağlantı hatası.</span>';
+        }
+    }
 
-  // Sayfa ilk açıldığında logları yükle
-  loadLogs();
+    document.getElementById('delLogBtn').addEventListener('click', async (e) => {
+        e.preventDefault();
+        if(!confirm("Son kaydı (en üsttekini) silmek istediğinize emin misiniz?")) return;
+        
+        const btn = document.getElementById('delLogBtn');
+        btn.textContent = "[siliniyor...]";
+        btn.style.pointerEvents = "none";
+        
+        await fetch(logApiUrl, { method: "DELETE" });
+        
+        btn.textContent = "[son kaydı sil]";
+        btn.style.pointerEvents = "auto";
+        
+        loadLogs();
+    });
 
-  // --- ARTI BİLGİ: Arka Plan Teması ---
-  // PHP'deki ?r=000000 mantığını JS ile yakalamak istersen:
-  const urlParams = new URLSearchParams(window.location.search);
-  const bg = urlParams.get('r');
-  if (bg === '000000' || bg === 'ffffff') {
-      document.body.style.backgroundColor = '#' + bg;
-  }    
-    
+    loadLogs();
 </script>
-    <div class="logs-container">
-    <h2><span>Ziyaretçi Logları</span> <a href="#" id="delLogBtn" style="color:#d9534f; font-size:0.75rem; font-weight:normal; text-decoration:none;">[son kaydı sil]</a></h2>
-    <pre id="logOutput">Yükleniyor...</pre>
-</div>
 </body>
 </html>
