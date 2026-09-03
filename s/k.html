@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>..</title>
 <meta name="theme-color" content="#333333">
 <style>
@@ -87,16 +87,17 @@ ul#messages {
 </tr>
 </table>
     
-<template>
+
 <ul id="messages">
     <li>yükleniyor…</li>
-    
+    <template>
         <li class="pending">
             <span class="msg-text">…</span>
             <span class="message-time"></span>
         </li>
+        </template>
 </ul>
-</template>
+
     
 <!-- Action adresi kendi domainine çevrildi -->
 <form action="https://api.enaramu.com" method="post">
