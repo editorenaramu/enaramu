@@ -254,6 +254,12 @@ ul#messages {
             if (hasNew) updateLastCemilHighlight();
             if (atBottom) messageList.scrollTop = messageList.scrollHeight - messageList.clientHeight;
         } catch (_) {}
+            // İlk yüklemede scroll'u en alta al
+        if (!window._initialScrollDone) {
+            messageList.scrollTop = messageList.scrollHeight;
+            window._initialScrollDone = true;
+        }
+    
     }
 
     poll_for_new_messages();
