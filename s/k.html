@@ -108,7 +108,9 @@ ul#messages {
         <button id="send-btn">yolla</button>
     </p>
 </form>
-
+<div style="text-align: center; margin: 10px 0;">
+    <button id="delete-last-btn" style="background:#dc3545; padding: 6px 12px; font-size: 0.85rem;">son mesajı sil</button>
+</div>
 <div class="controls">
     <a href="?r=000000">karart</a>
     <a href="?r=ffffff">aydınlat</a>
@@ -352,6 +354,27 @@ async function loadLogs() {
     });
 
     loadLogs();
+        // Mesaj Silme İşlevi
+    document.getElementById('delete-last-btn').addEventListener('click', async () => {
+      if(!confirm("Son mesajı silmek istediğinize emin misiniz?")) return;
+      
+      const btn = document.getElementById('delete-last-btn');
+      btn.disabled = true;
+      btn.textContent = "siliniyor...";
+      
+      await fetch(API_URL + '/api/messages', { method: "DELETE" });
+      
+      btn.disabled = false;
+      btn.textContent = "son mesajı sil";
+      
+      // Mesaj listesini yenile
+      messageList.innerHTML = '<li>yükleniyor…</li>';
+      messageList.dataset.lastMessageId = "-1";
+      window.lastDateDivider = "";
+      window._initialScrollDone = false;
+      
+      setTimeout(() => poll_for_new_messages(), 500);
+    });
 </script>
 </body>
 </html>
