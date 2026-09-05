@@ -76,6 +76,33 @@ ul#messages {
     .logs-container h2 { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; margin: 8px 0 4px 0; color: #555; }
     .logs-container pre { white-space: pre-wrap; word-wrap: break-word; margin: 0 0 10px 0; font-family: monospace; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 6px; }
     #new-message-notification:hover { filter: brightness(0.9); }
+
+ul#messages li .delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 6px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+}
+ul#messages li:hover .delete-btn {
+    opacity: 1;
+}
+/* Mobilde her zaman görünür */
+@media (hover: none) {
+    ul#messages li .delete-btn {
+        opacity: 0.7;
+    }
+}
+    
 </style>
 </head>
 <body>
@@ -108,9 +135,7 @@ ul#messages {
         <button id="send-btn">yolla</button>
     </p>
 </form>
-<div style="text-align: center; margin: 10px 0;">
-    <button id="delete-last-btn" style="background:#dc3545; padding: 6px 12px; font-size: 0.85rem;">son mesajı sil</button>
-</div>
+
 <div class="controls">
     <a href="?r=000000">karart</a>
     <a href="?r=ffffff">aydınlat</a>
@@ -199,10 +224,22 @@ ul#messages {
         });
 
         // Ekrana anında ekle (Optimistic UI)
-        const el = messageTemplate.cloneNode(true);
-        el.classList.add("from-kagan", "message-out");
-        el.querySelector(".msg-text").textContent = content;
-        messageList.append(el);
+const el = messageTemplate.cloneNode(true);
+el.classList.add("from-kagan", "message-out");
+el.querySelector(".msg-text").textContent = content;
+
+// Geçici ID (gerçek ID polling'den gelecek)
+const tempId = 'temp-' + Date.now();
+const deleteBtn = document.createElement('button');
+deleteBtn.className = 'delete-btn';
+deleteBtn.textContent = '×';
+deleteBtn.onclick = (e) => {
+    e.stopPropagation();
+    alert("Mesaj gönderilene kadar silinemez");
+};
+el.appendChild(deleteBtn);
+
+messageList.append(el);
         
         messageList.scrollTop = messageList.scrollHeight;
         event.target.content.value = "";
@@ -249,8 +286,19 @@ ul#messages {
                     el.querySelector(".msg-text").innerHTML = linkify(msg.content);
                     el.querySelector(".message-time").textContent = ".... " + timeStr;
 
-                    messageList.append(el);
-                    messageList.dataset.lastMessageId = msg.id;
+// Silme butonu ekle
+const deleteBtn = document.createElement('button');
+deleteBtn.className = 'delete-btn';
+deleteBtn.textContent = '×';
+deleteBtn.dataset.messageId = msg.id;
+deleteBtn.onclick = (e) => {
+    e.stopPropagation();
+    deleteMessage(msg.id, el);
+};
+el.appendChild(deleteBtn);
+
+messageList.append(el);
+messageList.dataset.lastMessageId = msg.id;
                     hasNew = true;
                 }
             }
@@ -375,6 +423,17 @@ async function loadLogs() {
       
       setTimeout(() => poll_for_new_messages(), 500);
     });
+    async function deleteMessage(id, element) {
+    if(!confirm("Bu mesajı silmek istediğinize emin misiniz?")) return;
+    
+    try {
+        await fetch(API_URL + `/api/messages?id=${id}`, { method: "DELETE" });
+        element.remove();
+        updateLastCemilHighlight();
+    } catch (e) {
+        alert("Mesaj silinemedi");
+    }
+}
 </script>
 </body>
 </html>
