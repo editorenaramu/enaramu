@@ -22,11 +22,11 @@
     .file-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem; }
     .file-wrapper { background: #ffffff; border: 1px solid #eaeaea; border-radius: 10px; overflow: hidden; transition: 0.15s; }
     .file-wrapper:hover { border-color: #ccc; }
-    .file-item { display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1rem; }
-    .file-info { display: flex; flex-direction: column; gap: 0.2rem; }
+    .file-item { display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1rem; gap: 0.5rem; }
+    .file-info { display: flex; flex-direction: column; gap: 0.2rem; flex: 1; min-width: 0; }
     .file-title { color: #007bff; font-weight: 600; font-size: 0.95rem; word-break: break-all; margin: 0;}
     .file-meta { font-size: 0.75rem; color: #888; }
-    .file-actions { display: flex; gap: 0.5rem; flex-shrink: 0; }
+    .file-actions { display: flex; gap: 0.35rem; flex-shrink: 0; }
     .duzenle-btn { background-color: #e7f1ff; color: #007bff; border: 1px solid #cce5ff; padding: 0.35rem 0.75rem; border-radius: 6px; font-size: 0.8rem; cursor: pointer; }
     .duzenle-btn:hover { background-color: #007bff; color: #ffffff; }
     .sil-btn { color: #dc3545; background-color: #fff5f5; border: 1px solid #ffe3e3; padding: 0.35rem 0.75rem; border-radius: 6px; font-size: 0.8rem; cursor: pointer; }
@@ -34,6 +34,29 @@
     .edit-container { display: none; padding: 1rem; background-color: #fafafa; border-top: 1px solid #eaeaea; }
     .edit-container.active { display: block; }
     .empty-state { text-align: center; color: #888; font-size: 0.9rem; padding: 1.5rem 0; }
+
+    /* YENİ: Kopyala Butonu Stilleri */
+    .kopyala-btn {
+      background-color: #e8f5e9;
+      color: #28a745;
+      border: 1px solid #c8e6c9;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .kopyala-btn:hover {
+      background-color: #28a745;
+      color: #ffffff;
+      border-color: #28a745;
+    }
+    .kopyala-btn.success {
+      background-color: #28a745;
+      color: #ffffff;
+      border-color: #28a745;
+    }
   </style>
 </head>
 <body>
@@ -60,6 +83,9 @@
 <script>
   const API_URL = "https://s-api.salmezun.workers.dev/api/notes";
   const alertBox = document.getElementById('alertBox');
+
+  // YENİ: Not içeriklerini id'ye göre saklayan map (kopyalama için)
+  const notesMap = {};
   
   function showAlert(msg) {
     alertBox.textContent = msg;
@@ -79,14 +105,15 @@
         return;
       }
 
+      // Not içeriklerini map'e kaydet
+      notes.forEach(n => { notesMap[n.id] = n.content; });
+
       let html = '<ul class="file-list">';
       notes.forEach(note => {
         const date = new Date(note.time * 1000);
         const dateStr = date.toLocaleDateString('tr-TR') + ' - ' + date.toLocaleTimeString('tr-TR', {hour: '2-digit', minute:'2-digit'});
-        // İçeriğin yaklaşık byte boyutunu hesapla
         const size = (new Blob([note.content]).size / 1024).toFixed(1) + ' KB';
         
-        // Zararlı HTML kodlarını engellemek için kaçış işlemi
         const safeTitle = note.title.replace(/</g, "&lt;");
         const safeContent = note.content.replace(/</g, "&lt;");
 
@@ -98,6 +125,8 @@
                 <span class="file-meta">${dateStr} • ${size}</span>
               </div>
               <div class="file-actions">
+                <!-- YENİ: Kopyala Butonu -->
+                <button type="button" class="kopyala-btn" onclick="kopyala(this, ${note.id})">Kopyala</button>
                 <button type="button" class="duzenle-btn" onclick="toggleEdit(${note.id})">Düzenle</button>
                 <button type="button" class="sil-btn" onclick="deleteNote(${note.id})">Sil</button>
               </div>
@@ -158,8 +187,8 @@
     if (!confirm("Bu dosyayı silmek istediğinize emin misiniz?")) return;
     await fetch(`${API_URL}?id=${id}`, { method: "DELETE" });
     document.getElementById(`note-${id}`).remove();
+    delete notesMap[id]; // Map'ten de temizle
     
-    // Son not silindiyse listeyi yenile
     if(document.querySelectorAll('.file-wrapper').length === 0) loadNotes();
   }
 
@@ -171,7 +200,48 @@
     if (!isActive) el.classList.add('active');
   }
 
-  // Sayfa açıldığında notları yükle
+  // YENİ: Panoya Kopyalama Fonksiyonu
+  function kopyala(btn, id) {
+    const metin = notesMap[id] || '';
+    if (!metin) return;
+
+    const basariliFeedback = () => {
+      const orijinalMetin = btn.textContent;
+      btn.textContent = 'Kopyalandı!';
+      btn.classList.add('success');
+      setTimeout(() => {
+        btn.textContent = orijinalMetin;
+        btn.classList.remove('success');
+      }, 1500);
+    };
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(metin).then(basariliFeedback).catch(() => {
+        fallbackKopyala(metin);
+        basariliFeedback();
+      });
+    } else {
+      fallbackKopyala(metin);
+      basariliFeedback();
+    }
+  }
+
+  // Eski tarayıcılar için fallback kopyalama
+  function fallbackKopyala(metin) {
+    const textarea = document.createElement('textarea');
+    textarea.value = metin;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand('copy');
+    } catch (err) {
+      console.error('Kopyalama başarısız:', err);
+    }
+    document.body.removeChild(textarea);
+  }
+
   loadNotes();
 </script>
 
