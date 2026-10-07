@@ -1,0 +1,15 @@
+Selin'in anlatımında gerçekten bağlam/özne-zaman referansı eksikliği var. En belirgin bölüm şu:
+“Bizden başka kimse yok.”
+“Ayın birine kadar doluydu.”
+“Bize bile yer yoktu.”
+
+Dinleyicinin elindeki bilgiyle bunlar aynı zaman dilimine aitmiş gibi okunuyor. Dolayısıyla:
+- şimdi tesiste sizden başka kimse yok,
+- ama aynı yerde size bile yer yoktu
+ifadeleri ilk bakışta çelişiyor.
+Eksik bilgi şu: “Biz aslında Eylül'ün son haftası gelmek istemiştik.” Bunu ancak sen sorunca söylüyor. Dolayısıyla burada söylediğin:
+“Ben bunları sen söylemeden nasıl bilebilirim?”
+
+itirazı mantıken doğru.
+Aynı şekilde “ayın birine kadar doluydu” da bağlam yeterince kurulmadığı için “hangi ayın biri?” sorusunu gerektiriyor. Selin'in “ben olsam ilk soracağım şey hangi ayın olmazdı” demesi problemi ortadan kaldırmıyor. Konuşmacının zihninde “1 Ekim” çok açık olabilir; fakat dinleyicinin zihninde aynı bilgi yok. Buna pragmatikte kabaca shared context/common ground problemi denir: konuşmacı, karşı tarafın sahip olmadığı bilgiyi ortak bilgiymiş gibi varsayıyor.
+Dolayısıyla “Selin bazen zihnindeki ara bağlantıları söylemeden sonuca atlıyor” tespitin bu örnekte destekleniyor.
