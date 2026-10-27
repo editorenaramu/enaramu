@@ -130,6 +130,7 @@
     <a href="?r=000000">karart</a>
     <a href="?r=ffffff">aydınlat</a>
     <a href="#" onclick="window.location.reload(); return false;">yenile</a>
+    <a href="#" id="clearAllBtn" style="color: #d9534f;">tüm mesajları sil</a>
 </div>
 
 <div class="logs-container">
@@ -197,7 +198,7 @@
         applyTheme(isCemil ? "cemil" : "kagan");
     }
 
-    // Mesaj Silme İşlevi
+    // Tekil Mesaj Silme İşlevi
     async function deleteMessage(id, element) {
         if (!confirm("Bu mesajı silmek istediğinize emin misiniz?")) return;
         
@@ -213,6 +214,43 @@
             alert("Bağlantı hatası.");
         }
     }
+
+    // Tekil Silme Özelliğini Kullanarak Tüm Mesajları Temizleme
+    document.getElementById('clearAllBtn').addEventListener('click', async (e) => {
+        e.preventDefault();
+        
+        const deleteButtons = Array.from(messageList.querySelectorAll('.delete-btn[data-message-id]'));
+        if (deleteButtons.length === 0) {
+            alert("Silinecek yüklü mesaj bulunamadı.");
+            return;
+        }
+
+        if (!confirm(`Ekrandaki ${deleteButtons.length} mesaj tek tek silinecek. Emin misiniz?`)) return;
+
+        const btn = document.getElementById('clearAllBtn');
+        btn.textContent = "siliniyor...";
+        btn.style.pointerEvents = "none";
+
+        try {
+            for (const dBtn of deleteButtons) {
+                const id = dBtn.dataset.messageId;
+                if (id) {
+                    await fetch(`${API_URL}/api/messages?id=${id}`, { method: "DELETE" });
+                }
+            }
+            
+            messageList.querySelectorAll('li:not(template li)').forEach(el => el.remove());
+            messageList.dataset.lastMessageId = "-1";
+            window.lastDateDivider = "";
+            applyTheme("kagan");
+        } catch (err) {
+            alert("Toplu silme sırasında bir hata oluştu.");
+        } finally {
+            btn.textContent = "tüm mesajları sil";
+            btn.style.pointerEvents = "auto";
+            poll_for_new_messages();
+        }
+    });
 
     document.querySelector("form").addEventListener("submit", async event => {
         event.preventDefault();
@@ -234,7 +272,7 @@
         deleteBtn.textContent = '×';
         deleteBtn.onclick = (e) => {
             e.stopPropagation();
-            alert("Mesaj sunucuya kaydedilene kadar (veya sayfa yenilenene kadar) buradan silinemez. Sayfayı yenileyip silebilirsiniz.");
+            alert("Mesaj sunucuya kaydedilene kadar buradan silinemez. Sayfayı yenileyip silebilirsiniz.");
         };
         el.appendChild(deleteBtn);
 
