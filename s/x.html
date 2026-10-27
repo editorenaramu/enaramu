@@ -148,13 +148,24 @@
     const initialBg = allowedColors.includes(rInput) ? `#${rInput}` : "#ffffff";
     document.body.style.backgroundColor = initialBg;
 
-    function linkify(text) {
-        const regex = /\b((?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b(?:[-a-zA-Z0-9@:%_\+.~#?&//=]*))/gi;
-        return text.replace(regex, (url) => {
-            let href = url;
-            if (!/^https?:\/\//i.test(href)) { href = 'https://' + href; }
-            return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
-        });
+    // XSS-güvenli linkify: innerHTML yerine DOM düğümleri üretir.
+    const URL_REGEX = /\b((?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b(?:[-a-zA-Z0-9@:%_\+.~#?&//=]*))/gi;
+
+    function renderContent(target, text) {
+        target.textContent = "";
+        let last = 0;
+        for (const m of String(text).matchAll(URL_REGEX)) {
+            if (m.index > last) target.append(document.createTextNode(text.slice(last, m.index)));
+            const url = m[0];
+            const a = document.createElement("a");
+            a.href = /^https?:\/\//i.test(url) ? url : "https://" + url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = url;
+            target.append(a);
+            last = m.index + url.length;
+        }
+        if (last < text.length) target.append(document.createTextNode(text.slice(last)));
     }
 
     const messageList     = document.querySelector("ul#messages");
@@ -215,42 +226,55 @@
         }
     }
 
-    // Tekil Silme Özelliğini Kullanarak Tüm Mesajları Temizleme
+    // Tekil silme ile tüm mesajları temizleme.
+    // Yalnızca sunucunun başarıyla sildiği mesajlar DOM'dan kaldırılır.
     document.getElementById('clearAllBtn').addEventListener('click', async (e) => {
-        e.preventDefault();
-        
-        const deleteButtons = Array.from(messageList.querySelectorAll('.delete-btn[data-message-id]'));
-        if (deleteButtons.length === 0) {
-            alert("Silinecek yüklü mesaj bulunamadı.");
-            return;
-        }
+    e.preventDefault();
+    if (!confirm("Sunucudaki TÜM mesajlar kalıcı olarak silinecek. Geri alınamaz. Emin misiniz?")) return;
 
-        if (!confirm(`Ekrandaki ${deleteButtons.length} mesaj tek tek silinecek. Emin misiniz?`)) return;
+    const btn = document.getElementById('clearAllBtn');
+    btn.style.pointerEvents = "none";
 
-        const btn = document.getElementById('clearAllBtn');
-        btn.textContent = "siliniyor...";
-        btn.style.pointerEvents = "none";
+    const MAX_ROUNDS = 100;   // sonsuz döngü emniyeti
+    const BATCH = 10;         // eşzamanlı DELETE sayısı
+    let deleted = 0, failed = 0, rounds = 0, prevKey = "";
 
-        try {
-            for (const dBtn of deleteButtons) {
-                const id = dBtn.dataset.messageId;
-                if (id) {
-                    await fetch(`${API_URL}/api/messages?id=${id}`, { method: "DELETE" });
-                }
+    try {
+        for (; rounds < MAX_ROUNDS; rounds++) {
+            const res = await fetch(API_URL, { cache: "no-cache" });
+            if (!res.ok) { failed++; break; }
+            const ids = (await res.json()).map(m => m.id);
+            if (ids.length === 0) break;                      // sunucu boş
+
+            const key = ids.join(",");
+            if (key === prevKey) { failed++; break; }         // ilerleme yok (silme etkisiz)
+            prevKey = key;
+
+            for (let i = 0; i < ids.length; i += BATCH) {
+                const results = await Promise.all(ids.slice(i, i + BATCH).map(id =>
+                    fetch(`${API_URL}/api/messages?id=${id}`, { method: "DELETE" })
+                        .then(r => r.ok).catch(() => false)
+                ));
+                for (const ok of results) ok ? deleted++ : failed++;
+                btn.textContent = `siliniyor... ${deleted}`;
             }
-            
-            messageList.querySelectorAll('li:not(template li)').forEach(el => el.remove());
-            messageList.dataset.lastMessageId = "-1";
-            window.lastDateDivider = "";
-            applyTheme("kagan");
-        } catch (err) {
-            alert("Toplu silme sırasında bir hata oluştu.");
-        } finally {
-            btn.textContent = "tüm mesajları sil";
-            btn.style.pointerEvents = "auto";
-            poll_for_new_messages();
+            if (failed > 0) break;                            // hata varsa dur, körlemesine devam etme
         }
-    });
+    } finally {
+        btn.textContent = "tüm mesajları sil";
+        btn.style.pointerEvents = "auto";
+    }
+
+    if (failed === 0 && rounds < MAX_ROUNDS) {
+        messageList.querySelectorAll(':scope > li').forEach(el => el.remove());
+        messageList.dataset.lastMessageId = "-1";
+        window.lastDateDivider = "";
+        applyTheme("kagan");
+    } else {
+        alert(`Silinen: ${deleted}, hata: ${failed}${rounds >= MAX_ROUNDS ? " (tur sınırına ulaşıldı)" : ""}. Kalanlar sunucuda olabilir.`);
+    }
+    poll_for_new_messages();
+});
 
     document.querySelector("form").addEventListener("submit", async event => {
         event.preventDefault();
@@ -317,11 +341,12 @@
                     el.classList.add(msg.name === "cemil" ? "from-cemil" : "from-kagan");
                     el.classList.add(msg.name === "kagan" ? "message-out" : "message-in");
 
-                    el.querySelector(".msg-text").innerHTML = linkify(msg.content);
+                    renderContent(el.querySelector(".msg-text"), msg.content);
                     el.querySelector(".message-time").textContent = ".... " + timeStr;
 
                     const deleteBtn = document.createElement('button');
                     deleteBtn.className = 'delete-btn';
+                    deleteBtn.dataset.messageId = msg.id;   // toplu silme bu özniteliğe bağlı
                     deleteBtn.textContent = '×';
                     deleteBtn.onclick = (e) => {
                         e.stopPropagation();
@@ -341,7 +366,7 @@
             if (hasNew && !atBottom) {
                 const notification = document.createElement('div');
                 notification.id = 'new-message-notification';
-                notification.innerHTML = '↓ Yeni mesaj';
+                notification.textContent = '↓ Yeni mesaj';
                 notification.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#007bff;color:white;padding:8px 16px;border-radius:20px;cursor:pointer;z-index:1000;';
                 notification.onclick = () => {
                     messageList.scrollTop = messageList.scrollHeight;
@@ -363,46 +388,40 @@
     setInterval(poll_for_new_messages, 3000);
 
     async function loadLogs() {
+        const out = document.getElementById('logOutput');
         try {
             const res = await fetch(logApiUrl);
             const logs = await res.json();
             
             if (logs.length === 0) {
-                document.getElementById('logOutput').innerHTML = '<span style="color:#888">Dosya bulunamadı.</span>';
+                out.innerHTML = '<span style="color:#888">Dosya bulunamadı.</span>';
                 return;
             }
 
             const now = Math.floor(Date.now() / 1000);
             const todayStart = new Date().setHours(0,0,0,0) / 1000;
             
-            let html = "";
+            out.textContent = "";
             let firstRedFound = false;
 
             logs.forEach(log => {
                 const d = new Date((log.time + 10800) * 1000); 
                 const dateStr = d.toISOString().replace('T', ' ').substring(0, 19);
-                const safeIp = log.ip.replace(/</g, "<");
-                const line = `${safeIp} - ${dateStr}`;
+                const line = `${log.ip} - ${dateStr}\n`;
                 const diff = now - log.time;
-                let colorClass = "";
-                
+                const span = document.createElement('span');
+                span.textContent = line;   // textContent: log.ip içindeki HTML etkisiz
+
                 if (!firstRedFound && diff >= 0 && diff <= (3 * 3600)) {
                     firstRedFound = true;
-                    colorClass = 'style="color:red"';
+                    span.style.color = "red";
                 } else if (log.time < todayStart) {
-                    colorClass = 'style="color:#888"';
+                    span.style.color = "#888";
                 }
-
-                if (colorClass) {
-                    html += `<span ${colorClass}>${line}</span>\n`;
-                } else {
-                    html += `${line}\n`;
-                }
+                out.append(span);
             });
-            
-            document.getElementById('logOutput').innerHTML = html;
         } catch (e) {
-            document.getElementById('logOutput').innerHTML = '<span style="color:#888">Bağlantı hatası.</span>';
+            out.innerHTML = '<span style="color:#888">Bağlantı hatası.</span>';
         }
     }
 
@@ -414,10 +433,12 @@
         btn.textContent = "[siliniyor...]";
         btn.style.pointerEvents = "none";
         
-        await fetch(logApiUrl, { method: "DELETE" });
-        
-        btn.textContent = "[son kaydı sil]";
-        btn.style.pointerEvents = "auto";
+        try {
+            await fetch(logApiUrl, { method: "DELETE" });
+        } finally {
+            btn.textContent = "[son kaydı sil]";
+            btn.style.pointerEvents = "auto";
+        }
         
         loadLogs();
     });
