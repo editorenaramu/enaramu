@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>..</title>
+<meta name="theme-color" content="#333333">
+<style>
+    html { margin: 0; padding: 0; }
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        box-sizing: border-box;
+        padding: 0.8em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: medium;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6em;
+        overflow-y: auto;
+    }
+
+    ul#messages {
+        flex: 0 0 auto;
+        min-height: 65vh;
+        max-height: 75vh;
+        overflow-y: auto;
+        margin: 0 auto;
+        padding: 15px;
+        list-style: none;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        width: 100%;
+        max-width: 40rem;
+        box-sizing: border-box;
+        scrollbar-width: none;
+    }
+    ul#messages::-webkit-scrollbar { display: none; }
+    ul#messages li { 
+        max-width: 75%; padding: 8px 14px; border-radius: 18px; position: relative; 
+        line-height: 1.4; word-wrap: break-word; display: inline-flex; align-items: flex-end; gap: 6px; margin: 0;
+    }
+    .message-out { align-self: flex-end; background-color: #e6e6e6; color: black; border-bottom-right-radius: 4px; }
+    .message-in { align-self: flex-start; background-color: #f1f1f1; color: black; border-bottom-left-radius: 4px; }
+    ul#messages li.pending { opacity: 0.5; align-self: flex-end; background-color: #e6e6e6; border-bottom-right-radius: 4px; }
+    .date-divider { 
+        align-self: center !important; background-color: #e9ecef !important; color: #555 !important; 
+        padding: 4px 14px !important; border-radius: 14px !important; font-size: 0.8rem; font-weight: 500; margin: 10px 0 !important; 
+    }
+    .message-time { font-size: 0.65rem; color: #888; white-space: nowrap; margin-bottom: -1px; }
+    ul#messages li a { color: #007bff; text-decoration: none; }
+    ul#messages li a:hover { text-decoration: underline; }
+    ul#messages li.last-cemil .msg-text { font-weight: bold; color: red; }
+    
+    form { flex: 0 0 auto; margin: 0 auto; padding: 0; border: none; outline: none; width: 100%; max-width: 40rem; box-sizing: border-box; }
+    form p { margin: 0; padding: 6px 8px; display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; border-radius: 30px; background: #fff; }
+    form p input { font-size: 1rem; min-width: 0; border: none; background: transparent; width: 100%; }
+    form p input[name=content] { flex: 1 1 auto; padding: 8px 12px; outline: none; }
+    button { background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: background-color 0.2s; flex-shrink: 0; }
+    button:hover { filter: brightness(0.9); }
+    .controls { flex: 0 0 auto; text-align: center; font-size: 0.9rem; margin-top: 10px; }
+    .controls a { color: #888; text-decoration: none; margin: 0 10px; }
+    
+    /* Log Alanı CSS */
+    .logs-container { width: 100%; max-width: 40rem; margin: 0 auto; font-size: 0.85rem; }
+    .logs-container h2 { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; margin: 8px 0 4px 0; color: #555; }
+    .logs-container pre { white-space: pre-wrap; word-wrap: break-word; margin: 0 0 10px 0; font-family: monospace; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 6px; }
+    #new-message-notification:hover { filter: brightness(0.9); }
+
+    ul#messages li .delete-btn {
+        background: #c5c6c7;
+        color: white;
+        border: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+        line-height: 1;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 6px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        flex-shrink: 0;
+    }
+    ul#messages li:hover .delete-btn {
+        opacity: 1;
+    }
+    @media (hover: none) {
+        ul#messages li .delete-btn {
+            opacity: 0.7;
+        }
+    }
+</style>
+</head>
+<body>
+<table>
+<tr>
+    <td><a href="r/rk.html">resimler</a></td>
+    <td><a href="r/index.html">resim yükle</a></td>
+    <td><a href="https://us04web.zoom.us/j/4664446764?pwd=wHOKdxxEYSzx409OWba5KaQFlcAdoL.1">Zoom</a></td>
+    <td><a target="_blank" href="https://selin.gt.tc/beycan/ka.php">üçlü</a></td>
+</tr>
+</table>
+    
+<ul id="messages">
+    <li>yükleniyor…</li>
+    <template>
+        <li class="pending">
+            <span class="msg-text">…</span>
+            <span class="message-time"></span>
+        </li>
+    </template>
+</ul>
+    
+<form action="https://api.enaramu.com" method="post">
+    <p>
+        <input type="hidden" name="name" value="kagan">
+        <input type="text" name="content" placeholder="Mesaj" autofocus autocomplete="off">
+        <button id="send-btn">yolla</button>
+    </p>
+</form>
+
+<div class="controls">
+    <a href="?r=000000">karart</a>
+    <a href="?r=ffffff">aydınlat</a>
+    <a href="#" onclick="window.location.reload(); return false;">yenile</a>
+    <a href="#" id="clearAllBtn" style="color: #d9534f;">tüm mesajları sil</a>
+</div>
+
+<div class="logs-container">
+    <h2><span>Ziyaretçi Logları</span> <a href="#" id="delLogBtn" style="color:#d9534f; font-size:0.75rem; font-weight:normal; text-decoration:none;">[son kaydı sil]</a></h2>
+    <pre id="logOutput">Yükleniyor...</pre>
+</div>
+
+<script type="module">
+    const API_URL = "https://api.enaramu.com";
+    const logApiUrl = "https://api.enaramu.com/api/log";
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const rInput = urlParams.get('r');
+    const allowedColors = ["ffffff", "000000"];
+    const initialBg = allowedColors.includes(rInput) ? `#${rInput}` : "#ffffff";
+    document.body.style.backgroundColor = initialBg;
+
+    // XSS-güvenli linkify: innerHTML yerine DOM düğümleri üretir.
+    const URL_REGEX = /\b((?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b(?:[-a-zA-Z0-9@:%_\+.~#?&//=]*))/gi;
+
+    function renderContent(target, text) {
+        target.textContent = "";
+        let last = 0;
+        for (const m of String(text).matchAll(URL_REGEX)) {
+            if (m.index > last) target.append(document.createTextNode(text.slice(last, m.index)));
+            const url = m[0];
+            const a = document.createElement("a");
+            a.href = /^https?:\/\//i.test(url) ? url : "https://" + url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = url;
+            target.append(a);
+            last = m.index + url.length;
+        }
+        if (last < text.length) target.append(document.createTextNode(text.slice(last)));
+    }
+
+    const messageList     = document.querySelector("ul#messages");
+    const messageTemplate = messageList.querySelector("template").content.querySelector("li");
+    const sendBtn         = document.getElementById("send-btn");
+    const contentInput    = document.querySelector("input[name=content]");
+    window.lastDateDivider = "";
+
+    const loadingLi = messageList.querySelector("li");
+    if (loadingLi) loadingLi.remove();
+
+    function applyTheme(lastSender) {
+        const isCemil = lastSender === "cemil";
+        const isDark  = initialBg === "#000000";
+
+        if (isCemil) {
+            document.body.style.backgroundColor = "white";
+            document.body.style.visibility      = "visible";
+            contentInput.style.backgroundColor  = "white";
+            sendBtn.style.backgroundColor       = "red";
+            sendBtn.style.color                 = "white";
+        } else if (isDark) {
+            document.body.style.backgroundColor = "black";
+            document.body.style.visibility      = "hidden";
+        } else {
+            document.body.style.backgroundColor = "white";
+            document.body.style.visibility      = "visible";
+            contentInput.style.backgroundColor  = "white";
+            sendBtn.style.backgroundColor       = "";      
+            sendBtn.style.color                 = "white";
+        }
+    }
+
+    function updateLastCemilHighlight() {
+        for (const li of messageList.querySelectorAll("li.last-cemil")) li.classList.remove("last-cemil");
+        const all = Array.from(messageList.querySelectorAll("li:not(.pending):not(.date-divider)"));
+        if (all.length === 0) return;
+        const last    = all[all.length - 1];
+        const isCemil = last.classList.contains("from-cemil");
+        if (isCemil) last.classList.add("last-cemil");
+        applyTheme(isCemil ? "cemil" : "kagan");
+    }
+
+    // Tekil Mesaj Silme İşlevi
+    async function deleteMessage(id, element) {
+        if (!confirm("Bu mesajı silmek istediğinize emin misiniz?")) return;
+        
+        try {
+            const res = await fetch(`${API_URL}/api/messages?id=${id}`, { method: "DELETE" });
+            if (res.ok) {
+                element.remove();
+                updateLastCemilHighlight();
+            } else {
+                alert("Mesaj silinemedi.");
+            }
+        } catch (e) {
+            alert("Bağlantı hatası.");
+        }
+    }
+
+    // Tekil silme ile tüm mesajları temizleme.
+    // Yalnızca sunucunun başarıyla sildiği mesajlar DOM'dan kaldırılır.
+    document.getElementById('clearAllBtn').addEventListener('click', async (e) => {
+        e.preventDefault();
+        
+        const deleteButtons = Array.from(messageList.querySelectorAll('.delete-btn[data-message-id]'));
+        if (deleteButtons.length === 0) {
+            alert("Silinecek yüklü mesaj bulunamadı.");
+            return;
+        }
+
+        if (!confirm(`Ekrandaki ${deleteButtons.length} mesaj tek tek silinecek. Emin misiniz?`)) return;
+
+        const btn = document.getElementById('clearAllBtn');
+        btn.textContent = "siliniyor...";
+        btn.style.pointerEvents = "none";
+
+        let failed = 0;
+        try {
+            for (const dBtn of deleteButtons) {
+                const id = dBtn.dataset.messageId;
+                if (!id) continue;
+                try {
+                    const res = await fetch(`${API_URL}/api/messages?id=${id}`, { method: "DELETE" });
+                    if (res.ok) {
+                        dBtn.closest("li")?.remove();
+                    } else {
+                        failed++;
+                    }
+                } catch (_) {
+                    failed++;
+                }
+            }
+
+            if (failed === 0) {
+                // Her şey silindi: kalan tarih ayırıcıları da temizle.
+                messageList.querySelectorAll(':scope > li').forEach(el => el.remove());
+                messageList.dataset.lastMessageId = "-1";
+                window.lastDateDivider = "";
+                applyTheme("kagan");
+            } else {
+                alert(`${failed} mesaj silinemedi (sunucu yanıtı/yetki/CORS kontrol edin).`);
+                updateLastCemilHighlight();
+            }
+        } finally {
+            btn.textContent = "tüm mesajları sil";
+            btn.style.pointerEvents = "auto";
+            poll_for_new_messages();
+        }
+    });
+
+    document.querySelector("form").addEventListener("submit", async event => {
+        event.preventDefault();
+        const name    = event.target.name.value;
+        const content = event.target.content.value;
+        if (!name || !content) return;
+
+        await fetch(API_URL, { 
+            method: "POST", 
+            body: new URLSearchParams({name, content}) 
+        });
+
+        const el = messageTemplate.cloneNode(true);
+        el.classList.add("from-kagan", "message-out");
+        el.querySelector(".msg-text").textContent = content;
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'delete-btn';
+        deleteBtn.textContent = '×';
+        deleteBtn.onclick = (e) => {
+            e.stopPropagation();
+            alert("Mesaj sunucuya kaydedilene kadar buradan silinemez. Sayfayı yenileyip silebilirsiniz.");
+        };
+        el.appendChild(deleteBtn);
+
+        messageList.append(el);
+        messageList.scrollTop = messageList.scrollHeight;
+        event.target.content.value = "";
+        event.target.content.focus();
+        updateLastCemilHighlight();
+    });
+
+    async function poll_for_new_messages() {
+        try {
+            const response = await fetch(API_URL, { cache: "no-cache" });
+            if (!response.ok) return;
+
+            const messages = await response.json();
+            const atBottom = (messageList.scrollHeight - messageList.scrollTop - messageList.clientHeight) < 50;
+
+            for (const li of messageList.querySelectorAll("li.pending")) li.remove();
+
+            const lastId = parseInt(messageList.dataset.lastMessageId ?? "-1");
+            let hasNew = false;
+
+            for (const msg of messages) {
+                if (msg.id > lastId) {
+                    const date = new Date(msg.time * 1000);
+                    
+                    const dateStr = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+                    if (window.lastDateDivider !== dateStr) {
+                        const divider = document.createElement('li');
+                        divider.className = 'date-divider';
+                        divider.textContent = dateStr;
+                        messageList.append(divider);
+                        window.lastDateDivider = dateStr;
+                    }
+
+                    const timeStr = new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit' }).format(date);
+
+                    const el = messageTemplate.cloneNode(true);
+                    el.classList.remove("pending");
+                    
+                    el.classList.add(msg.name === "cemil" ? "from-cemil" : "from-kagan");
+                    el.classList.add(msg.name === "kagan" ? "message-out" : "message-in");
+
+                    renderContent(el.querySelector(".msg-text"), msg.content);
+                    el.querySelector(".message-time").textContent = ".... " + timeStr;
+
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.className = 'delete-btn';
+                    deleteBtn.dataset.messageId = msg.id;   // toplu silme bu özniteliğe bağlı
+                    deleteBtn.textContent = '×';
+                    deleteBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        deleteMessage(msg.id, el);
+                    };
+                    el.appendChild(deleteBtn);
+
+                    messageList.append(el);
+                    messageList.dataset.lastMessageId = msg.id;
+                    hasNew = true;
+                }
+            }
+
+            for (const li of Array.from(messageList.querySelectorAll("li:not(.date-divider)")).slice(0, -1000)) li.remove();
+            if (hasNew) updateLastCemilHighlight();
+
+            if (hasNew && !atBottom) {
+                const notification = document.createElement('div');
+                notification.id = 'new-message-notification';
+                notification.textContent = '↓ Yeni mesaj';
+                notification.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#007bff;color:white;padding:8px 16px;border-radius:20px;cursor:pointer;z-index:1000;';
+                notification.onclick = () => {
+                    messageList.scrollTop = messageList.scrollHeight;
+                    notification.remove();
+                };
+                document.body.appendChild(notification);
+                setTimeout(() => notification.remove(), 5000);
+            }
+            if (atBottom) messageList.scrollTop = messageList.scrollHeight - messageList.clientHeight;
+        } catch (_) {}
+
+        if (!window._initialScrollDone) {
+            messageList.scrollTop = messageList.scrollHeight;
+            window._initialScrollDone = true;
+        }
+    }
+
+    poll_for_new_messages();
+    setInterval(poll_for_new_messages, 3000);
+
+    async function loadLogs() {
+        const out = document.getElementById('logOutput');
+        try {
+            const res = await fetch(logApiUrl);
+            const logs = await res.json();
+            
+            if (logs.length === 0) {
+                out.innerHTML = '<span style="color:#888">Dosya bulunamadı.</span>';
+                return;
+            }
+
+            const now = Math.floor(Date.now() / 1000);
+            const todayStart = new Date().setHours(0,0,0,0) / 1000;
+            
+            out.textContent = "";
+            let firstRedFound = false;
+
+            logs.forEach(log => {
+                const d = new Date((log.time + 10800) * 1000); 
+                const dateStr = d.toISOString().replace('T', ' ').substring(0, 19);
+                const line = `${log.ip} - ${dateStr}\n`;
+                const diff = now - log.time;
+                const span = document.createElement('span');
+                span.textContent = line;   // textContent: log.ip içindeki HTML etkisiz
+
+                if (!firstRedFound && diff >= 0 && diff <= (3 * 3600)) {
+                    firstRedFound = true;
+                    span.style.color = "red";
+                } else if (log.time < todayStart) {
+                    span.style.color = "#888";
+                }
+                out.append(span);
+            });
+        } catch (e) {
+            out.innerHTML = '<span style="color:#888">Bağlantı hatası.</span>';
+        }
+    }
+
+    document.getElementById('delLogBtn').addEventListener('click', async (e) => {
+        e.preventDefault();
+        if(!confirm("Son kaydı (en üsttekini) silmek istediğinize emin misiniz?")) return;
+        
+        const btn = document.getElementById('delLogBtn');
+        btn.textContent = "[siliniyor...]";
+        btn.style.pointerEvents = "none";
+        
+        try {
+            await fetch(logApiUrl, { method: "DELETE" });
+        } finally {
+            btn.textContent = "[son kaydı sil]";
+            btn.style.pointerEvents = "auto";
+        }
+        
+        loadLogs();
+    });
+
+    loadLogs();
+</script>
+<iframe src="https://yerel.enaramu.com/l.txt" title="description" frameBorder="0"></iframe>
+</body>
+</html>
